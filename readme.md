@@ -1,1 +1,3 @@
-This is a repository to collaborate on CSCI 599 projects.
+# csci599-12
+
+Repository to collaborate on CSCI 599 course projects.
