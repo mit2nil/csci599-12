@@ -26,19 +26,19 @@ public class App
 		System.out.println("total files:" + listOfFiles.length);
 		System.out.println("Time taken:" + (System.currentTimeMillis()-st1));
 		Tika tika = new Tika();
-		
+		File output;
 		for(File file: listOfFiles){
 			if(file.isFile() && !file.getName().startsWith(".DS_")){
 				String contentType = tika.detect(file);
 				contentType = contentType.replace("/", "_");
-				File output = new File(outputFolder.getAbsolutePath() +"/" + contentType);
+				output = new File(outputFolder.getAbsolutePath() +"/" + contentType);
 				if(!output.isDirectory()){
 					output.mkdir();
 				}
 				String fileName= file.getName();
 				file = file.getAbsoluteFile();
 				if(!file.renameTo(new File(output.getAbsoluteFile() +"/" + fileName))){
-					System.out.println("File not moved to folder" + output.getAbsolutePath());
+					System.out.println(fileName + " File not moved to folder: " + output.getAbsolutePath());
 				}
 			}
 		}
