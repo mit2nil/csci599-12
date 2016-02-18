@@ -1,0 +1,3 @@
+$MIMETYPE=''
+$EXTENSION=''
+aws s3 cp s3://latest-commoncrawl/crawl/572-team1/ team1-data/$MIMETYPE/ --exclude '*' --include '*.$EXTENSION*' --recursive
