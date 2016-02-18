@@ -1,3 +1,9 @@
 $MIMETYPE=''
 $EXTENSION=''
 aws s3 cp s3://latest-commoncrawl/crawl/572-team1/ team1-data/$MIMETYPE/ --exclude '*' --include '*.$EXTENSION*' --recursive
+
+
+
+#flatten , run inside folder
+find */ -type f -exec bash -c 'file=${1#./}; mv "$file" "${file//\//_}"' _ '{}' \;
+find */ -depth -type d -exec rmdir '{}' \;
