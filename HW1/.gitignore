@@ -1,4 +1,5 @@
 .DS_S*
+*/.gitignore
 .classpath
 .project
 .settings*
