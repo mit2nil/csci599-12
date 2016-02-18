@@ -1,17 +1,18 @@
 import java.io.File;
+import java.io.FileWriter;
 import java.io.FileInputStream;
 import java.io.IOException;
+import com.google.gson.stream.JsonWriter;
 
 public class BFA
 {
     // Fields
     private File dir; // Name of the dirctory containing files to be analyzed
     private long[] signatures = new long[256];
-    private float[] normalizedSignatures = new float[256];
-    private float[] tempNormalizedSignatures = new float[256];
-
+    private double[] normalizedSignatures = new double[256];
+    private double[] tempNormalizedSignatures = new double[256];
     
-    // Constructors
+    // Constructor
     public BFA(String path) throws IllegalArgumentException 
     {
         // Ensure path is valid
@@ -64,13 +65,6 @@ public class BFA
             }
             
             // Step-3
-            // Decide if companding required or not
-            // If yes, which one a-law or u-law
-            
-            // Step-4
-            // Apply companding
-            
-            // Step-5
             // Averge the normalized frequencey
             if (count != 0)
             {
@@ -87,9 +81,12 @@ public class BFA
                     normalizedSignatures[i] = tempNormalizedSignatures[i];
                 }
             }
-            printFqs();
+            //printFqs();
             count++;
         }
+        
+        // Output final signatuers to Json
+        dumpJson();
         return status;
     }
     
@@ -150,26 +147,24 @@ public class BFA
         {            
             tempNormalizedSignatures[i] = (float) signatures[i]/max;
         }
+                
+        // Apply a-law
+        double A = 87.6;
+        double A_inv = 0.0114155251141553;
+        double A_denom = (double) 1.0 + Math.log(A);
+        for (int i=0;i<256;i++)
+        {
+            double temp = tempNormalizedSignatures[i];
+            if (temp < A_inv)            
+                temp = (A*temp)/A_denom;            
+            else            
+                temp = (1+Math.log(A*temp))/A_denom;
+            tempNormalizedSignatures[i] = temp;
+        }
         
         // Right now always returning true. 
         // Modify later if required
-        
         return status;
-    }
-    
-    private void applyCompanding()
-    {
-        
-    }
-    
-    private void alawCompanding()
-    {
-        
-    }
-    
-    private void ulawCompanding()
-    {
-        
     }
     
     private void printFqs()
@@ -180,6 +175,54 @@ public class BFA
                 System.out.print(normalizedSignatures[i*8+j]+" ");
             System.out.println("");
         }        
+    }
+    
+    private void dumpJson()
+    {
+        JsonWriter jsonWriter = null;
+        try 
+        {
+            jsonWriter = new JsonWriter(new FileWriter(dir.getName()+".json"));
+            jsonWriter.setIndent("    ");
+            jsonWriter.beginObject();
+            jsonWriter.name("property");
+            jsonWriter.beginArray();
+            jsonWriter.beginObject();
+            jsonWriter.name("companding");
+            jsonWriter.value("True");
+            jsonWriter.name("compandingAlgorithm");
+            jsonWriter.value("A-law");
+            jsonWriter.endObject();
+            jsonWriter.endArray();
+            jsonWriter.name("BFA Signatures");
+            jsonWriter.beginArray();
+            jsonWriter.beginObject();
+            for (int i=0;i<256;i++)
+            {
+                jsonWriter.name("Byte-"+i);
+                jsonWriter.value(normalizedSignatures[i]);               
+            }
+            jsonWriter.endObject();
+            jsonWriter.endArray();            
+            jsonWriter.endObject();            
+        } 
+        catch (IOException e)
+        {
+            e.printStackTrace();
+            System.out.println("IOException writing Json file: ");
+        }
+        finally
+        {
+            try 
+            {
+                jsonWriter.close();
+            } 
+            catch (IOException e) 
+            {
+                e.printStackTrace();
+                System.out.println("IOException closing Json file: ");
+            }
+        }
     }
     
     // Tester main method
