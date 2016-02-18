@@ -1,5 +1,5 @@
 .DS_S*
 */.gitignore
-.classpath
-.project
-.settings*
+*.classpath
+*.project
+*.settings*
