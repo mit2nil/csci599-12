@@ -158,7 +158,7 @@ public class BFA
             if (temp < A_inv)            
                 temp = (A*temp)/A_denom;            
             else            
-                temp = (1+Math.log(A*temp))/A_denom;            
+                temp = (1+Math.log(A*temp))/A_denom;
             tempNormalizedSignatures[i] = temp;
         }
         
