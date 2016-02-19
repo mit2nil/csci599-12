@@ -6,9 +6,9 @@
   * [Gson reference] (https://github.com/google/gson)
 
 *Compile and Run (Windows)*
-  * javac -cp ".;gson-2.6.1.jar;tika-app-1.11.jar" BFA.java
-  * java -cp ".;gson-2.6.1.jar;tika-app-1.11.jar" BFA
+  * javac -cp ".;gson-2.6.1.jar;tika-app-1.11.jar" App.java
+  * java -cp ".;gson-2.6.1.jar;tika-app-1.11.jar" App
 
 *Compile and Run (Linux/Mac)*
-  * javac -cp ".:gson-2.6.1.jar;tika-app-1.11.jar" BFA.java
-  * java -cp ".:gson-2.6.1.jar;tika-app-1.11.jar" BFA
+  * javac -cp ".:gson-2.6.1.jar;tika-app-1.11.jar" App.java
+  * java -cp ".:gson-2.6.1.jar;tika-app-1.11.jar" App
