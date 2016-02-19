@@ -11,6 +11,7 @@ public class App
     private static HashMap<String,Integer> mimetypes = new HashMap<String,Integer>();
     private static File inputFolder;
     private static File outputFolder;
+    private static Tika tk = new Tika();
     
     public static void main( String[] args ) throws IOException
     {
@@ -44,7 +45,6 @@ public class App
     
     private static void detectTika(File dir) throws IOException
     {
-        Tika tk = new Tika();
         for (File f: dir.listFiles())
         {
             //System.out.println("Traversing: "+f);
