@@ -1,0 +1,98 @@
+Traversing: C:\stuff\Git\csci599-12\HW1\PreProcessv2\in\org\creativecommons\mirrors\C777E966A9F73A5D74CE1A7AC3359A79D97B38F8176C32E09B38CFCE528235C6
+java.io.IOException: Asked to read 4206 bytes from 0 but hit EoF at 3416
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:39)
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:31)
+        at org.gagravarr.ogg.OggPage.<init>(OggPage.java:82)
+        at org.gagravarr.ogg.OggPacketReader.getNextPacket(OggPacketReader.java:116)
+        at org.gagravarr.tika.OggDetector.detect(OggDetector.java:97)
+        at org.apache.tika.detect.CompositeDetector.detect(CompositeDetector.java:77)
+        at org.apache.tika.Tika.detect(Tika.java:156)
+        at org.apache.tika.Tika.detect(Tika.java:288)
+        at App.detectTika(App.java:73)
+        at App.detectTika(App.java:68)
+        at App.detectTika(App.java:68)
+        at App.detectTika(App.java:68)
+        at App.main(App.java:26)
+IOException occured
+Traversing: C:\stuff\Git\csci599-12\HW1\PreProcessv2\in\org\fsf\gplv3\6401506F0C5D4CEE0F7A26C37307D4EA8EF07CA075821B41F5EAA5A4EA4548FB
+java.io.IOException: Asked to read 4335 bytes from 0 but hit EoF at 3612
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:39)
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:31)
+        at org.gagravarr.ogg.OggPage.<init>(OggPage.java:82)
+        at org.gagravarr.ogg.OggPacketReader.getNextPacket(OggPacketReader.java:116)
+        at org.gagravarr.ogg.OggPacketReader.getNextPacket(OggPacketReader.java:124)
+        at org.gagravarr.ogg.OggPacketReader.getNextPacket(OggPacketReader.java:124)
+        at org.gagravarr.ogg.OggPacketReader.getNextPacket(OggPacketReader.java:124)
+        at org.gagravarr.tika.OggDetector.detect(OggDetector.java:97)
+        at org.apache.tika.detect.CompositeDetector.detect(CompositeDetector.java:77)
+        at org.apache.tika.Tika.detect(Tika.java:156)
+        at org.apache.tika.Tika.detect(Tika.java:288)
+        at App.detectTika(App.java:73)
+        at App.detectTika(App.java:68)
+        at App.detectTika(App.java:68)
+        at App.detectTika(App.java:68)
+        at App.main(App.java:26)
+IOException occured
+Traversing: C:\stuff\Git\csci599-12\HW1\PreProcessv2\in\org\gnu\www\CD7F23D7F80BAE2070AF8B30DE7C3B17C837A504967B4000ADD235E6FA510884
+java.io.IOException: Asked to read 4222 bytes from 0 but hit EoF at 1295
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:39)
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:31)
+        at org.gagravarr.ogg.OggPage.<init>(OggPage.java:82)
+        at org.gagravarr.ogg.OggPacketReader.getNextPacket(OggPacketReader.java:116)
+        at org.gagravarr.tika.OggDetector.detect(OggDetector.java:97)
+        at org.apache.tika.detect.CompositeDetector.detect(CompositeDetector.java:77)
+        at org.apache.tika.Tika.detect(Tika.java:156)
+        at org.apache.tika.Tika.detect(Tika.java:288)
+        at App.detectTika(App.java:73)
+        at App.detectTika(App.java:68)
+        at App.detectTika(App.java:68)
+        at App.detectTika(App.java:68)
+        at App.main(App.java:26)
+IOException occured
+Traversing: C:\stuff\Git\csci599-12\HW1\PreProcessv2\in\org\sfconservancy\53BE1BD0F07E910BDF0E832BA7EA37071E6DDE342FA18E0EB85E2CD6AE04BBC6
+java.io.IOException: Asked to read 61952 bytes from 0 but hit EoF at 56526
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:39)
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:31)
+        at org.gagravarr.ogg.OggPage.<init>(OggPage.java:82)
+        at org.gagravarr.ogg.OggPacketReader.getNextPacket(OggPacketReader.java:116)
+        at org.gagravarr.tika.OggDetector.detect(OggDetector.java:97)
+        at org.apache.tika.detect.CompositeDetector.detect(CompositeDetector.java:77)
+        at org.apache.tika.Tika.detect(Tika.java:156)
+        at org.apache.tika.Tika.detect(Tika.java:288)
+        at App.detectTika(App.java:73)
+        at App.detectTika(App.java:68)
+        at App.detectTika(App.java:68)
+        at App.main(App.java:26)
+IOException occured
+Traversing: C:\stuff\Git\csci599-12\HW1\PreProcessv2\in\org\w3\media\ACED96C88F2082D3D0FBFFCADCF115037D74A99A3D56996642F66FE145B36609
+java.io.IOException: Asked to read 4124 bytes from 0 but hit EoF at 3504
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:39)
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:31)
+        at org.gagravarr.ogg.OggPage.<init>(OggPage.java:82)
+        at org.gagravarr.ogg.OggPacketReader.getNextPacket(OggPacketReader.java:116)
+        at org.gagravarr.tika.OggDetector.detect(OggDetector.java:97)
+        at org.apache.tika.detect.CompositeDetector.detect(CompositeDetector.java:77)
+        at org.apache.tika.Tika.detect(Tika.java:156)
+        at org.apache.tika.Tika.detect(Tika.java:288)
+        at App.detectTika(App.java:73)
+        at App.detectTika(App.java:68)
+        at App.detectTika(App.java:68)
+        at App.detectTika(App.java:68)
+        at App.main(App.java:26)
+IOException occured
+Traversing: C:\stuff\Git\csci599-12\HW1\PreProcessv2\in\org\wikimedia\upload\0AFF1F7D4AE251E27F0C9E927C90B49F3DA1B02441D2A366517D76B7C65DCBE1
+java.io.IOException: Asked to read 4177 bytes from 0 but hit EoF at 3849
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:39)
+        at org.gagravarr.ogg.IOUtils.readFully(IOUtils.java:31)
+        at org.gagravarr.ogg.OggPage.<init>(OggPage.java:82)
+        at org.gagravarr.ogg.OggPacketReader.getNextPacket(OggPacketReader.java:116)
+        at org.gagravarr.tika.OggDetector.detect(OggDetector.java:97)
+        at org.apache.tika.detect.CompositeDetector.detect(CompositeDetector.java:77)
+        at org.apache.tika.Tika.detect(Tika.java:156)
+        at org.apache.tika.Tika.detect(Tika.java:288)
+        at App.detectTika(App.java:73)
+        at App.detectTika(App.java:68)
+        at App.detectTika(App.java:68)
+        at App.detectTika(App.java:68)
+        at App.main(App.java:26)
+IOException occured
