@@ -1,0 +1,16 @@
+application/diff-xml
+application/octet-stream
+application/pdf
+application/xhtml+xml
+application/zip
+audio/mpeg
+audio/x-ms-wma
+audio/x-wav
+image/jpeg
+image/gif
+image/png
+message/rfc822
+text/x-matlab
+video/mp4
+video/quicktime
+xscapplication/zip
