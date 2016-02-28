@@ -1,3 +1,6 @@
+// Original code was taken from "Sequences Sunburst" @
+// https://gist.github.com/kerryrodden/7090426
+
 // Dimensions of sunburst.
 var width = 600;
 var height = 600;
