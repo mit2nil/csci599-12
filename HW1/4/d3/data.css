@@ -1,55 +1,26 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  background-color: #fff;
-  width: 900px;
-  height: 900px;
-  margin-top: 10px;
-}
+path {
+				stroke: steelblue;
+				stroke-width: 1;
+				fill: none;
+			}
+			
+			.axis {
+			  shape-rendering: crispEdges;
+			}
 
-#main {
-  float: left;
-  width: 600px;
-}
+			.x.axis line {
+			  stroke: lightgrey;
+			}
 
-#sidebar {
-  float: right;
-  width: 200px;
-}
+			.x.axis .minor {
+			  stroke-opacity: .5;
+			}
 
-#sequence {
-  width: 600px;
-  height: 70px;
-}
+			.x.axis path {
+			  display: none;
+			}
 
-#legend {
-  padding: 10px 0 0 3px;
-}
-
-#sequence text, #legend text {
-  font-weight: 600;
-  fill: #fff;
-}
-
-#chart path {
-  stroke: #fff;
-}
-
-#chart {
-  position: relative;
-}
-
-#explanation {
-  position: absolute;
-  top: 300px;
-  left: 100px;
-  width: 400px;
-  text-align: center;
-  color: #666;
-  z-index: -1;
-}
-
-#percentage {
-  font-size: 2.5em;
-}
+			.y.axis line, .y.axis path {
+			  fill: none;
+			  stroke: #000;
+			}

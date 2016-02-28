@@ -5,7 +5,7 @@ target_size = 0
 import os
 
 # os.walk(give folder name which contains one or more mime folders to be cleaned)
-for dirpath, dirs, files in os.walk('polar_data_nilay_mime15'):
+for dirpath, dirs, files in os.walk('polar_data_all_mime15'):
     count = 0
     for file in files: 
         path = os.path.join(dirpath, file)
