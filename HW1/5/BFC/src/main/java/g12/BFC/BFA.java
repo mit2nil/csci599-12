@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.FileInputStream;
 import java.io.IOException;
 import com.google.gson.stream.JsonWriter;
-
+  
 public class BFA
 {
     // Fields
@@ -23,29 +23,23 @@ public class BFA
             System.out.println("Path not specified!");
             throw new IllegalArgumentException();
         }
-        if(path.equals("/Users/kshah/output/Batch5/onguardonline__www_EF618D7279687B5F07C714B2C7AE081CEFD1F6281ADF18BDD41F33EE9C67703D")){
-        	System.out.println("FALSE");
-        }
-        dir = new File(path);
         
         // Initialize the signatures to zero
         for(int i=0;i<256;i++)
-        {            signatures[i] = 0;
+        {   signatures[i] = 0;
             normalizedSignatures[i] = 0;
             tempNormalizedSignatures[i] = 0;
         }
+        dir = new File(path);
     }
     
     // Computation flow for Byte Frequency analysis for set of files
-    protected boolean computeBFA()
+    protected boolean computeBFA(Boolean flag)
     {
         boolean status = true;
         int count = 0; // Tracking number of files
-        
         if(!dir.isDirectory()){
-        	status=BFA_file(dir);
-        	//dumpJson();
-        	return status;
+        	return BFA_file(dir);
         }
         System.out.println(dir);
         
@@ -90,7 +84,8 @@ public class BFA
         }
         
         // Output final signatures to Json
-        //dumpJson();
+        if(flag)
+        dumpJson();
         return status;
     }
     
@@ -175,21 +170,24 @@ public class BFA
     
     protected void printFqs()
     {
-        for (int i=0;i<8;i++)
+        for (int i=0;i<256;i++)
         {
-            for (int j=0;j<8;j++)
-            	;
-       //         System.out.print(normalizedSignatures[i*8+j]+" ");
-       //     System.out.println("");
-        }        
+            
+             System.out.print(normalizedSignatures[i]+" ");
+             System.out.println("");
+                
+    }
     }
     
     protected void dumpJson()
     {
+    	//printFqs();
         JsonWriter jsonWriter = null;
         try 
         {
-            jsonWriter = new JsonWriter(new FileWriter(dir.getName()+".json"));
+        	String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/")) + "/BFA_" +  dir.getAbsolutePath().substring(dir.getAbsolutePath().lastIndexOf("/")+1) + ".json";
+        	
+            jsonWriter = new JsonWriter(new FileWriter(file));
             jsonWriter.setIndent("    ");
             jsonWriter.beginObject();
             jsonWriter.name("property");
@@ -258,7 +256,59 @@ public class BFA
         return status; 
 
     }
-    	
+    
+    
+	protected static void dumpJson(double[] arr,String mimename, File dir)
+    {
+		
+        JsonWriter jsonWriter = null;
+        try 
+        {
+        	String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/")) + "/BFA100_" + mimename + ".json";
+        	System.out.println("XXXXXX" + file);
+        	jsonWriter = new JsonWriter(new FileWriter(file));
+            jsonWriter.setIndent("    ");
+            jsonWriter.beginObject();
+            jsonWriter.name("property");
+            jsonWriter.beginArray();
+            jsonWriter.beginObject();
+            jsonWriter.name("companding");
+            jsonWriter.value("True");
+            jsonWriter.name("compandingAlgorithm");
+            jsonWriter.value("A-law");
+            jsonWriter.endObject();
+            jsonWriter.endArray();
+            jsonWriter.name("BFA Signatures");
+            jsonWriter.beginArray();
+            jsonWriter.beginObject();
+            for (int i=0;i<256;i++)
+            {
+                jsonWriter.name("Byte-"+i);
+                jsonWriter.value(arr[i]);               
+            }
+            jsonWriter.endObject();
+            jsonWriter.endArray();            
+            jsonWriter.endObject();            
+        } 
+        catch (IOException e)
+        {
+            e.printStackTrace();
+            System.out.println("IOException writing Json file: ");
+        }
+        finally
+        {
+            try 
+            {
+                jsonWriter.close();
+            } 
+            catch (IOException e) 
+            {
+                e.printStackTrace();
+                System.out.println("IOException closing Json file: ");
+            }
+        }
+    }
+    
 }
  
 
