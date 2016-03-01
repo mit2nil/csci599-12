@@ -58,7 +58,7 @@ public class FHT {
 		boolean status = true;
 		int count = 0; //Tracking Number of Files
 		if(type.equals(DIRECTORY)){
-			
+	
 			for (File f: path.listFiles())
 	        {
 				if(f.getName().equals(".DS_Store")){
@@ -108,7 +108,7 @@ public class FHT {
 		JsonNode n = o.valueToTree(fingerprint_16);
 		FileWriter f=null;
 		try {
-			f = new FileWriter(path+"/FHT_fingerprint.json");
+			f = new FileWriter("/Users/manali/599/ass1/manali/"+"/image_gif_FHT_fingerprint.json");
 			f.write(o.writeValueAsString(n));
 			
 		} catch (IOException e) {
@@ -275,7 +275,7 @@ public class FHT {
         }
         
         // Right now always returning true. 
-        // Failing to read one file does not mean entire fucntion failed.
+        // Failing to read one file does not mean entire function failed.
         // Modify later if required
 		return status;
 	}
@@ -285,10 +285,12 @@ public class FHT {
 		long st1 = System.currentTimeMillis();
 		
 		//Calculate frequency header for a particular mime type
-		FHT gif_fingerprint = new FHT("/Users/manali/599/ass1/polar-fulldump/demoFHT/image_gif", "DIRECTORY");
+		FHT gif_fingerprint = new FHT("/Users/manali/599/ass1/manali/image_gif", "DIRECTORY");
 		gif_fingerprint.computeFHT();
-		System.out.println("Time taken to calculate fingerprint: " + (System.currentTimeMillis()-st1));
+		System.out.println("Generated 16-Byte FHT Fingerprint in: " + (System.currentTimeMillis()-st1));
 		st1 = System.currentTimeMillis();
+		
+		
 		//Compare with all unknown files to determine
 		File unknown = new File("/Users/manali/599/ass1/polar-fulldump/demoFHT/unknown_type/");
 		
