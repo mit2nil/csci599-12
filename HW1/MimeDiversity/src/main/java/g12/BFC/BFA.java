@@ -186,7 +186,7 @@ public class BFA
         try 
         {
             String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/")) + "/BFA_" +  dir.getAbsolutePath().substring(dir.getAbsolutePath().lastIndexOf("/")+1) + ".json";
-            
+            //String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("\\")) + "\\BFA_" +  dir.getAbsolutePath().substring(dir.getAbsolutePath().lastIndexOf("\\")+1) + ".json";
             jsonWriter = new JsonWriter(new FileWriter(file));
             jsonWriter.setIndent("    ");
             jsonWriter.beginObject();
@@ -266,6 +266,7 @@ public class BFA
         try 
         {
             String file = dir.getAbsolutePath() + "/BFA100_" + mimename + ".json";
+            //String file = dir.getAbsolutePath() + "\\BFA100_" + mimename + ".json";
             System.out.println("XXXXXX" + file);
             jsonWriter = new JsonWriter(new FileWriter(file));
             jsonWriter.setIndent("    ");
