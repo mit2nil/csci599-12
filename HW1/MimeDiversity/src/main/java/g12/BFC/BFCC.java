@@ -35,7 +35,7 @@ public class BFCC {
 		}
 		
 		protected void writematrix(double[][] matrix, File tdir, File file, Mimetype mime){
-			 if(file.getName().startsWith(".DS_Store") && file.getName().endsWith(".json")){
+			 if(file.getName().startsWith(".DS_Store") || file.getName().endsWith(".json")){
 				 return;
 			 }
 			String name;
