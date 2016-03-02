@@ -31,9 +31,14 @@ public class App
 		//Test directory could contain non-classified files or files you want to see correlation matrix against. 
 		//Either way out, it will output a matrix of the correlation between the file and all mime types that exist. 
 		BFCC bfcc = new BFCC("C:\\stuff\\Git\\polar_data_all_mime15_splitted","C:\\stuff\\Git\\polar_data_all_mime15_splitted\\audio_x-wav\\audio_x-wav_25");
-		
-		
-		
+
+
+		String mainDirectory = "C:\\stuff\\Git\\polar_data_all_mime15_splitted";
+		String mimeType = "audio_x-wav";
+		FHT f = new FHT(mainDirectory + "\\" + mimeType + "\\" + mimeType, "DIRECTORY");
+		f.computeFHT();
+		f.detectFileScore(mainDirectory, mainDirectory + "\\" + mimeType + "\\" + mimeType + "_25", mimeType);
+		//System.out.println("Generated FHT scores in: " + (System.currentTimeMillis()-st1));
 	}
 	
 	

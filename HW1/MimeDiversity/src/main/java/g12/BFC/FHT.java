@@ -79,7 +79,7 @@ public class FHT {
         
     }
 	
-	private boolean computeFHT(){
+	public boolean computeFHT(){
 		boolean status = true;
 		int count = 0; //Tracking Number of Files
 		if(type.equals(DIRECTORY)){
@@ -133,8 +133,8 @@ public class FHT {
 		JsonNode n = o.valueToTree(fingerprint_16);
 		FileWriter f=null;
 		try {
-			int i  = path.getAbsolutePath().lastIndexOf("/");
-			String mimeType = path.getAbsolutePath().substring(path.getAbsolutePath().lastIndexOf("/")+1);
+			int i  = path.getAbsolutePath().lastIndexOf("\\");
+			String mimeType = path.getAbsolutePath().substring(path.getAbsolutePath().lastIndexOf("\\")+1);
 			String test = path.getAbsolutePath().substring(0,path.getAbsolutePath().indexOf(mimeType))+"FHT_fingerprint_"+mimeType+".json";
 			f = new FileWriter(test);
 			f.write(o.writeValueAsString(n));
@@ -296,7 +296,7 @@ public class FHT {
 					if(f.getName().contains(".DS_Store")){
 						continue;
 					}
-					x.append("{\"id\":" + f.getName() +",");
+					x.append("{\"id\":\"" + f.getName() +"\",");
 					FHT file_fingerprint = new FHT(f.getAbsolutePath(), "FILE");
 					file_fingerprint.computeFHT();
 					ObjectMapper o = new ObjectMapper();
@@ -314,7 +314,7 @@ public class FHT {
 					score = new FileWriter(mainDirectory.getAbsolutePath() + "/FHT_solution_" + mimeType + ".json");
 
 					x.deleteCharAt(x.length()-1);
-					score.write(x.toString());
+					score.write(x.toString()+"]");
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
