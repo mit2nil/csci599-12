@@ -183,9 +183,13 @@ public class BFA
         JsonWriter jsonWriter = null;
         try 
         {
-            //String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/")) + "/BFA_" +  dir.getAbsolutePath().substring(dir.getAbsolutePath().lastIndexOf("/")+1) + ".json";
-            String tempPath = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("\\"));
-            String file = tempPath.substring(0,tempPath.lastIndexOf("\\")) + "\\BFA_" +  dir.getName() + ".json";
+
+            //String tempPath = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("\\"));
+            //String file = tempPath.substring(0,tempPath.lastIndexOf("\\")) + "\\BFA_" +  dir.getName() + ".json";
+        	String tempPath = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/"));
+            String file = tempPath.substring(0,tempPath.lastIndexOf("/")) + "/BFA_" + dir.getName() + ".json"; 
+            
+
             jsonWriter = new JsonWriter(new FileWriter(file));
             jsonWriter.setIndent("    ");
             jsonWriter.beginObject();
