@@ -264,7 +264,7 @@ public class BFA
         JsonWriter jsonWriter = null;
         try 
         {
-            String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/")) + "/BFA100_" + mimename + ".json";
+            String file = dir.getAbsolutePath() + "/BFA100_" + mimename + ".json";
             System.out.println("XXXXXX" + file);
             jsonWriter = new JsonWriter(new FileWriter(file));
             jsonWriter.setIndent("    ");
