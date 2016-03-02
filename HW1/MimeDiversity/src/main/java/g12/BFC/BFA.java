@@ -41,8 +41,6 @@ public class BFA
         if(!dir.isDirectory()){
             return BFA_file(dir);
         }
-        System.out.println(dir);
-        
         // Repeat the process for every file in a directory
         for (File f: dir.listFiles())
         {
@@ -185,8 +183,9 @@ public class BFA
         JsonWriter jsonWriter = null;
         try 
         {
-            String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/")) + "/BFA_" +  dir.getAbsolutePath().substring(dir.getAbsolutePath().lastIndexOf("/")+1) + ".json";
-            //String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("\\")) + "\\BFA_" +  dir.getAbsolutePath().substring(dir.getAbsolutePath().lastIndexOf("\\")+1) + ".json";
+            //String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/")) + "/BFA_" +  dir.getAbsolutePath().substring(dir.getAbsolutePath().lastIndexOf("/")+1) + ".json";
+            String tempPath = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("\\"));
+            String file = tempPath.substring(0,tempPath.lastIndexOf("\\")) + "\\BFA_" +  dir.getName() + ".json";
             jsonWriter = new JsonWriter(new FileWriter(file));
             jsonWriter.setIndent("    ");
             jsonWriter.beginObject();

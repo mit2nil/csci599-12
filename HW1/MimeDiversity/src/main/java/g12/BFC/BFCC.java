@@ -29,7 +29,7 @@ public class BFCC {
 				for(Mimetype mime : mimeCollection){
 					tempmatrix = correlation(tempsignature,mime.signature);
 					System.out.println(file.getAbsolutePath()+" "+mime.name);
-					writematrix(tempmatrix,tdir,file,mime);
+					writematrix(tempmatrix,dir,file,mime);
 				}				
 			}
 		}
@@ -38,8 +38,8 @@ public class BFCC {
 			 if(file.getName().startsWith(".DS_Store")){
 				 return;
 			 }
-			 String name = tdir.getAbsolutePath()+ "/"+mime.name+"_"+file.getName()+".csv";
-			 //String name = tdir.getAbsolutePath()+ "\\"+mime.name+"_"+file.getName()+".csv";
+			 //String name = tdir.getAbsolutePath()+ "/"+mime.name+"_"+file.getName()+".csv";
+			 String name = tdir.getAbsolutePath()+ "\\"+mime.name+"_"+file.getName()+".csv";
 			 try{
 				 FileWriter writer = new FileWriter(name); 
 				 for(int i=0; i< 256; i++){
