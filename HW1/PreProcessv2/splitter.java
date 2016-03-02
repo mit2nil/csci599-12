@@ -38,7 +38,7 @@ public class splitter
                 if (f.isDirectory())
                     continue;
                 
-                if (count > initialCount*0.5)
+                if (count > initialCount*0.25)
                 {
                     //System.out.println("Moving file "+f.getAbsolutePath()+" to "+dir75.getAbsolutePath()+"\\"+f.getName());
                     f.renameTo(new File(dir75.getAbsolutePath()+"\\"+f.getName()));
