@@ -304,7 +304,7 @@ public class FHT {
 				FileWriter score=null;
 				for(File f : unknown.listFiles()){
 					
-					if(f.getName().contains(".DS_Store")){
+					if(f.getName().contains(".DS_Store") || f.getName().endsWith(".json")){
 						continue;
 					}
 					x.append("{\"id\":\"" + f.getName() +"\",");
