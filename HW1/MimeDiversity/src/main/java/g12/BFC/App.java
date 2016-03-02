@@ -32,7 +32,7 @@ public class App
 		//Give input of the format : Main folder[to search for BFA100_mimeType.json],Test Directory path. 
 		//Test directory could contain non-classified files or files you want to see correlation matrix against. 
 		//Either way out, it will output a matrix of the correlation between the file and all mime types that exist. 
-<<<<<<< Updated upstream
+
 		BFCC bfcc = new BFCC("C:\\stuff\\Git\\polar_data_all_mime15_splitted","C:\\stuff\\Git\\polar_data_all_mime15_splitted\\audio_x-wav\\audio_x-wav_25");
 
 
@@ -42,7 +42,7 @@ public class App
 		f.computeFHT();
 		f.detectFileScore(mainDirectory, mainDirectory + "\\" + mimeType + "\\" + mimeType + "_25", mimeType);
 		//System.out.println("Generated FHT scores in: " + (System.currentTimeMillis()-st1));
-=======
+
 		BFCC bfcc = new BFCC("/Volumes/KSHAH/mime_4","/Volumes/KSHAH/mime_4/audio_x-ms-wma/audio_x-ms-wma_25");
 		
 		String mainDirectory = "/Volumes/KSHAH/mime_4";
@@ -50,8 +50,7 @@ public class App
 		FHT f = new FHT(mainDirectory + "/" + mimeType + "/" + mimeType, "DIRECTORY");
 		f.computeFHT();
 		f.detectFileScore(mainDirectory, mainDirectory + "/" + mimeType + "/" + mimeType + "_25", mimeType);
-		
->>>>>>> Stashed changes
+
 	}
 	
 	
