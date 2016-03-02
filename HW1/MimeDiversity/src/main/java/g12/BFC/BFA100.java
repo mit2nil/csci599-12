@@ -1,5 +1,5 @@
 package g12.BFC;
-import g12.BFC.Mimetype;
+import g12.BFC.*;
 import java.io.FileReader;
 import java.io.File;
 import java.io.BufferedReader;
