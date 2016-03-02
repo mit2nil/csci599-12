@@ -26,7 +26,6 @@ public class FHT {
 		String json = new String(Files.readAllBytes(Paths.get(jsonDump)));
 		// Create a Jackson mapper
 		ObjectMapper mapper = new ObjectMapper();
-
 		// Map the JSON to a 2D array
 		fingerprint_16 = mapper.readValue(json, double[][].class);
 		for(int i=0; i<8; i++){
@@ -40,6 +39,7 @@ public class FHT {
 		}
 		
 	}
+	
     public FHT(String filepath, String type) throws IllegalArgumentException 
     {
         // Ensure path is valid
@@ -100,7 +100,7 @@ public class FHT {
 //            calculateCorrelation();
             
             //Step-3
-            dumpJSON();
+            dumpJSON("DIRECTORY");
             
 		}
 		else{
@@ -122,7 +122,7 @@ public class FHT {
 	
 	
 	
-	private void dumpJSON() {
+	private void dumpJSON(String type) {
 		// TODO Auto-generated method stub
 		ObjectMapper o = new ObjectMapper();
 		JsonNode n = o.valueToTree(fingerprint_16);
