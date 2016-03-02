@@ -91,7 +91,6 @@ public class BFA
                 System.out.println("Dir "+dir.getName()+" had "+(initialCount-count)+" files in 75 %");
                 break;
             }
-            
         }
         
         // Output final signatuers to Json
