@@ -220,6 +220,7 @@ public class BFA
         {
             try 
             {
+                if(jsonWriter!=null)
                 jsonWriter.close();
             } 
             catch (IOException e) 
@@ -299,6 +300,7 @@ public class BFA
         {
             try 
             {
+                if(jsonWriter!=null)
                 jsonWriter.close();
             } 
             catch (IOException e) 
