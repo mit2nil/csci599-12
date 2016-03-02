@@ -12,6 +12,11 @@ public class splitter
 
         for (File mimedir: dir.listFiles())
         {
+            if (!(mimedir != null && mimedir.isDirectory()))
+            {
+                continue;
+            }
+            
             // Store number of files for split
             int count = mimedir.listFiles().length; // Tracking number of files
             int initialCount = count;
@@ -33,7 +38,7 @@ public class splitter
                 if (f.isDirectory())
                     continue;
                 
-                if (count > initialCount*0.25)
+                if (count > initialCount*0.5)
                 {
                     //System.out.println("Moving file "+f.getAbsolutePath()+" to "+dir75.getAbsolutePath()+"\\"+f.getName());
                     f.renameTo(new File(dir75.getAbsolutePath()+"\\"+f.getName()));
