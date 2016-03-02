@@ -38,8 +38,15 @@ public class BFCC {
 			 if(file.getName().startsWith(".DS_Store")){
 				 return;
 			 }
-			 //String name = tdir.getAbsolutePath()+ "/"+mime.name+"_"+file.getName()+".csv";
-			 String name = tdir.getAbsolutePath()+ "\\"+mime.name+"_"+file.getName()+".csv";
+			String name;
+			if (App.OS.contains("windows"))
+			{
+				name = tdir.getAbsolutePath()+ "\\"+mime.name+"_"+file.getName()+".csv";
+			}
+			else
+			{
+				name = tdir.getAbsolutePath()+ "/"+mime.name+"_"+file.getName()+".csv";
+			}
 			 try{
 				 FileWriter writer = new FileWriter(name); 
 				 for(int i=0; i< 256; i++){

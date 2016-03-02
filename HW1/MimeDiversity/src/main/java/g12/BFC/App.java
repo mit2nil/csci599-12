@@ -1,5 +1,6 @@
 package g12.BFC;
 import g12.BFC.BFA;
+import g12.BFC.FHT;
 
 /**
  * This project runs BFA, BFC, BFCC and FHT and generates all the necessary output files for D3 visualization. 
@@ -14,28 +15,67 @@ import g12.BFC.BFA100;
 
 public class App 
 {
-	public static void main(String[] args){
-		//Give input path of the mime type. 
-		BFA bfa = new BFA("C:\\stuff\\Git\\polar_data_all_mime15_splitted\\audio_x-wav\\audio_x-wav");
+    protected static String OS = System.getProperty("os.name").toLowerCase();
+
+    public static void main(String[] args){
+
+        BFA bfa;
+        if (OS.contains("windows"))
+        {
+            //Give input path of the mime type, 75 percent path.
+            bfa = new BFA("C:\\stuff\\Git\\polar_data_all_mime15_splitted\\audio_x-wav\\audio_x-wav");
+        }
+        else
+        {
+            //Give input path of the mime type, 75 percent path.
+            bfa = new BFA("/Volumes/KSHAH/mime_4/audio_x-ms-wma/audio_x-ms-wma");
+        }
+
 		//Check if BFA succeeds.
 		boolean status = bfa.computeBFA(true);
 		if(!status){
 			System.out.println("Byte Frequency Analysis Failed");
 			return;
 		}
-		//Give input of the format : path to dir of 25% files, path of the Main folder[to search for BFA_mimeType.json]. 
-		//Below code will calculate both BFA for 100% files and BFC for 25% files. 
-		BFA100 bfa100 = new BFA100("C:\\stuff\\Git\\polar_data_all_mime15_splitted\\audio_x-wav\\audio_x-wav_25","C:\\stuff\\Git\\polar_data_all_mime15_splitted");
-		
+
+        //Give input of the format : path to dir of 25% files, path of the Main folder[to search for BFA_mimeType.json].
+		//Below code will calculate both BFA for 100% files and BFC for 25% files.
+        if (OS.contains("windows"))
+        {
+            BFA100 bfa100 = new BFA100("C:\\stuff\\Git\\polar_data_all_mime15_splitted\\audio_x-wav\\audio_x-wav_25","C:\\stuff\\Git\\polar_data_all_mime15_splitted");
+
+        }
+        else
+        {
+            BFA100 bfa100 = new BFA100("/Volumes/KSHAH/mime_4/audio_x-ms-wma/audio_x-ms-wma_25","/Volumes/KSHAH/mime_4");
+        }
+
 		//Give input of the format : Main folder[to search for BFA100_mimeType.json],Test Directory path. 
 		//Test directory could contain non-classified files or files you want to see correlation matrix against. 
 		//Either way out, it will output a matrix of the correlation between the file and all mime types that exist. 
-		BFCC bfcc = new BFCC("C:\\stuff\\Git\\polar_data_all_mime15_splitted","C:\\stuff\\Git\\polar_data_all_mime15_splitted\\audio_x-wav\\audio_x-wav_25");
-		
-		
-		
+
+        //Give input of the format : path to dir of 25% files, path of the Main folder[to search for BFA_mimeType.json].
+        //Below code will calculate both BFA for 100% files and BFC for 25% files.
+        if (OS.contains("windows"))
+        {
+            BFCC bfcc = new BFCC("C:\\stuff\\Git\\polar_data_all_mime15_splitted","C:\\stuff\\Git\\polar_data_all_mime15_splitted\\audio_x-wav\\audio_x-wav_25");
+
+            String mainDirectory = "C:\\stuff\\Git\\polar_data_all_mime15_splitted";
+            String mimeType = "audio_x-wav";
+            FHT f = new FHT(mainDirectory + "\\" + mimeType + "\\" + mimeType, "DIRECTORY");
+            f.computeFHT();
+            f.detectFileScore(mainDirectory, mainDirectory + "\\" + mimeType + "\\" + mimeType + "_25", mimeType);
+        }
+        else
+        {
+            BFCC bfcc = new BFCC("/Volumes/KSHAH/mime_4","/Volumes/KSHAH/mime_4/audio_x-ms-wma/audio_x-ms-wma_25");
+
+            String mainDirectory = "/Volumes/KSHAH/mime_4";
+            String mimeType = "audio_x-ms-wma";
+            FHT f = new FHT(mainDirectory + "/" + mimeType + "/" + mimeType, "DIRECTORY");
+            f.computeFHT();
+            f.detectFileScore(mainDirectory, mainDirectory + "/" + mimeType + "/" + mimeType + "_25", mimeType);
+        }
+		//System.out.println("Generated FHT scores in: " + (System.currentTimeMillis()-st1));
 	}
-	
-	
-							
 }

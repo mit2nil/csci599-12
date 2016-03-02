@@ -1,9 +1,14 @@
 package g12.BFC;
 import g12.BFC.*;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.File;
 import java.io.BufferedReader;
 import java.util.regex.Pattern;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.io.IOException;
@@ -151,20 +156,56 @@ public class BFA100 {
 				System.out.println("Error in folder : "+path);
 				continue;
 			}
-			computeDifference(bfa25.normalizedSignatures);	
+			computeDifference(bfa25.normalizedSignatures,path,mimename,file.getName());	
 		}	
 	}
 	
-	protected void computeDifference(double[] signature){
+	protected void computeDifference(double[] signature, String dirPath,String mimename,String name){
 		double[][] matrix = new double[mimeCollection.size()][256];
 		int count = 0; 
 		for(Mimetype mime : mimeCollection){
-			for(int i =0; i<256; i++){
-				matrix[count][i] = Math.abs(signature[i]-mime.signature[i]);
-				System.out.print(matrix[count][i]);
+			if(mimename.equals(mime.name)){
+				for(int i =0; i<256; i++){
+					matrix[count][i] = Math.abs(signature[i]-mime.signature[i]);
+					System.out.print(matrix[count][i]);
+				}
+				count++;
+				System.out.println("");
+			}			
+		}
+		ObjectMapper o = new ObjectMapper();
+		JsonNode n = o.valueToTree(matrix);
+		FileWriter f=null;
+		try {
+
+			String test;
+			if (App.OS.contains("windows"))
+			{
+				test = dirPath + "\\BFC_" + mimename + ".json";
 			}
-			count++;
-			System.out.println("");
+			else
+			{
+				test = dirPath + "/BFC_" + mimename + name+".json";
+			}
+			f = new FileWriter(test);
+			f.write(o.writeValueAsString(n));
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally{
+			 try
+	            {
+	                if (f != null)
+	                    f.close();
+	                System.out.println("Dumped results in json file");
+	            }
+	            catch(IOException e)
+	            {
+	                 e.printStackTrace();
+	                 System.out.println("IOException closing jsonfile");
+	            }
 		}
 	}
 	
