@@ -131,7 +131,7 @@ public class BFA100 {
 		for(int i = 0; i<256; i++){
 			temp[i] = (0.75*sign75[i]) + (0.25*bfa25.normalizedSignatures[i]);
 		}
-		BFA.dumpJson(temp,mimename,dirPath);		
+		BFA.dumpJson(temp,mimename,new File(dirPath));		
 	}
 	
 	protected void test25Data(String path, String dirPath){
