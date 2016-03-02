@@ -15,7 +15,7 @@ import g12.BFC.BFA100;
 public class App 
 {
 	public static void main(String[] args){
-		//Give input path of the mime type. 
+		//Give input path of the mime type, 75 percent path. 
 		BFA bfa = new BFA("C:\\stuff\\Git\\polar_data_all_mime15_splitted\\audio_x-wav\\audio_x-wav");
 		//Check if BFA succeeds.
 		boolean status = bfa.computeBFA(true);
