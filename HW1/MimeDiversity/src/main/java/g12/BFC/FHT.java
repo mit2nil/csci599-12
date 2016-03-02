@@ -133,8 +133,19 @@ public class FHT {
 		JsonNode n = o.valueToTree(fingerprint_16);
 		FileWriter f=null;
 		try {
-			int i  = path.getAbsolutePath().lastIndexOf("\\");
-			String mimeType = path.getAbsolutePath().substring(path.getAbsolutePath().lastIndexOf("\\")+1);
+			int i;
+			String mimeType;
+			if (App.OS.contains("windows"))
+			{
+				i  = path.getAbsolutePath().lastIndexOf("\\");
+				mimeType = path.getAbsolutePath().substring(path.getAbsolutePath().lastIndexOf("\\")+1);
+			}
+			else
+			{
+				i  = path.getAbsolutePath().lastIndexOf("/");
+				mimeType = path.getAbsolutePath().substring(path.getAbsolutePath().lastIndexOf("/")+1);
+			}
+
 			String test = path.getAbsolutePath().substring(0,path.getAbsolutePath().indexOf(mimeType))+"FHT_fingerprint_"+mimeType+".json";
 			f = new FileWriter(test);
 			f.write(o.writeValueAsString(n));
@@ -281,7 +292,7 @@ public class FHT {
 		File mainDirectory = new File(mainFolder);
 		FHT mimeType_fingerprint=null;
 		StringBuilder x = new StringBuilder("[");
-		if(!mimeType.equals("unkown")){
+		if(!mimeType.equals("unknown")){
 			
 			try {
 				mimeType_fingerprint = new FHT(mainDirectory.getAbsolutePath() + "/FHT_fingerprint_" + mimeType +".json");

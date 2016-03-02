@@ -177,9 +177,16 @@ public class BFA100 {
 		JsonNode n = o.valueToTree(matrix);
 		FileWriter f=null;
 		try {
-			
-			String test = dirPath + "/BFC_" + mimename + name+".json";
-			//String test = dirPath + "\\BFC_" + mimename + ".json";
+
+			String test;
+			if (App.OS.contains("windows"))
+			{
+				test = dirPath + "\\BFC_" + mimename + ".json";
+			}
+			else
+			{
+				test = dirPath + "/BFC_" + mimename + name+".json";
+			}
 			f = new FileWriter(test);
 			f.write(o.writeValueAsString(n));
 			
