@@ -33,7 +33,7 @@ public class BFA100 {
             BufferedReader br = new BufferedReader(new FileReader(bfaFingerprint));
             // Initialize the fingerprint by reading from json file
             // Regex for "Byte-0": 0.8689165960011597,
-            String regex = "\"Byte-(\\d+)\":\\s(\\d[\\.]\\d+)";
+            String regex = "\"Byte-(\\d+)\":\\s\"(\\d[\\.]\\d+)\"";
             String line = "";
             
             while ((line = br.readLine()) != null)
