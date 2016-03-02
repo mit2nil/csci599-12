@@ -9,7 +9,7 @@ def flattenifyJson(filename):
     flag = 0
     
     for line in fi:
-        matcher = re.match('.*"Byte-\\d+":\\s(\\d[\\.]\\d+)', line)
+        matcher = re.match('.*"Byte-\\d+":\\s"(\\d[\\.]\\d+)"', line)
         if matcher != None:
             if flag == 0:
                 fo.write(matcher.group(1))

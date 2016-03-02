@@ -43,12 +43,13 @@ public class BFA
     private boolean computeBFA()
     {
         boolean status = true;
-        int count = 0; // Tracking number of files
+        int count = dir.listFiles().length; // Tracking number of files
+        int initialCount = count;
         
         // Repeat the process for every file in a directory
         for (File f: dir.listFiles())
         {
-            System.out.println("Processing file: "+f.getName());
+            //System.out.println("Processing file: "+f.getName());
             
             // Step-1
             status = computeByteFrequency(f);
@@ -82,7 +83,15 @@ public class BFA
                 }
             }
             //printFqs();
-            count++;
+            count--;
+            
+            // Break when data is 75%
+            if (count < initialCount*0.25)
+            {
+                System.out.println("Dir "+dir.getName()+" had "+(initialCount-count)+" files in 75 %");
+                break;
+            }
+            
         }
         
         // Output final signatuers to Json
@@ -145,7 +154,7 @@ public class BFA
         // Normalize
         for (int i=0;i<256;i++)
         {            
-            tempNormalizedSignatures[i] = (float) signatures[i]/max;
+            tempNormalizedSignatures[i] = (double) signatures[i]/max;
         }
                 
         // Apply a-law
@@ -182,7 +191,7 @@ public class BFA
         JsonWriter jsonWriter = null;
         try 
         {
-            jsonWriter = new JsonWriter(new FileWriter(dir.getName()+".json"));
+            jsonWriter = new JsonWriter(new FileWriter("bfa_"+dir.getName()+".json"));
             jsonWriter.setIndent("    ");
             jsonWriter.beginObject();
             jsonWriter.name("property");
@@ -200,7 +209,7 @@ public class BFA
             for (int i=0;i<256;i++)
             {
                 jsonWriter.name("Byte-"+i);
-                jsonWriter.value(normalizedSignatures[i]);               
+                jsonWriter.value(String.format("%.10f", normalizedSignatures[i]));
             }
             jsonWriter.endObject();
             jsonWriter.endArray();            
@@ -228,23 +237,37 @@ public class BFA
     // Tester main method
     public static void main(String args[])
     {
-        // Try MIME Type 1 directory e.g. PDF
-        BFA mimeBfa = new BFA("C:\\stuff\\Git\\csci599-12\\HW1\\4\\pdf");       
-        boolean status = mimeBfa.computeBFA();
-        if (!status)
-        {
-            System.out.println("Byte Frequency analysis failed!");
-        }
+        String dir = "C:\\stuff\\Git\\polar_data_all_mime15\\";
         
-        // Try MIME Type 2 directory e.g. JPEG
-        /*mimeBfa = new BFA("C:\\stuff\\Git\\csci599-12\\HW1\\4\\MIME_files");       
-        status = mimeBfa.computeBFA();
-        if (!status)
-        {
-            System.out.println("Byte Frequency analysis failed!");
-        }
-        
-        // ... So on for 15 MIME types
-        */
+        BFA mimeBfa = new BFA(dir+"application_dif+xml");       
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"application_octet-stream");       
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"application_pdf");       
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"application_xhtml+xml");    
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"application_zip");    
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"audio_mpeg");    
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"audio_x-ms-wma");    
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"audio_x-wav");    
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"image_gif");    
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"image_jpeg");   
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"image_png");   
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"message_rfc822");   
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"text_x-matlab");   
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"video_mp4");   
+        mimeBfa.computeBFA();
+        mimeBfa = new BFA(dir+"video_quicktime");   
+        mimeBfa.computeBFA();
     }    
 }

@@ -205,7 +205,7 @@ public class BFA
             for (int i=0;i<256;i++)
             {
                 jsonWriter.name("Byte-"+i);
-                jsonWriter.value(normalizedSignatures[i]);               
+                jsonWriter.value(String.format("%.10f", normalizedSignatures[i]));               
             }
             jsonWriter.endObject();
             jsonWriter.endArray();            
