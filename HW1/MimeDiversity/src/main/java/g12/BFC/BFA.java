@@ -39,7 +39,7 @@ public class BFA
         boolean status = true;
         int count = 0; // Tracking number of files
         if(!dir.isDirectory()){
-        	return BFA_file(dir);
+            return BFA_file(dir);
         }
         System.out.println(dir);
         
@@ -100,8 +100,8 @@ public class BFA
             in = new FileInputStream(f);
             int b;
             while ((b = in.read()) != -1){
-            	signatures[b] += 1;
-             //	System.out.println(signatures[b]);
+                signatures[b] += 1;
+             // System.out.println(signatures[b]);
             }
         }
         catch (IOException e)
@@ -181,12 +181,12 @@ public class BFA
     
     protected void dumpJson()
     {
-    	//printFqs();
+        //printFqs();
         JsonWriter jsonWriter = null;
         try 
         {
-        	String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/")) + "/BFA_" +  dir.getAbsolutePath().substring(dir.getAbsolutePath().lastIndexOf("/")+1) + ".json";
-        	
+            String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/")) + "/BFA_" +  dir.getAbsolutePath().substring(dir.getAbsolutePath().lastIndexOf("/")+1) + ".json";
+            
             jsonWriter = new JsonWriter(new FileWriter(file));
             jsonWriter.setIndent("    ");
             jsonWriter.beginObject();
@@ -231,7 +231,7 @@ public class BFA
     }
     
     protected boolean BFA_file(File f){
-    	System.out.println("TTTTT Processing file: "+f.getName());
+        System.out.println("TTTTT Processing file: "+f.getName());
         // Step-1
         boolean status = computeByteFrequency(f);
         if (!status)
@@ -258,15 +258,15 @@ public class BFA
     }
     
     
-	protected static void dumpJson(double[] arr,String mimename, File dir)
+    protected static void dumpJson(double[] arr,String mimename, File dir)
     {
-		
+        
         JsonWriter jsonWriter = null;
         try 
         {
-        	String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/")) + "/BFA100_" + mimename + ".json";
-        	System.out.println("XXXXXX" + file);
-        	jsonWriter = new JsonWriter(new FileWriter(file));
+            String file = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("/")) + "/BFA100_" + mimename + ".json";
+            System.out.println("XXXXXX" + file);
+            jsonWriter = new JsonWriter(new FileWriter(file));
             jsonWriter.setIndent("    ");
             jsonWriter.beginObject();
             jsonWriter.name("property");

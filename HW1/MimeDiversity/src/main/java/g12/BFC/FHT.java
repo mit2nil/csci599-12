@@ -1,9 +1,11 @@
-package g12.assignment1;
+package g12.BFC;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -20,6 +22,24 @@ public class FHT {
 	private String type;
 	private int totalFiles=0;
 
+	public FHT(String jsonDump) throws IOException{
+		String json = new String(Files.readAllBytes(Paths.get(jsonDump)));
+		// Create a Jackson mapper
+		ObjectMapper mapper = new ObjectMapper();
+		// Map the JSON to a 2D array
+		fingerprint_16 = mapper.readValue(json, double[][].class);
+		for(int i=0; i<8; i++){
+			if(i<4){
+				fingerprint_4[i] = fingerprint_16[i];
+				fingerprint_8[i] = fingerprint_16[i];
+			}
+			else{
+				fingerprint_8[i] = fingerprint_16[i];
+			}
+		}
+		
+	}
+	
     public FHT(String filepath, String type) throws IllegalArgumentException 
     {
         // Ensure path is valid
@@ -80,7 +100,7 @@ public class FHT {
 //            calculateCorrelation();
             
             //Step-3
-            dumpJSON();
+            dumpJSON("DIRECTORY");
             
 		}
 		else{
@@ -102,13 +122,17 @@ public class FHT {
 	
 	
 	
-	private void dumpJSON() {
+	private void dumpJSON(String type) {
 		// TODO Auto-generated method stub
 		ObjectMapper o = new ObjectMapper();
 		JsonNode n = o.valueToTree(fingerprint_16);
 		FileWriter f=null;
 		try {
-			f = new FileWriter("/Users/manali/599/ass1/manali/"+"/image_gif_FHT_fingerprint.json");
+			int i  = path.getAbsolutePath().lastIndexOf("/");
+			String mimeType = path.getAbsolutePath().substring(path.getAbsolutePath().lastIndexOf("/")+1);
+			String test = path.getAbsolutePath().substring(0,i)+"FHT_fingerprint_+"+mimeType+".json";
+			System.out.println(test);
+			f = new FileWriter(path.getAbsolutePath().substring(0,i)+"FHT_fingerprint_+"+mimeType+".json");
 			f.write(o.writeValueAsString(n));
 			
 		} catch (IOException e) {
@@ -143,54 +167,6 @@ public class FHT {
   
 		return max;
 	}
-	
-//	private void calculateCorrelation() {
-//		// TODO Auto-generated method stub
-//		double max;
-//        int byteValue;
-//        max = Double.MIN_VALUE;
-//        byteValue=0;
-//        for(int i=0; i<fingerprint_4.length; i++){
-//        	for(int j=0; j<fingerprint_4[i].length; j++){
-//        		if(fingerprint_4[i][j]>max){
-//        			max = fingerprint_4[i][j];
-//        			byteValue = j;
-//        		}
-//        	}
-//        	fingerprint_4[i] = new double[256];
-//        	fingerprint_4[i][byteValue] = 1;
-//        }
-//		
-//        
-//        max = Double.MIN_VALUE;
-//        byteValue=0;
-//        for(int i=0; i<fingerprint_8.length; i++){
-//        	for(int j=0; j<fingerprint_8[i].length; j++){
-//        		if(fingerprint_8[i][j]>max){
-//        			max = fingerprint_8[i][j];
-//        			byteValue = j;
-//        		}
-//        	}
-//        	fingerprint_8[i] = new double[256];
-//        	fingerprint_8[i][byteValue] = 1;
-//        	
-//        }
-//        
-//        
-//        max = Double.MIN_VALUE;
-//        byteValue=0;
-//        for(int i=0; i<fingerprint_16.length; i++){
-//        	for(int j=0; j<fingerprint_16[i].length; j++){
-//        		if(fingerprint_16[i][j]>max){
-//        			max = fingerprint_16[i][j];
-//        			byteValue = j;
-//        		}
-//        	}
-//        	fingerprint_16[i] = new double[256];
-//        	fingerprint_16[i][byteValue] = 1;
-//        	
-//        }
-//	}
 
 	private boolean computeFrequencyHeader(File f, int count) {
 		// TODO Auto-generated method stub
@@ -283,6 +259,13 @@ public class FHT {
 
 	public static void main(String m[]) throws IOException{
 		long st1 = System.currentTimeMillis();
+		//test json constructor
+		FHT mm = new FHT("/Users/manali/599/ass1/polar-fulldump/demoFHT/image_gif/FHT_fingerprint_image_gif.json");
+		
+		
+		
+		
+		
 		
 		//Calculate frequency header for a particular mime type
 		FHT gif_fingerprint = new FHT("/Users/manali/599/ass1/manali/image_gif", "DIRECTORY");
@@ -304,6 +287,59 @@ public class FHT {
 		}
 	
 		System.out.println("Generated FHT scores in: " + (System.currentTimeMillis()-st1));
+	}
+	
+	//input mainFolder: Path to the main folder that contains all fingerprints, 
+	//input path: path to the folder/files that need to be compared with existing fingerprint
+	//mimeType: if known compare to only that mime fingerprint else if unknown compare to all obtained from mainFolder
+	public static void detectFileScore(String mainFolder, String path, String mimeType) throws IOException{
+		File unknown = new File(path);
+		File mainDirectory = new File(mainFolder);
+		FHT mimeType_fingerprint;
+		if(!mimeType.equals("unkown")){
+			
+			mimeType_fingerprint = new FHT(mainDirectory.getAbsolutePath() + "/FHT_fingerprint_" + mimeType);
+			if(unknown.isDirectory()){
+				for(File f : unknown.listFiles()){
+					if(f.getName().contains(".DS_Store")){
+						continue;
+					}
+					FHT file_fingerprint = new FHT(f.getAbsolutePath(), "FILE");
+					file_fingerprint.computeFHT();
+					mimeType_fingerprint.computeWeightedCorrelation(file_fingerprint);
+				}
+			}
+			else if(unknown.isFile()){
+				FHT file_fingerprint = new FHT(unknown.getAbsolutePath(), "FILE");
+				file_fingerprint.computeFHT();
+				mimeType_fingerprint.computeWeightedCorrelation(file_fingerprint);
+			}
+		}
+		else{
+			
+			for(File f1: mainDirectory.listFiles()){
+				
+				if(f1.isFile() && !f1.getName().contains(".DS_Store") && f1.getName().startsWith("FHT_fingerprint")){
+					mimeType_fingerprint = new FHT(f1.getAbsolutePath());
+					if(unknown.isDirectory()){
+						for(File f : unknown.listFiles()){
+							if(f.getName().contains(".DS_Store")){
+								continue;
+							}
+							FHT file_fingerprint = new FHT(f.getAbsolutePath(), "FILE");
+							file_fingerprint.computeFHT();
+							mimeType_fingerprint.computeWeightedCorrelation(file_fingerprint);
+						}
+					}
+					else if(unknown.isFile()){
+						FHT file_fingerprint = new FHT(unknown.getAbsolutePath(), "FILE");
+						file_fingerprint.computeFHT();
+						mimeType_fingerprint.computeWeightedCorrelation(file_fingerprint);
+					}
+				}
+			}
+		}
+		
 	}
 	
 	private void computeWeightedCorrelation(FHT file_fingerprint) {
@@ -360,59 +396,6 @@ public class FHT {
 		
 	}
 
-	public void computeCorelation(FHT y){
-		int tempsum = 0;
-		int sum = 0;
-		int i,j;
-		//4 Byte FHT
-		outer:
-		for(i= 0; i<fingerprint_4.length; i++){
-			tempsum=0;
-			for(j=0; j< fingerprint_4[i].length; j++){
-				if(y.fingerprint_4[i][j] == -1){
-					break outer;
-				}
-				tempsum += Math.abs(y.fingerprint_4[i][j]-fingerprint_4[i][j]);
-			}
-			tempsum = tempsum/256;
-			sum += tempsum;
-		}
-	    sum = sum/(4+(i-4));
-	    sum = (1-sum) - (i-4)/4;
-	    System.out.println("correlation in 4 Byte FHT: " + sum);
-	    sum=0;
-	    
-	    //8 Byte FHT
-	    outer2:
-  		for(i= 0; i<fingerprint_8.length; i++){
-  			tempsum=0;
-  			for(j=0; j< fingerprint_8[i].length; j++){
-  				if(y.fingerprint_8[i][j] == -1){
-  					break outer2;
-  				}
-  				tempsum += Math.abs(y.fingerprint_8[i][j]-fingerprint_8[i][j]);
-  			}
-  			tempsum = tempsum/256;
-  			sum += tempsum;
-  		}
-  	    sum = sum/(8+(i-8));
-  	    sum = (1-sum) - (i-8)/8;
-  	    System.out.println("correlation in 8 Byte FHT: " + sum);
-	    sum=0;
-	    //16 Byte FHT
-  		for(i= 0; i<fingerprint_16.length; i++){
-  			tempsum=0;
-  			for(j=0; j< fingerprint_16[i].length; j++){
-  				tempsum += Math.abs(y.fingerprint_16[i][j]-fingerprint_16[i][j]);
-  			}
-  			tempsum = tempsum/256;
-  			sum += tempsum;
-  		}
-  	    sum = sum/(16+(i-16));
-  	    sum = (1-sum) - (i-16)/16;
-  	    System.out.println("correlation in 16 Byte FHT: " + sum);
-	
-	}
 	public void display(double a[][]){
 		for(int i=0; i<a.length; i++){
 			for(int j=0; j<a[i].length; j++){
