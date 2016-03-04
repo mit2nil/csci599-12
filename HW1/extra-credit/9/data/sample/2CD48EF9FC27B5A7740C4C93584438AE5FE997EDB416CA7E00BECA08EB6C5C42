@@ -1,0 +1,2044 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+
+	
+	<link rel="icon" href="/themes/cadis/images/favicon.ico?v=2" type="image/x-icon" >
+
+	<title>HLY-04-04 ADCP Data (30-min Averages) [Muenchow, A.]</title>
+
+
+
+	
+
+<!--CSS source files for the entire YUI Library--> 
+<!--CSS Foundation: (also partially aggregated in reset-fonts-grids.css; does not include base.css)-->
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/reset/reset-min.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/base/base-min.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/fonts/fonts-min.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/grids/grids-min.css" >
+
+<!--CSS for Controls:-->
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/container/assets/skins/sam/container.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/menu/assets/skins/sam/menu.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/autocomplete/assets/skins/sam/autocomplete.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/button/assets/skins/sam/button.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/calendar/assets/skins/sam/calendar.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/carousel/assets/skins/sam/carousel.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/colorpicker/assets/skins/sam/colorpicker.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/datatable/assets/skins/sam/datatable.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/editor/assets/skins/sam/editor.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/imagecropper/assets/skins/sam/imagecropper.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/layout/assets/skins/sam/layout.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/paginator/assets/skins/sam/paginator.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/resize/assets/skins/sam/resize.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/tabview/assets/skins/sam/tabview.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/treeview/assets/skins/sam/treeview.css" >
+
+<!--JavaScript source files for the entire YUI Library:-->
+
+<!--YUI Core (also aggregated in yahoo-dom-event.js; see readmes in the
+YUI download for details on each of the aggregate files and their contents):-->
+<script type="text/javascript" src="/js/yui/2.8.2/build/yahoo/yahoo-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/dom/dom.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/event/event-min.js"></script>
+
+<!--Utilities (also partialy aggregated utilities.js; see readmes in the 
+YUI download for details on each of the aggregate files and their contents):-->
+<script type="text/javascript" src="/js/yui/2.8.2/build/element/element-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/swf/swf-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/animation/animation-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/connection/connection-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/cookie/cookie-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/datasource/datasource-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/dragdrop/dragdrop-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/get/get-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/history/history-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/imageloader/imageloader-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/json/json-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/resize/resize-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/selector/selector-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/yuiloader/yuiloader-min.js"></script>
+
+<!--YUI's UI Controls:-->
+<script type="text/javascript" src="/js/yui/2.8.2/build/container/container-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/menu/menu-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/autocomplete/autocomplete-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/button/button-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/calendar/calendar-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/colorpicker/colorpicker-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/datatable/datatable-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/editor/editor-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/imagecropper/imagecropper-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/layout/layout-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/paginator/paginator-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/slider/slider-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/tabview/tabview-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/treeview/treeview-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/uploader/uploader.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/stylesheet/stylesheet-min.js"></script>
+
+<!--.swf file for the YUI Charts Control--> 
+<script type="text/javascript"> 
+YAHOO.widget.Chart.SWFURL = "/js/yui/2.8.2/build/charts/assets/charts.swf;"
+</script> 
+
+<link rel="stylesheet" type="text/css" href="/themes/base.css" >
+
+
+	<script type="text/javascript">
+	document.write('<style>.noscript { display: none; }</style>');
+
+	YAHOO.util.Cookie.set("cookietest", "true", { path: "/" });
+	if (YAHOO.util.Cookie.get("cookietest"))
+	{
+
+	} else {
+		document.write('<style>.nocookie { display: block; }</style>');
+	}
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+
+<script src="https://maps.google.com/maps/api/js?sensor=false"></script> 
+
+
+
+
+<script type="text/javascript">
+	<!--
+
+	var myTabs;
+	
+	function init() {
+	
+		myTabs = new YAHOO.widget.TabView("dataset_tabs");
+
+		//The Summary/Metadata Tab as default.
+		myTabs.set('activeIndex', 0);
+
+	}
+	
+	YAHOO.util.Event.onDOMReady(init); 
+	
+	
+	
+	
+		$(document).ready(
+		function showMap() {
+
+			var minLat = 60.0;
+			var maxLat = 80.0;
+			var maxLong = -130.0;
+			var minLong = -180.0;
+
+			var avgLat = ((Number(minLat) + Number(maxLat))/2).toFixed(3);
+			var avgLong = ((Number(minLong) + Number(maxLong))/2).toFixed(3);
+
+			var centerLat = 66.0;
+			var centerLong = 0.0;
+
+			var mapDiv = document.getElementById('map-canvas');
+
+			var centerPoint = new google.maps.LatLng(centerLat, centerLong);
+
+			var mapOptions = {
+					center: centerPoint,
+					zoom: 0,
+					mapTypeId: google.maps.MapTypeId.MAP,
+					disableDefaultUI: true
+			};
+
+			var datasetMap = new google.maps.Map(mapDiv, mapOptions);
+
+			var shape = new google.maps.Rectangle({
+				bounds: new google.maps.LatLngBounds(
+							new google.maps.LatLng(minLat, minLong),
+							new google.maps.LatLng(maxLat, maxLong)),
+					strokeColor: '#ff0000',
+					strokeOpacity: 0.8,
+					strokeWeight: 2,
+					fillColor: '#ff0000',
+					fillOpacity: 0.35
+				});
+
+			var avgpoint = new google.maps.LatLng(avgLat, avgLong);
+
+			var latDiff = Math.abs(Number(maxLat)) - Math.abs(Number(minLat));
+			var longDiff = Math.abs(Number(maxLong)) - Math.abs(Number(minLong));
+
+			// Decide if point is needed as bb is too small to see on map
+			if ((latDiff <= 3)  &&  (longDiff <= 3)) {
+				var showMarker = true;
+			}
+
+			if (showMarker == true ) {
+
+				// Center of BBox
+				var marker = new google.maps.Marker({
+						position: avgpoint,
+						map: datasetMap,
+						title: "Dataset Location"
+				});
+			}
+
+			shape.setMap(datasetMap);
+		}
+
+		);
+	
+
+	-->
+</script>
+
+	
+	<link rel="stylesheet" href="/themes/cadis/style.css" type="text/css" >
+	<style type="text/css">
+	
+	</style>
+
+	<link rel="self" type="text/html" href="/dataset/id/d1361ae6-638d-11e4-8886-00c0f03d5b7c.html" />
+<link rel="self" type="text/dif" href="/dataset/id/d1361ae6-638d-11e4-8886-00c0f03d5b7c.dif" />
+<link rel="self" type="text/iso19139" href="/dataset/id/d1361ae6-638d-11e4-8886-00c0f03d5b7c.iso19139" />
+<link rel="self" type="text/plain" href="/dataset/id/d1361ae6-638d-11e4-8886-00c0f03d5b7c.txt" />
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-30746926-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+</head>
+
+<body class="yui-skin-sam">
+
+	<div id="container">
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="broadcast-message-banner" style="background-color: ;">
+
+<p>
+If you have published a scientific paper using ACADIS data, please consider filling out our <a href="/redirect.html?link=https%3a%2f%2fdocs.google.com%2fa%2fucar.edu%2fforms%2fd%2f1hN1hQqhJRV2VPdawSBkUNro6KsQJ9b4wfPiUv8rv3PU%2fviewform">ACADIS Publication Survey</a>.<br>
+It only takes a few short minutes and will be a great help to us.
+</p>
+
+</div>
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="background-image: url('/themes/cadis/images/caribou_pass_by_on_frozen_tundra.png'); height: 125px; background-repeat: repeat-x; position: relative; min-width: 70em;" >
+<div style="min-width: 80em;"> 
+	<div style="float: left; display: inline;">
+		
+		<a href="/home.htm">
+			<img src="/themes/cadis/images/AcadisGatewayBannerLogo.png" style="margin: 25px 10px 0 10px;" width="330" height="80" alt="ACADIS Gateway: An Arctic Data Repository" />
+		</a>
+	</div>
+	<div style="float: left; display: inline;">
+		<img src="/themes/cadis/images/acadis-service-logo.png" style="margin: 26px 0px 5px 25px;" width="160" height="78" alt="A Service of ACADIS" />
+	</div>
+	<div style="float: right; display: inline;">
+		<div id="login_links" style="float: right; margin: 8px 7px 0 0; display: inline; ">
+			
+				<div>
+					<a href="/ac/guest/secure/registration.html">Register</a>&nbsp;|&nbsp;<a href="/ac/guest/secure/login.html">Login</a>
+				</div>
+			
+			
+		</div>
+		<div class="searchBox" style="clear: right; margin: 80px 5px 8px 5px; ">
+			<div style="float:right; ">
+				<form name="simpleQueryForm" id="simpleQueryForm" method="GET" action="/search.html">
+					<table>
+						<tr>
+							<td><input style="font-size: 18px; margin: 0 5px;" type="text" name="freeText" size="32" /></td>
+							<td><input style="font-size: 16px; margin: 0 5px;" type="submit" id="submit-simple-query" value="Search"/></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="header-tabs" class="yuimenubar yuimenubarnav" style="clear: both; min-width: 74.923em;">
+	<div class="bd">
+	<nav class="sitenav">
+		<ul id="topmenu">
+			<li class="yuimenubaritem first-of-type"><a class="yuimenubaritemlabel" href="/home.htm">Home</a></li>
+			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="/cadis/searchOptions.html">Get Data</a>
+				<ul>
+					<li><a href="/search.html">Search</a></li>
+					<li><a href="/scienceKeywordTopic/topic.html">Science Keyword Topics</a></li>
+					<li><a href="/contact.html">Principal Investigators</a></li>
+					<li><a href="/project.html">Projects</a></li>
+					<li><a href="/cadis/viewProjectsGeographically.html">Geographic Tools</a></li>
+				</ul>
+			</li>
+			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="/user/publish/viewEditableProjects.html">Contribute Data</a>
+				<ul>
+					<li><a href="/cadis/howToContribute.html">Templates & Guides</a></li>
+				</ul>
+			</li>
+			
+			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="/cadis/about/aboutUs.htm">About</a></li>
+			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="/contactUs.htm">Contact</a></li>
+		</ul>
+	</nav>
+	</div>
+</div>
+
+
+
+
+
+
+
+		<div class="noscript">
+		JavaScript must be enabled.
+		</div>
+		<div class="nocookie">
+		Cookies must be enabled.
+		</div>
+
+		
+		
+		
+			
+				<div id="doc4" class="yui-t7">
+					<div class="page-title">
+						<h1>Dataset</h1>
+					</div>
+					<div id="hd">
+						
+					</div>
+					<div id="bd">
+						<div class="yui-g">
+							<div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dataset_parent_hierarchy">
+	<table><tr><td><a href="https://www.aoncadis.org/project/ucar.ncar.eol.project.SBI.html">SBI: Western Arctic Shelf Basin Interactions Project</a></td></tr></table>
+<tr><td>&nbsp;</td></tr></td></tr></table>
+
+
+</div>
+
+<div class="dataset_name">
+	<h1>HLY-04-04 ADCP Data (30-min Averages) [Muenchow, A.]</h1>
+</div>
+
+
+
+
+    <div class="yui-skin-sam">
+
+	<div id="dataset_tabs" class="yui-navset">
+		<ul class="yui-nav">
+			<li><a href="#summaryTab"><em>Metadata</em></a></li>
+			
+			
+				<li><a href="#filesTab"><em>Download Data</em></a></li>
+			
+			
+			
+			
+			
+			
+		</ul>
+
+		<div class="yui-content" >
+			<div class="tab_panel" id="summaryTab">
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Authoritative Source:</span></td><td><span><a href="/redirect.html?link=http%3a%2f%2fdata.eol.ucar.edu%2fjedi%2fcatalog%2fucar.ncar.eol.dataset.62_290.thredds.xml">data.eol.ucar.edu</a></span></td></tr></table>
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Author:</span></td><td><span>Andreas Muenchow
+			<br/></span></td></tr></table>
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Originator:</span></td><td><span>Andreas Muenchow
+			<br/></span></td></tr></table>
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Point of Contact:</span></td><td><span>Andreas Muenchow
+			<br/></span></td></tr></table>
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Description:</span></td><td><span><p>The United States Coast Guard Cutter (USCGC) Healy contains a 75-kHz phased-array Acoustic Doppler Current Profiler (ADCP) (Ocean Surveyor) mounted under the hull to transmit and receive echos of acoustic pulses from which to estimate vertical profiles of horizontal currents. Attitude information such as heading, pitch, and roll is provided by an Ashtech ADU2-3DGPS receiver while position data are provided by a Trimble Centurion p-code DGPS system. These data streams provide earth-referenced absolute horizontal currents and their vertical variations from about 20-m below the surface to the bottom or about 400-m depth.</p></span></td></tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Progress:</span></td><td><span>Not Assigned
+	
+		 - Dataset state not assigned.</span></td></tr></table>
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Time Coverage:</span></td><td><span>Sep 1, 2004 - Oct 1, 2004</span></td></tr></table>
+
+
+
+
+<div>
+
+	
+		
+		
+		
+		
+	
+
+	<div style="float:left; width: 500px;">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Northernmost Latitude:</span></td><td><span>80</span></td></tr></table>
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Southernmost Latitude:</span></td><td><span>60</span></td></tr></table>
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Westernmost Longitude:</span></td><td><span>-180</span></td></tr></table>
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Easternmost Longitude:</span></td><td><span>-130</span></td></tr></table>
+
+
+
+	</div>
+
+	
+	
+		<div style="width:259px; height:130px; float:left; ">
+			<div id="map-canvas" style="width: 100%; height: 100%;"></div>
+		</div>
+	
+		<div style="padding-top: 20px; clear: both;"></div>
+	
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Date Created:</span></td><td><span>2007-11-05 01:05:20</span></td></tr></table>
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row">
+<tr><td class="descriptive_row_name"><span>Data Center:</span></td><td><span><a href="/redirect.html?link=http%3a%2f%2fdata.eol.ucar.edu%2f">Earth Observing Laboratory</a></span></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>Related Links:</span></td><td><span><a href="/redirect.html?link=http%3a%2f%2fdata.eol.ucar.edu%2fcodiac%2fdss%2fid%3d62.290">EOL Data Archive website for dataset HLY-04-04 ADCP Data (30-min Averages) [Muenchow, A.] (62.290), containing more information and data download access</a><br></span></td></tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="descriptive_row_table descriptive_row_table_bottom_row"><tr><td class="descriptive_row_name"><span>More Like This Dataset:</span></td><td><span><a href="/dataset/ucar.ncar.eol.dataset.62_289.html?ref=moreLikeThis">HLY-04-04 ADCP Data (10-min Averages) [Muenchow, A.]</a><br>
+			
+		
+	
+		
+			
+			
+				
+				<a href="/dataset/ucar.ncar.eol.dataset.62_288.html?ref=moreLikeThis">HLY-04-04 ADCP Data (5-min Averages) [Muenchow, A.]</a><br>
+			
+		
+	
+		
+			
+			
+				
+				<a href="/dataset/ucar.ncar.eol.dataset.62_287.html?ref=moreLikeThis">HLY-04-04 ADCP Data (2-min Averages) [Muenchow, A.]</a><br>
+			
+		
+	
+		
+			
+			
+				
+				<a href="/dataset/ucar.ncar.eol.dataset.62_266.html?ref=moreLikeThis">HLY-02-01 ADCP Data (30-min Averages) [Muenchow, A.]</a><br>
+			
+		
+	
+		
+			
+			
+				
+				<a href="/dataset/ucar.ncar.eol.dataset.62_270.html?ref=moreLikeThis">HLY-02-03 ADCP Data (30-min Averages) [Muenchow, A.]</a><br></span></td></tr></table>
+
+
+
+
+
+
+
+
+			</div>
+			
+			
+				<div class="tab_panel" id="filesTab">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="yui-fixed-panel" style="padding-top: 12px;">
+
+	
+	<div>
+		
+		<a href="/redirect.html?link=http%3a%2f%2fdata.eol.ucar.edu%2fcodiac%2ffgr_form%2fid%3d62.290" >Codiac access: order, subset, change formats; pickup data by FTP</a>
+	</div>
+	
+
+	
+
+</div>
+
+
+				</div>
+			
+			
+			
+
+			
+			
+		</div>
+		
+	</div>
+</div>
+<br/>
+						</div>
+					</div>
+					<div id="ft">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer_div">
+<hr class="line" />
+<div>
+	<div>
+		<div style="float: left; position: relative; width: 80px; padding-top: 20px; padding-left:10px;">
+			
+			<a href="/redirect.html?link=http%3a%2f%2fwww.nsf.gov%2f"><img src="/themes/cadis/images/nsf_logo.gif" height="75" width="75" alt="National Science Foundation" /></a>
+		</div>
+		<div style="float: left; position: relative; width: 400px; padding-top: 0px; padding-left: 15px;">
+			<div id="text_menu_div" style="padding-top: 20px;">
+			<a href="/"> Home</a> | <a href="/legal/privacy_policy.htm">Privacy Policy</a> | <a href="/legal/terms_of_use.htm">Terms of Use</a> | <a href="/contactUs.htm">Contact</a>
+			</div>
+			<div id="software_version_div">
+			Gateway Portal Software version 2.0.61-20150204-150041
+			</div>
+			<div id="copyright_div">
+				
+				Copyright &copy; 2015 <a href="/redirect.html?link=http%3a%2f%2fwww.ucar.edu%2f">UCAR</a>.  All Rights Reserved.
+			</div>
+		</div>
+		<div style="float: right; position: relative; width: 375px; padding-top: 15px; padding-left: 15px;">
+			<div id="collaborator_div">
+				<table>
+				<tr><td colspan="4" style="padding-bottom: 5px;">
+				<span style="text-align: center;">ACADIS Collaborators</span>
+				</td>
+				</tr>
+				<tr><td>
+				
+				<a href="/redirect.html?link=https%3a%2f%2fwww.eol.ucar.edu%2f"><img src="/themes/cadis/images/EOL_logo50_trans.gif" height="55" width="118" alt="Earth Observing Laboratory" /></a>
+				</td><td style="padding-left: 10px;">
+				
+				<a href="/redirect.html?link=http%3a%2f%2fnsidc.org%2f"><img src="/themes/cadis/images/nsidc_trans_notext.gif" height="55" width="71" alt="National Snow and Ice Data Center" /></a>
+				</td><td style="padding-left: 10px;">
+				
+				<a href="/redirect.html?link=http%3a%2f%2fwww.unidata.ucar.edu%2f"><img src="/themes/cadis/images/unidata_logo.jpg" height="55" width="55" alt="Unidata" /></a>
+				</td><td style="padding-left: 10px;">
+				
+				<a href="/redirect.html?link=http%3a%2f%2fwww.cisl.ucar.edu%2f"><img src="/themes/cadis/images/roundCISL.jpg" height="55" width="55" alt="Computational and Information Systems Lab" /></a>
+				</td></tr></table>
+			</div>
+		</div>
+	</div>
+</div></div>
+				</div>
+			
+			
+			
+			
+			
+			
+			
+		
+	</div>
+</body>
+</html>
+
+
+

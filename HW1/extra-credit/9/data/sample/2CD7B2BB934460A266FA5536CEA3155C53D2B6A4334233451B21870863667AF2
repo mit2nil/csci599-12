@@ -1,0 +1,677 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+
+	
+	<link rel="icon" href="/themes/cadis/images/favicon.ico?v=2" type="image/x-icon" >
+
+	<title>Download Files</title>
+
+
+
+	
+
+<!--CSS source files for the entire YUI Library--> 
+<!--CSS Foundation: (also partially aggregated in reset-fonts-grids.css; does not include base.css)-->
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/reset/reset-min.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/base/base-min.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/fonts/fonts-min.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/grids/grids-min.css" >
+
+<!--CSS for Controls:-->
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/container/assets/skins/sam/container.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/menu/assets/skins/sam/menu.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/autocomplete/assets/skins/sam/autocomplete.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/button/assets/skins/sam/button.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/calendar/assets/skins/sam/calendar.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/carousel/assets/skins/sam/carousel.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/colorpicker/assets/skins/sam/colorpicker.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/datatable/assets/skins/sam/datatable.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/editor/assets/skins/sam/editor.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/imagecropper/assets/skins/sam/imagecropper.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/layout/assets/skins/sam/layout.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/paginator/assets/skins/sam/paginator.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/resize/assets/skins/sam/resize.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/tabview/assets/skins/sam/tabview.css" >
+<link rel="stylesheet" type="text/css" href="/js/yui/2.8.2/build/treeview/assets/skins/sam/treeview.css" >
+
+<!--JavaScript source files for the entire YUI Library:-->
+
+<!--YUI Core (also aggregated in yahoo-dom-event.js; see readmes in the
+YUI download for details on each of the aggregate files and their contents):-->
+<script type="text/javascript" src="/js/yui/2.8.2/build/yahoo/yahoo-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/dom/dom.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/event/event-min.js"></script>
+
+<!--Utilities (also partialy aggregated utilities.js; see readmes in the 
+YUI download for details on each of the aggregate files and their contents):-->
+<script type="text/javascript" src="/js/yui/2.8.2/build/element/element-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/swf/swf-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/animation/animation-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/connection/connection-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/cookie/cookie-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/datasource/datasource-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/dragdrop/dragdrop-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/get/get-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/history/history-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/imageloader/imageloader-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/json/json-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/resize/resize-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/selector/selector-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/yuiloader/yuiloader-min.js"></script>
+
+<!--YUI's UI Controls:-->
+<script type="text/javascript" src="/js/yui/2.8.2/build/container/container-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/menu/menu-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/autocomplete/autocomplete-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/button/button-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/calendar/calendar-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/colorpicker/colorpicker-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/datatable/datatable-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/editor/editor-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/imagecropper/imagecropper-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/layout/layout-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/paginator/paginator-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/slider/slider-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/tabview/tabview-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/treeview/treeview-min.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/uploader/uploader.js"></script>
+<script type="text/javascript" src="/js/yui/2.8.2/build/stylesheet/stylesheet-min.js"></script>
+
+<!--.swf file for the YUI Charts Control--> 
+<script type="text/javascript"> 
+YAHOO.widget.Chart.SWFURL = "/js/yui/2.8.2/build/charts/assets/charts.swf;"
+</script> 
+
+<link rel="stylesheet" type="text/css" href="/themes/base.css" >
+
+
+	<script type="text/javascript">
+	document.write('<style>.noscript { display: none; }</style>');
+
+	YAHOO.util.Cookie.set("cookietest", "true", { path: "/" });
+	if (YAHOO.util.Cookie.get("cookietest"))
+	{
+
+	} else {
+		document.write('<style>.nocookie { display: block; }</style>');
+	}
+	</script>
+
+	<script>
+	function init() {
+		
+		var buttons = YAHOO.util.Dom.getElementsByClassName('deleteButton');
+		
+		for (var i = 0; i < buttons.length; i++) {
+			new YAHOO.widget.Button(buttons[i]);
+		}
+	}
+	
+	YAHOO.util.Event.addListener(window, "load", init);
+</script>
+
+	
+	<link rel="stylesheet" href="/themes/cadis/style.css" type="text/css" >
+	<style type="text/css">
+	
+	</style>
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-30746926-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+</head>
+
+<body class="yui-skin-sam">
+
+	<div id="container">
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="broadcast-message-banner" style="background-color: ;">
+
+<p>
+If you have published a scientific paper using ACADIS data, please consider filling out our <a href="/redirect.html?link=https%3a%2f%2fdocs.google.com%2fa%2fucar.edu%2fforms%2fd%2f1hN1hQqhJRV2VPdawSBkUNro6KsQJ9b4wfPiUv8rv3PU%2fviewform">ACADIS Publication Survey</a>.<br>
+It only takes a few short minutes and will be a great help to us.
+</p>
+
+</div>
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="background-image: url('/themes/cadis/images/caribou_pass_by_on_frozen_tundra.png'); height: 125px; background-repeat: repeat-x; position: relative; min-width: 70em;" >
+<div style="min-width: 80em;"> 
+	<div style="float: left; display: inline;">
+		
+		<a href="/home.htm">
+			<img src="/themes/cadis/images/AcadisGatewayBannerLogo.png" style="margin: 25px 10px 0 10px;" width="330" height="80" alt="ACADIS Gateway: An Arctic Data Repository" />
+		</a>
+	</div>
+	<div style="float: left; display: inline;">
+		<img src="/themes/cadis/images/acadis-service-logo.png" style="margin: 26px 0px 5px 25px;" width="160" height="78" alt="A Service of ACADIS" />
+	</div>
+	<div style="float: right; display: inline;">
+		<div id="login_links" style="float: right; margin: 8px 7px 0 0; display: inline; ">
+			
+				<div>
+					<a href="/ac/guest/secure/registration.html">Register</a>&nbsp;|&nbsp;<a href="/ac/guest/secure/login.html">Login</a>
+				</div>
+			
+			
+		</div>
+		<div class="searchBox" style="clear: right; margin: 80px 5px 8px 5px; ">
+			<div style="float:right; ">
+				<form name="simpleQueryForm" id="simpleQueryForm" method="GET" action="/search.html">
+					<table>
+						<tr>
+							<td><input style="font-size: 18px; margin: 0 5px;" type="text" name="freeText" size="32" /></td>
+							<td><input style="font-size: 16px; margin: 0 5px;" type="submit" id="submit-simple-query" value="Search"/></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="header-tabs" class="yuimenubar yuimenubarnav" style="clear: both; min-width: 74.923em;">
+	<div class="bd">
+	<nav class="sitenav">
+		<ul id="topmenu">
+			<li class="yuimenubaritem first-of-type"><a class="yuimenubaritemlabel" href="/home.htm">Home</a></li>
+			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="/cadis/searchOptions.html">Get Data</a>
+				<ul>
+					<li><a href="/search.html">Search</a></li>
+					<li><a href="/scienceKeywordTopic/topic.html">Science Keyword Topics</a></li>
+					<li><a href="/contact.html">Principal Investigators</a></li>
+					<li><a href="/project.html">Projects</a></li>
+					<li><a href="/cadis/viewProjectsGeographically.html">Geographic Tools</a></li>
+				</ul>
+			</li>
+			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="/user/publish/viewEditableProjects.html">Contribute Data</a>
+				<ul>
+					<li><a href="/cadis/howToContribute.html">Templates & Guides</a></li>
+				</ul>
+			</li>
+			
+			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="/cadis/about/aboutUs.htm">About</a></li>
+			<li class="yuimenubaritem"><a class="yuimenubaritemlabel" href="/contactUs.htm">Contact</a></li>
+		</ul>
+	</nav>
+	</div>
+</div>
+
+
+
+
+
+
+
+		<div class="noscript">
+		JavaScript must be enabled.
+		</div>
+		<div class="nocookie">
+		Cookies must be enabled.
+		</div>
+
+		
+		
+		
+			
+				<div id="doc4" class="yui-t7">
+					<div class="page-title">
+						<h1>Download Files</h1>
+					</div>
+					<div id="hd">
+						
+					</div>
+					<div id="bd">
+						<div class="yui-g">
+							<div class="bd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div>
+		
+		<b><a href="/dataset/KapNimsAtq2014.html">Kite Aerial Photography NIMS grid Barrow, Alaska 2014</a></b>
+		<br>
+	</div>
+
+	<div><br>7 File(s)</div>
+
+	<div style="clear: both; padding-top: 5px; " class="yui-dt yui-dt-noop">
+		
+		
+<table id="logicalFileRow">
+<thead>
+<tr>
+<th><div class="yui-dt-liner">
+					<span class="yui-dt-label">File Name</span>
+				</div></th>
+<th><div class="yui-dt-liner">
+					<span class="yui-dt-label">Size</span>
+				</div></th>
+<th><div class="yui-dt-liner">
+					<span class="yui-dt-label">Date Modified</span>
+				</div></th></tr></thead>
+<tbody>
+<tr class="yui-dt-even">
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">
+						
+							
+								
+								<a href="/download/fileDownload.htm?logicalFileId=c1d32a4e-21bb-11e4-9eb7-00c0f03d5b7c">BrwNimsGrid140616.&#8203;zip</a>
+							
+							
+						
+					</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">274.51 MB
+</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">2014-08-11 18:58:22Z</span>
+				</div>
+			</td></tr>
+<tr class="yui-dt-odd">
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">
+						
+							
+								
+								<a href="/download/fileDownload.htm?logicalFileId=d1817f51-21cb-11e4-9eb7-00c0f03d5b7c">BrwNimsGrid140630.&#8203;zip</a>
+							
+							
+						
+					</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">317.97 MB
+</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">2014-08-11 20:53:20Z</span>
+				</div>
+			</td></tr>
+<tr class="yui-dt-even">
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">
+						
+							
+								
+								<a href="/download/fileDownload.htm?logicalFileId=20f2e812-21d8-11e4-9eb7-00c0f03d5b7c">BrwNimsGrid140709.&#8203;zip</a>
+							
+							
+						
+					</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">274.81 MB
+</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">2014-08-11 22:21:27Z</span>
+				</div>
+			</td></tr>
+<tr class="yui-dt-odd">
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">
+						
+							
+								
+								<a href="/download/fileDownload.htm?logicalFileId=d98354bc-2253-11e4-9287-00c0f03d5b7c">BrwNimsGrid140716.&#8203;zip</a>
+							
+							
+						
+					</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">211.53 MB
+</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">2014-08-12 13:07:05Z</span>
+				</div>
+			</td></tr>
+<tr class="yui-dt-even">
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">
+						
+							
+								
+								<a href="/download/fileDownload.htm?logicalFileId=37b9c333-2270-11e4-9287-00c0f03d5b7c">BrwNimsGrid140722.&#8203;zip</a>
+							
+							
+						
+					</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">709.03 MB
+</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">2014-08-12 16:30:09Z</span>
+				</div>
+			</td></tr>
+<tr class="yui-dt-odd">
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">
+						
+							
+								
+								<a href="/download/fileDownload.htm?logicalFileId=0b386ef6-2285-11e4-9287-00c0f03d5b7c">BrwNimsGrid140729.&#8203;zip</a>
+							
+							
+						
+					</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">434.74 MB
+</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">2014-08-12 18:59:14Z</span>
+				</div>
+			</td></tr>
+<tr class="yui-dt-even">
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">
+						
+							
+								
+								<a href="/download/fileDownload.htm?logicalFileId=d21ae6a0-230e-11e4-9287-00c0f03d5b7c">BrwNimsGrid140804.&#8203;zip</a>
+							
+							
+						
+					</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">43.46 MB
+</span>
+				</div>
+			</td>
+<td class="yui-dt-first">
+				<div class="yui-dt-liner">
+					<span class="yui-dt-label">2014-08-13 11:25:28Z</span>
+				</div>
+			</td></tr></tbody></table>
+	</div>
+	
+	<br>
+	
+
+
+
+</div>
+						</div>
+					</div>
+					<div id="ft">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer_div">
+<hr class="line" />
+<div>
+	<div>
+		<div style="float: left; position: relative; width: 80px; padding-top: 20px; padding-left:10px;">
+			
+			<a href="/redirect.html?link=http%3a%2f%2fwww.nsf.gov%2f"><img src="/themes/cadis/images/nsf_logo.gif" height="75" width="75" alt="National Science Foundation" /></a>
+		</div>
+		<div style="float: left; position: relative; width: 400px; padding-top: 0px; padding-left: 15px;">
+			<div id="text_menu_div" style="padding-top: 20px;">
+			<a href="/"> Home</a> | <a href="/legal/privacy_policy.htm">Privacy Policy</a> | <a href="/legal/terms_of_use.htm">Terms of Use</a> | <a href="/contactUs.htm">Contact</a>
+			</div>
+			<div id="software_version_div">
+			Gateway Portal Software version 2.0.62-20150218-162036
+			</div>
+			<div id="copyright_div">
+				
+				Copyright &copy; 2015 <a href="/redirect.html?link=http%3a%2f%2fwww.ucar.edu%2f">UCAR</a>.  All Rights Reserved.
+			</div>
+		</div>
+		<div style="float: right; position: relative; width: 375px; padding-top: 15px; padding-left: 15px;">
+			<div id="collaborator_div">
+				<table>
+				<tr><td colspan="4" style="padding-bottom: 5px;">
+				<span style="text-align: center;">ACADIS Collaborators</span>
+				</td>
+				</tr>
+				<tr><td>
+				
+				<a href="/redirect.html?link=https%3a%2f%2fwww.eol.ucar.edu%2f"><img src="/themes/cadis/images/EOL_logo50_trans.gif" height="55" width="118" alt="Earth Observing Laboratory" /></a>
+				</td><td style="padding-left: 10px;">
+				
+				<a href="/redirect.html?link=http%3a%2f%2fnsidc.org%2f"><img src="/themes/cadis/images/nsidc_trans_notext.gif" height="55" width="71" alt="National Snow and Ice Data Center" /></a>
+				</td><td style="padding-left: 10px;">
+				
+				<a href="/redirect.html?link=http%3a%2f%2fwww.unidata.ucar.edu%2f"><img src="/themes/cadis/images/unidata_logo.jpg" height="55" width="55" alt="Unidata" /></a>
+				</td><td style="padding-left: 10px;">
+				
+				<a href="/redirect.html?link=http%3a%2f%2fwww.cisl.ucar.edu%2f"><img src="/themes/cadis/images/roundCISL.jpg" height="55" width="55" alt="Computational and Information Systems Lab" /></a>
+				</td></tr></table>
+			</div>
+		</div>
+	</div>
+</div></div>
+				</div>
+			
+			
+			
+			
+			
+			
+			
+		
+	</div>
+</body>
+</html>
+

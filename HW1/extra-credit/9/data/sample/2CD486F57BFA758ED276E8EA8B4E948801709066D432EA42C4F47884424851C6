@@ -1,0 +1,826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Pragma" content="no-cache" />
+<title>NSIDC Photo &amp; Image Gallery - Last additions - kleitzell/IMG 0944</title></head><!-- NSIDC Photo and Image Gallery interior pages template -->
+<meta name="keywords" content="troll,station,norway,norwegian,us,U.S.,antarctic,traverse,east,antarctica,antarctic,ice,sheet,ted,scambos"/><link rel="start" href="displayimage.php?album=lastupby&amp;cat=0&amp;pos=0" title="Return to start" />
+        <link rel="last" href="displayimage.php?album=lastupby&amp;cat=0&amp;pos=1139" title="Skip to end" />
+        <link rel="prev" href="displayimage.php?album=lastupby&amp;cat=0&amp;pos=119&amp;uid=12" title="See previous file" />
+                                <link rel="next" href="displayimage.php?album=lastupby&amp;cat=0&amp;pos=121&amp;uid=12" title="See next file"/>
+                                <link rel="up" href="thumbnails.php?album=lastupby&amp;cat=0&amp;page=11&amp;uid=12" title="Return to the thumbnail page"/>
+        
+
+<!-- begin meta_robots.ssi -->
+
+
+
+<!-- meta robots tag only included on testsnowtest.org test server -->
+
+
+
+<!-- end meta_robots.ssi -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/nsidc.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/nsidc-header-2014.css" type="text/css" media="all" />
+<link href="/css/nsidc-jquery-ui.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/css/nsidc_print.css" type="text/css" media="print" />
+
+<link rel="stylesheet" href="/gallery/coppermine/themes/nsidc/style.css" />
+
+<!--makes windo.onload non-destructive -->
+<script type="text/javascript" src="/scripts/global/functionOnload.js"></script>
+
+<!--build Service Interruption Notice window -->
+<script type="text/javascript" src="/scripts/global/buildModalDiv.js"></script>
+
+<!-- google api code required to load jquery in the fuction below -->
+
+<!-- load jQuery core and UI from Google ONLY IF page is not a set-aside nsidc app -->
+<!--
+<script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAADUHkVio4sWeNGpsbEqKKehQtRVw6tjCZahU1bPh5inofNBpAVBT_GknmqHhvhO4DcC5cfBhQIHNlbA"></script> 
+-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js" type="text/javascript"></script> 
+
+
+<!-- script for drop-down menus - REPLACED WITH MEGA MENU SCRIPT  -->
+<script type="text/javascript" src="/scripts/nsidc-nav.js"></script>
+
+<!-- script to rotate the background image onload -->
+<script type="text/javascript" src="/scripts/global/jquery-background.js"></script>
+
+
+<!-- start analytics.ssi -->
+
+
+
+<!-- start NSIDC web analytics scripts -->
+
+<!-- BEGIN: NetInsight Page Tag -->   
+<!-- Copyright 2004 Sane Solutions, LLC.  All rights reserved. -->
+<script type="text/javascript" src="/scripts/ntpagetag.js"></script>
+
+<!-- END: NetInsight Page Tag -->
+<!-- begin scripts for google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-192409-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- end scripts for google analytics -->
+<!-- end NSIDC web analytics scripts -->
+
+
+
+<!-- end analytics.ssi -->
+
+<!-- google search script -->
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cref"></script>
+
+<!-- jquery autocomplete script for site-wide search -->
+<script type="text/javascript">
+        jQuery(function ($) {
+            $('input.search')
+          .focus(function () { this.select(); })
+          .mouseup(function (e) { e.preventDefault(); })
+          .autocomplete({
+              position: { my: "left top", at: "left bottom", offset: "0, 0", collision: "none" },
+              source: function (request, response) {
+                  $.ajax({
+                      url: "http://clients1.google.com/complete/search?q=" + request.term + "&hl=en&client=partner&source=gcsc&partnerid=003583054367551111343:oocmuftmnau&ds=cse&nocache=" + Math.random().toString(),
+                      dataType: "jsonp",
+                      success: function (data) {
+                          response($.map(data[1], function (item) {
+                              return {
+                                  label: item[0],
+                                  value: item[0]
+                              };
+                          }));
+                      }
+                  });
+              },
+              autoFill: true,
+              minChars: 0,
+              select: function (event, ui) {
+                  $(this).closest('input').val(ui.item.value);
+                  $(this).closest('form').trigger('submit');
+              }
+          });
+        })
+</script>
+<!-- file needed for jquery fancybox plugin that delivers popup modal functionality on glossary terms throughout the site -->
+
+<script src="/scripts/jquery/plugins/jquery.fancybox.js" type="text/javascript"></script>
+<script src="/scripts/jquery/plugins/glossary-fancybox-options.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.selectboxit/3.8.0/jquery.selectBoxIt.min.js"></script>
+
+<!-- end NSIDC global scripts -->
+
+<!-- end scripts include -->
+
+
+<script type="text/javascript" src="/gallery/coppermine/scripts.js"></script>
+
+<script type="text/javascript" src="/scripts/gallery/galleryStyleHelper.js"></script>
+
+</head>
+
+<body id="galleryPage">
+
+<!-- Coppermine custom header placedholder, not being used -->
+
+<!-- BEGIN nsidc.ssi -->
+<div id="header">
+<div id="header-inside-left"><div id="logo"><h1><a href="/">National Snow and Ice Data Center</a></h1></div></div>
+<div id="nsidc-menu">
+<ul class="nsidc-nav">
+<li class="home main"><a href="/" id="home">Home</a></li>
+<li class="main"><a href="/data" id="data-nav">Data</a>
+	<div class="subnav data-menu">
+    <div class="column-1">
+    <p class="subhead">Data Sets for Research</p>
+    <ul>
+	  <li><a href="/data/search/#keywords=brightness+temperature">Brightness Temperature</a></li>
+      <li><a href="/data/search/#keywords=glaciers">Glaciers</a></li>
+      <li><a href="/data/search/#keywords=ice+sheets">Ice Sheets</a></li>
+      <li><a href="/data/search/#keywords=permafrost">Permafrost</a></li>
+      <li><a href="/data/search/#keywords=sea+ice">Sea Ice</a></li>
+      <li><a href="/data/search/#keywords=soil+moisture">Soil Moisture</a></li>
+      <li><a href="/data/search/#keywords=snow">Snow</a></li>
+      <li><a href="/data/search/">...search for more</a></li>
+	</ul>
+    </div>
+    <div class="column-2">
+    <p class="subhead">Scientific Data Search</p>
+    <form action="#" name="data-search" id="data-search">
+    <input type="text" value="Enter term(s)" onblur="if(this.value=='') this.value='Enter term(s)';" onfocus="if(this.value=='Enter term(s)') this.value='';" id="keywords2" name="keywords" class="keywords" autocomplete="off">
+    <input class="submit-btn" type="submit" name="submit" value="GO" alt="Submit" />
+    </form>
+    <p class="subhead">Support for Researchers</p>
+    <ul>
+    <li><a href="/data/tools/">Analysis & Imaging Tools</a></li>
+    <li><a href="/the-drift/data-update/">Data Announcements</a></li>
+    <li><a href="/data/submit.html">Submit Your Data</a></li>
+    <li><a href="https://nsidc.zendesk.com/account/dropboxes/20123172" onclick="script: Zenbox.show(); return false;">User Support</a></li>
+	<li><a href="/rocs">Library & Archives</a></li>
+    </ul>
+    </div>
+    <div class="column-3">
+    <p class="subhead">Data for Everyone</p>
+    <ul>
+    <li><a href="/arcticseaicenews">Arctic Sea Ice News & Analysis</a></li>
+    <li><a href="/cgi-bin/glacier_photos/glacier_photo_search.pl">Glacier Photograph Collection</a></li>
+    <li><a href="/greenland-today/">Greenland Ice Sheet Today</a></li>
+    <li><a href="/data/masie/">MASIE (Daily sea ice extent)</a></li>
+    <li><a href="/soac">Satellite Observations of Arctic Change</a></li>
+    <li><a href="/data/seaice_index/">Sea Ice Index</a></li>
+    <li><a href="/data/google_earth/">Virtual Globes: Google Earth </a></li>
+    </ul>
+    </div>
+    <div class="column-4">
+    <p class="subhead">Sponsored Programs</p>
+    <ul>
+    <li><a href="/agdc/">Antarctic Glaciological Data Center</a></li>
+    <li><a href="http://eloka-arctic.org/">Exchange for Local Observations and Knowledge of the Arctic (ELOKA)</a></li>
+    <li><a href="/noaa/">NOAA at NSIDC</a></li>
+    <li><a href="/daac">NASA Distributed Active Archive Center at NSIDC (NSIDC DAAC)</a></li>
+    </ul>
+    </div>
+    <div class="menu-see-also"><p>Looking for facts and information? See <a href="/cryosphere/">About the Cryosphere.</a></p></div>
+    </div>
+</li>
+<li class="main"><a href="/research" id="research-nav">Research</a>
+  <div class="subnav research-menu">
+  <ul>
+    <li><a href="/research/scientists.html"><img src="/sites/nsidc.org/files/images/about/researcher-100.jpg" alt="" />Scientists</a></li>
+    <li><a href="/research/projects.html"><img src="/sites/nsidc.org/files/images/about/asina-100.jpg" alt="" />Research Projects</a></li>
+    <li><a href="/research/publications.html"><img src="/sites/nsidc.org/files/images/about/publications-100.jpg" alt="" />Scientific Publications</a></li>
+	<li><a href="/research/informatics"><img src="/sites/nsidc.org/files/images/about/informatics-100.jpg" alt="" />Informatics Research</a></li>
+    <li><a href="/news/press/expeditions.html"><img src="/sites/nsidc.org/files/images/about/research-group-100.jpg" alt="" />NSIDC Scientific Expeditions</a></li>
+    </ul>
+    <div class="column-4">
+    <p class="subhead"><em>On Thin Ice:</em><br />Expedition to a Crumbling Ice Shelf</p>
+    <p><img src="/sites/nsidc.org/files/images/cryosphere/education-resources/0508_cold_thumb.jpg" />Scientists blog from Antarctica and provide a glimpse of what it's like to do research in the field. <a href="http://iceshelf.wordpress.com/">Read their blog ...</a></p>
+    </div>
+    </div>
+</li>
+<li class="main"><a href="/news" id="news-nav">News</a>
+	<div class="subnav news-menu">
+    <div class="column-1">
+    <p class="subhead">For the Media</p>
+    <ul>
+		<li><a href="/news/newsroom">Newsroom: For the Media</a></li>
+        </ul>
+     <p class="subhead">For Data Users</p>
+     <ul>
+     <li><a href="/the-drift/data-update/">Data Announcements</a></li>
+     <li><a href="/the-drift">The Drift</a></li>
+     </ul>
+        </div>
+     <div class="column-2">
+     <p class="subhead">Current Conditions</p>
+     <ul>
+     <li><a href="/arcticseaicenews/">Arctic Sea Ice News &amp; Analysis</a></li>
+     <li><a href="/greenland-today">Greenland Today</a></li>
+     <li><a href="/soac">Satellite Observations of Arctic Change</a></li>
+     </ul>
+     </div>
+     <div class="column-3">
+     		<p class="subhead"><a href="/news/inthenews/">NSIDC In the News</a></p>
+             <p class="subhead"><a href="/news/events/">Events</a></p>
+            <p class="subhead"><a href="/monthlyhighlights/">NSIDC Monthly Highlights</a></p>
+             <div class="social-links"><a href="http://www.facebook.com/NSIDC"><img src="http://nsidc.org/sites/nsidc.org/files/images/news/facebook-25px.png" class="img-no-border-left" alt="NSIDC Facebook"></a><a href="https://twitter.com/NSIDC"><img src="http://nsidc.org/sites/nsidc.org/files/images/news/twitter-25px.png" class="img-no-border-left" alt="NSIDC Twitter"></a><a href="/news/feed"><img src="http://nsidc.org/sites/nsidc.org/files/images/news/rss-25px.png" class="img-no-border-left" alt="NSIDC RSS News Feed"></a></div>    
+     </div>
+	<div class="column-4">
+    <p class="subhead"><em>Icelights:</em> Answers to your burning questions about ice and climate</p>
+    <p><img src="http://nsidc.org/sites/nsidc.org/files/images/news/icon-icelights.jpg" alt="" />What's hot in the news around climate and sea ice and what are scientists talking about now?  <a href="/icelights">Read more...</a></p>
+    </div>       
+    </div>
+</li>
+<li class="main"><a href="/about" id="about-nav">About</a>
+  <div class="subnav about-menu">
+    <div class="column-1">
+    <p class="subhead"><a href="/about/overview">About NSIDC</a></p>
+  <ul>
+    <li><a href="/about/people.html">NSIDC People</a></li>
+	<li><a href="/rocs">Library & Archives</a></li>
+    <li><a href="/about/sponsors.html">Our Sponsors</a></li>
+    <li><a href="/about/jobs/index.html">Jobs</a></li>
+    <li><a href="/monthlyhighlights/">NSIDC Monthly Highlights</a></li>
+    <li><a href="/about/use_copyright.html">Use &amp; Copyright</a></li>
+    <li><a href="/about/contact.html">Contact Us</a></li>
+    <li><a href="/about/support.html">Support NSIDC</a></li>
+    <li><a href="/about/green-data-center/">NSIDC's Green Data Center</a></li>
+    </ul>
+    </div>
+    <div class="column-2">
+    <p class="subhead"><a href="/cryosphere">About the Cryosphere</a></p>
+    <ul class="column-2">
+	<li><a href="/cryosphere/quickfacts/">Quick Facts</a></li>
+	<li><a href="/cryosphere/allaboutcryosphere.html">All About The Cryosphere</a></li>
+    <li><a href="/cryosphere/glaciers/">All About Glaciers</a></li>
+	<li><a href="/cryosphere/snow/">All About Snow</a></li>
+	<li><a href="/cryosphere/frozenground/index.html">All About Frozen Ground</a></li>
+	<li><a href="/cryosphere/seaice/">All About Sea Ice</a></li>
+	<li><a href="/cryosphere/arctic-meteorology/">All About Arctic Climatology & Meteorology</a></li>
+	</ul>
+    <ul class="column-3">
+    <li><a href="/cryosphere/climate-change.html">Snow, Ice and Climate Change</a></li>
+	<li><a href="/cryosphere/study-cryosphere.html">Studying the Cryosphere</a></li>
+	<li><a href="/gallery/">Photo Gallery</a></li>
+	<li><a href="/cryosphere/education-resources/">Educational Resources</a></li>
+	<li><a href="/cryosphere/glossary">Cryosphere Glossary</a></li>
+	</ul>
+    </div>
+    <div class="column-4">
+    <p class="subhead">What is the Cryosphere?</p>
+    <p><img src="/sites/nsidc.org/files/images/cryosphere/education-resources/0508_cold_thumb.jpg" alt="" />When scientists talk about the cryosphere, they mean the places on Earth where water is in its solid form, frozen into ice or snow. <a href="/cryosphere/allaboutcryosphere.html">Read more ...</a></p>
+    </div>
+    </div>
+</li>
+</ul>
+</div><!-- end menu -->
+  <div id="nsidc-search">
+<!-- service announcement include -->
+<div id="serviceAnnouncement">
+
+<!--BEGIN close button-->
+<a id="closeButton" href="#" class="modalTrigger">
+<img class="btn_close" alt="Close" title="Close Window" src="/images/close_pop.png" />
+</a>
+<!--END close button-->
+
+<!--INSTRUCTIONS ON HOW TO USE THIS SSI
+
+You DO NOT need to comment out the Service Interruption Message Content. Only comment out the DIV ID Service Message located at the bottom of this page, which is the trigger that creates the Service Interruption Red Box that displays at the top of each Web page.-->
+
+	
+<!--BEGIN Service Interruption Message Content-->
+
+<h1>Service Interruption</h1>
+
+
+<p>On Friday, 06 February 2015 from 8:00 a.m. to 5:00 p.m. (USA Mountain Time), we will be performing scheduled maintenance, which may cause temporary disruptions to our Web site, applications, and FTP. We apologize for any inconvenience this may cause you.</p>
+
+
+<!--END Service Interruption Message Content-->
+
+
+<!--Begin Examples Notices
+
+<p>From 4:30 p.m. Wednesday, June 04 until noon Friday, June 06 (USA Mountain Time), our Web site will be unavailable due to system maintenance. We apologize for any inconvenience this may cause you.</p>
+
+<p>The NSIDC Web site and data services are currently having intermittent problems and may be unavailable. We are working to restore these services as soon as possible and apologize for any inconvenience this may cause. Please <a href="mailto:nsidc@nsidc.org?Subject=Inquiry about unavailable FTP server">contact NSIDC User Services</a> for assistance.</p> 
+
+
+<p>On Thursday, 12 June 2014 from 3:00 p.m. to 4:00 p.m. (USA Mountain Time), our Web services will be unavailable due to NSIDC server maintenance. We apologize for any inconvenience this may cause you.</p> 
+
+End Example Notices-->
+
+</div>
+
+
+<div id="service-message">
+ 
+<!--COMMENT OUT JUST THE FOLLOWING LINE-->
+
+<!--
+<p class="noticeButton"><a href="#" class="modalTrigger">Outage Notice</a></p>
+-->
+
+<!--COMMENT OUT JUST THE LINE ABOVE-->
+
+</div>
+<!-- end service announcement include -->
+<div id="search-box"><form action="#" id="search-nsidc"><input type="text" size="40" name="keywords" id="keywords" alt="search" value="SEARCH" onblur="if(this.value=='') this.value='SEARCH';" onfocus="if(this.value=='SEARCH') this.value='';" class="search" autocomplete="off" /><input type="hidden" name="cref" value="http://nsidc.org/google-search.xml" /><input name="cof" value="FORID:11" type="hidden"><div id="search-select"><select name="search_type" id="search_type">
+        <option value="web">Web pages</option>
+        <option value="data">Data Sets</option>
+        </select></div><input class="submit-btn" type="submit" name="submit" src="/images/search-submit-btn.png" alt="Submit" /></form></div>
+  </div><!-- nsidc-search -->
+</div>
+<!-- END nsidc.ssi -->
+
+<div id="galleryWrapper">&nbsp;
+
+	
+    
+  <div id="mainContentContainer">
+
+	<div id="galleryNav" class="hidden">         <ul class="secondarySiteNavList" id="nsidcSecondaryNav">     <!-- BEGIN album_list -->
+        <li class="nav1"><a href="index.php?cat=22" title="Go to the album list">Album list</a></li>
+  <!-- END album_list -->  <!-- BEGIN lastup -->
+        <li class="nav1"><a href="thumbnails.php?album=lastup&amp;cat=0" title="Show most recent uploads">Last uploads</a></li>
+  <!-- END lastup -->  <!-- BEGIN lastcom -->
+        <li class="nav1"><a href="thumbnails.php?album=lastcom&amp;cat=0" title="Show most recent comments">Last comments</a></li>
+  <!-- END lastcom -->  <!-- BEGIN topn -->
+        <li class="nav1"><a href="thumbnails.php?album=topn&amp;cat=0" title="Show most viewed items">Most viewed</a></li>
+  <!-- END topn -->  <!-- BEGIN toprated -->
+        <li class="nav1"><a href="thumbnails.php?album=toprated&amp;cat=0" title="Show top rated items">Top rated</a></li>
+  <!-- END toprated -->  <!-- BEGIN favpics -->
+        <li class="nav1"><a href="thumbnails.php?album=favpics" title="Go to my favorites">My Favorites</a></li>
+  <!-- END favpics -->  <!-- BEGIN search -->
+        <li class="nav1"><a href="search.php" title="Search the gallery">Search</a></li>
+  <!-- END search --></ul></div><!-- end galleryNav for standard Coppermine nav which is hidden -->
+        
+        
+<!-- Start standard table -->
+<table align="center" width="100%" cellspacing="6" cellpadding="0" class="maintable">
+
+	<table class="maintable" id="breadcrumb">
+        <tr class="breadcrumb">
+                <td colspan="3" align="left" class="breadcrumb"><span><a href="/gallery/index.html">Photo Gallery Home</a> > <a href="/gallery/coppermine/index.php">Category Index</a> > <a href="index.php?cat=22">Images by project</a> > <a href="thumbnails.php?album=42">Norwegian-U.S.Antarctica Traverse</a></span></td>
+        </tr>
+	</table>
+</table>
+<!-- End standard table -->
+
+<!-- Start standard table -->
+<table align="center" width="100%" cellspacing="6" cellpadding="0" class="maintable">
+
+		</table>
+		<table class="maintable" id="bottomImgNavBar" cellspacing="0">
+        <tr>
+                <td align="center" valign="middle" class="navmenu" width="48">
+                        <a href="thumbnails.php?album=lastupby&amp;cat=0&amp;page=11&amp;uid=12" class="navmenu_pic" title="Return to the thumbnail page"><img src="images/thumbnails.gif" align="middle" border="0" alt="Return to the thumbnail page" /></a>
+                </td>
+                <td align="center" valign="middle" class="navmenu" width="48">
+                        <a href="javascript:;" class="navmenu_pic" onclick="blocking('picinfo','yes', 'block'); return false;" title="Display/hide file information"><img src="images/info.gif" border="0" align="middle" alt="Display/hide file information" /></a>
+                </td>
+                <td align="center" valign="middle" class="navmenu" width="48">
+                        <a href="displayimage.php?album=lastupby&amp;cat=0&amp;uid=12&amp;pid=1117&amp;slideshow=5000" class="navmenu_pic" title="Slideshow"><img src="images/slideshow.gif" border="0" align="middle" alt="Slideshow" /></a>
+                </td>
+                <td align="center" valign="middle" class="navmenu" width="100%">
+                        FILE 121/1140
+                </td>
+
+
+                <td align="center" valign="middle" class="navmenu" width="48">
+                        <a href="displayimage.php?album=lastupby&amp;cat=0&amp;pos=119&amp;uid=12" class="navmenu_pic" title="See previous file"><img src="images/prev.gif"  border="0" align="middle" alt="See previous file" /></a>
+                </td>
+                <td align="center" valign="middle" class="navmenu" width="48">
+                        <a href="displayimage.php?album=lastupby&amp;cat=0&amp;pos=121&amp;uid=12" class="navmenu_pic" title="See next file"><img src="images/next.gif"  border="0" align="middle" alt="See next file" /></a>
+                </td>
+        </tr>
+</table>
+<!-- End standard table -->
+
+<!-- Start standard table -->
+<table align="center" width="100%" cellspacing="6" cellpadding="0" class="maintable">
+        <tr>
+                <td align="center" class="display_media" nowrap="nowrap">
+                        <table cellspacing="2" cellpadding="0" class="imageborder">
+                                <tr>
+                                        <td align="center">
+                                                <a href="javascript:;" onclick="MM_openBrWindow('displayimage.php?pid=1117&amp;fullsize=1','71845086154e433f477b6d','scrollbars=yes,toolbar=no,status=no,resizable=yes,width=4421,height=3315')"><img src="albums/scambos_2009_2/normal_IMG_0944.JPG" class="image" border="0" alt="Click to view full size image" /><br /></a>
+
+
+                                        </td>
+                                </tr>
+                        </table>
+                </td></tr>
+                <tr><td>
+                                                <table width="100%" cellspacing="2" cellpadding="0" class="tableb">
+                                <tr>
+                                        <td align="center">
+
+                                                
+                                        </td>
+                                </tr>
+                        </table>
+
+
+
+
+
+<!-- BEGIN img_desc -->
+                        <table cellpadding="0" cellspacing="0" class="tableb" width="100%">
+
+<!-- BEGIN caption -->
+                                <tr>
+                                        <td class="tableb"><center>
+                                                Researchers and guests celebrate the end of the traverse at Troll Station, the Norwegian Antarctic research station.<br />
+Image Credit: Ted Scambos, NSIDC
+                                        </center></td>
+                                </tr>
+<!-- END caption -->
+                        </table>
+<!-- END img_desc -->
+                </td>
+        </tr>
+</table>
+<!-- End standard table -->
+
+<!-- Start standard table -->
+<table align="center" width="100%" cellspacing="6" cellpadding="0" class="maintable">
+
+        <!--commented out by TT-->
+		<!--tr>
+         <td valign="top" style="background-image: url(images/tile.gif);"><img src="images/tile.gif" alt="" border="0" /></td>
+        </tr-->
+        <tr>
+        <td valign="bottom" class="thumbnails" align="center">
+          <table width="100%" cellspacing="0" cellpadding="3" border="0">
+              <tr>
+                 <td width="50%"></td>
+                 
+                <td valign="top" align="center">
+                                        <a href="displayimage.php?album=lastupby&amp;cat=0&amp;pos=118&amp;uid=12"><img src="albums/scambos_2009_2/thumb_IMG_0957.JPG" class="image" width="100" height="75" border="0" alt="IMG_0957.JPG" title="Filename=IMG_0957.JPG
+Filesize=1612KB
+Dimensions=4416x3312
+Date added=Jun 16, 2009" /></a>
+                                        
+                                        
+                </td>
+
+                <td valign="top" align="center">
+                                        <a href="displayimage.php?album=lastupby&amp;cat=0&amp;pos=119&amp;uid=12"><img src="albums/scambos_2009_2/thumb_IMG_0946.JPG" class="image" width="100" height="75" border="0" alt="IMG_0946.JPG" title="Filename=IMG_0946.JPG
+Filesize=1618KB
+Dimensions=4416x3312
+Date added=Jun 16, 2009" /></a>
+                                        
+                                        
+                </td>
+
+                <td valign="top" align="center">
+                                        <a href="displayimage.php?album=lastupby&amp;cat=0&amp;pos=120&amp;uid=12"><img src="albums/scambos_2009_2/thumb_IMG_0944.JPG" class="image" width="100" height="75" border="0" alt="IMG_0944.JPG" title="Filename=IMG_0944.JPG
+Filesize=1654KB
+Dimensions=4416x3312
+Date added=Jun 16, 2009" /></a>
+                                        
+                                        
+                </td>
+
+                <td valign="top" align="center">
+                                        <a href="displayimage.php?album=lastupby&amp;cat=0&amp;pos=121&amp;uid=12"><img src="albums/scambos_2009_2/thumb_IMG_0948.JPG" class="image" width="100" height="75" border="0" alt="IMG_0948.JPG" title="Filename=IMG_0948.JPG
+Filesize=943KB
+Dimensions=4416x3312
+Date added=Jun 16, 2009" /></a>
+                                        
+                                        
+                </td>
+
+                <td valign="top" align="center">
+                                        <a href="displayimage.php?album=lastupby&amp;cat=0&amp;pos=122&amp;uid=12"><img src="albums/scambos_2009_2/thumb_IMG_0942.JPG" class="image" width="100" height="75" border="0" alt="IMG_0942.JPG" title="Filename=IMG_0942.JPG
+Filesize=1140KB
+Dimensions=4416x3312
+Date added=Jun 16, 2009" /></a>
+                                        
+                                        
+                </td>
+
+                 <td width="50%"></td>
+              </tr>
+          </table>
+        </td>
+        </tr>
+		<!--commented out by TT-->
+        <!--tr>
+         <td valign="top" style="background-image: url(images/tile.gif);"><img src="images/tile.gif" alt="" border="0" /></td>
+        </tr-->
+
+
+</table>
+<!-- End standard table -->
+<div id="picinfo" style="display: block;">
+
+<!-- Start standard table -->
+<table align="center" width="100%" cellspacing="6" cellpadding="0" class="maintable">
+        <tr><td colspan="2" class="tableh2_compact"><b>File information</b></td></tr>
+        <tr><td class="tableb_compact" valign="top" >Filename:</td><td class="tableb_compact">IMG_0944.JPG</td></tr>
+        <tr><td class="tableb_compact" valign="top" >Album name:</td><td class="tableb_compact"><span class="alblink"><a href ="profile.php?uid=12">kleitzell</a> / <a href="thumbnails.php?album=42">Norwegian-U.S.Antarctica Traverse</a></span></td></tr>
+        <tr><td class="tableb_compact" valign="top" >Keywords:</td><td class="tableb_compact"><span class="alblink"><a href="thumbnails.php?album=search&amp;search=troll">troll</a> <a href="thumbnails.php?album=search&amp;search=station">station</a> <a href="thumbnails.php?album=search&amp;search=norway">norway</a> <a href="thumbnails.php?album=search&amp;search=norwegian">norwegian</a> <a href="thumbnails.php?album=search&amp;search=us">us</a> <a href="thumbnails.php?album=search&amp;search=U.S.">U.S.</a> <a href="thumbnails.php?album=search&amp;search=antarctic">antarctic</a> <a href="thumbnails.php?album=search&amp;search=traverse">traverse</a> <a href="thumbnails.php?album=search&amp;search=east">east</a> <a href="thumbnails.php?album=search&amp;search=antarctica">antarctica</a> <a href="thumbnails.php?album=search&amp;search=antarctic">antarctic</a> <a href="thumbnails.php?album=search&amp;search=ice">ice</a> <a href="thumbnails.php?album=search&amp;search=sheet">sheet</a> <a href="thumbnails.php?album=search&amp;search=ted">ted</a> <a href="thumbnails.php?album=search&amp;search=scambos">scambos</a></span></td></tr>
+        <tr><td class="tableb_compact" valign="top" >Copyright Information:</td><td class="tableb_compact">May be used freely if properly cited</td></tr>
+        <tr><td class="tableb_compact" valign="top" >Image Credit:</td><td class="tableb_compact">Ted Scambos, NSIDC</td></tr>
+        <tr><td class="tableb_compact" valign="top" >File Size:</td><td class="tableb_compact"><span dir="ltr">1654&nbsp;KB</span></td></tr>
+        <tr><td class="tableb_compact" valign="top" >Date added:</td><td class="tableb_compact">Jun 16, 2009</td></tr>
+        <tr><td class="tableb_compact" valign="top" >Dimensions:</td><td class="tableb_compact">4416 x 3312 pixels</td></tr>
+        <tr><td class="tableb_compact" valign="top" >Displayed:</td><td class="tableb_compact">669 times</td></tr>
+        <tr><td class="tableb_compact" valign="top" >Digital Zoom Ratio:</td><td class="tableb_compact">1</td></tr>
+        <tr><td class="tableb_compact" valign="top" >Flash:</td><td class="tableb_compact">Red Eye, Auto-Mode</td></tr>
+        <tr><td class="tableb_compact" valign="top" >Flash Pix Version:</td><td class="tableb_compact">version 1</td></tr>
+        <tr><td class="tableb_compact" valign="top" >ISO:</td><td class="tableb_compact">250</td></tr>
+        <tr><td class="tableb_compact" valign="top" >Resolution Unit:</td><td class="tableb_compact">Inch</td></tr>
+        <tr><td class="tableb_compact" valign="top" >Y Resolution:</td><td class="tableb_compact">180 dots per ResolutionUnit</td></tr>
+        <tr><td class="tableb_compact" valign="top" >YCbCrPositioning:</td><td class="tableb_compact">Datum Point</td></tr>
+        <tr><td class="tableb_compact" valign="top" >URL:</td><td class="tableb_compact"><a href="http://nsidc.org/gallery/coppermine/displayimage.php?pos=-1117" >http://nsidc.org/gallery/coppermine/displayimage.php?pos=-1117</a></td></tr>
+        <tr><td class="tableb_compact" valign="top" >Favorites:</td><td class="tableb_compact"><a href="addfav.php?pid=1117&amp;ref=displayimage.php%3Falbum%3Dlastupby%26cat%3D0%26pos%3D120%26uid%3D12" >Add to Favorites</a></td></tr>
+</table>
+<!-- End standard table -->
+</div>
+<div id="comments">
+</div>
+<div class="footer" align="center" style="padding-top: 10px;">Powered by <a href="http://coppermine-gallery.net/" title="Coppermine Photo Gallery" rel="external">Coppermine Photo Gallery</a></div>
+  		
+        
+        
+
+  </div><!-- end mainContentContainer for Photo Gallery -->
+
+
+<!-- start /ssi/gallery/gallery_toolbox.ssi -->
+
+<div id="toolboxContainer">
+    
+<div class="browseContainerContent" id="browseGalleries">
+                
+          <h2><a href="/gallery/coppermine/index.php" class="searchBrowseHeader">Browse Galleries</a></h2>
+                
+          <form name="nav">
+            <select name="Menu1" class="dropDownMenu" onchange="document.location.href=document.nav.Menu1.options[document.nav.Menu1.selectedIndex].value">
+                <option value="" selected>By Location</option>
+                <option value="">--------------------------</option>
+                <option value="/gallery/coppermine/index.php?cat=12">All Locations</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=31">Alaska</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=26">Antarctica</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=28">Arctic Ocean</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=49">Colorado</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=27">Greenland</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=69">Nepal</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=35">South America</option>
+            </select>
+</form>
+            
+         <form name="nav2">
+            <select name="Menu2" class="dropDownMenu" onchange="document.location.href=document.nav2.Menu2.options[document.nav2.Menu2.selectedIndex].value">
+                <option value="" selected>By Project or Expedition
+                </option><option value="">--------------------------</option>
+                <option value="/gallery/coppermine/index.php?cat=22">All Projects and Expeditions</option>
+
+                <option value="/gallery/coppermine/thumbnails.php?album=38">AIDJEX</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=73">Arctic Climatology and Meteorolgy</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=34">ARISE Project 2003</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=40">Good Days Film</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=32">Greenland 2004</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=71">Green Data Center</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=20">IceTrek 2006</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=66">Larissa Project 2009/2010</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=75">Larissa Project 2013</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=24">Megadunes 2002/2003</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=29">Megadunes 2003/2004</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=69">Nepal 2012</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=67">North Slope SNOWNET 2011</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=76">Permafrost Survey 2013</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=77">Permafrost Survey 2012</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=78">Permafrost Survey 2009</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=72">North Slope SNOWNET 2012</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=74">North Slope SNOWNET 2013</option>
+              	<option value="/gallery/coppermine/thumbnails.php?album=42">Norwegian-U.S. Scientific Traverse of East Antarctica 2008-2009</option>
+                <!--<option value="/gallery/coppermine/thumbnails.php?album=44">NSIDC Data Images</option>-->
+                <option value="/gallery/coppermine/thumbnails.php?album=41">Sea Ice Knowledge Exchange</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=68">SCICEX</option>
+            </select>
+    </form>
+<!-- Begin Subject Menu Options -->            
+         <form name="nav3">
+         	<select name="Menu3" class="dropDownMenu" onchange="document.location.href=document.nav3.Menu3.options[document.nav3.Menu3.selectedIndex].value">
+                <option value="" selected>By Subject</option>
+                <option value="">--------------------------</option>
+                <option value="/gallery/coppermine/index.php?cat=13">All Subjects</option>
+				<option value="/gallery/coppermine/thumbnails.php?album=73">Arctic Climatology and Meteorolgy</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=23">Glaciers </option>
+                <option value="/gallery/coppermine/thumbnails.php?album=21">Icebergs</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=22">Ice Shelves</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=33">Ice Sheets</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=25">Megadunes</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=44">NSIDC Data Images</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=5">NSIDC Scientists</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=18">Sea Ice</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=search&search=snow">Snow</option>
+            </select>
+          </form>
+            
+          <form name="nav4">
+            <select name="Menu4" class="dropDownMenu" onchange="document.location.href=document.nav4.Menu4.options[document.nav4.Menu4.selectedIndex].value">
+                <option value="" selected>By Photographer</option>
+                <option value="">--------------------------</option>
+                <option value="/gallery/coppermine/index.php?cat=23">All Photographers</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=59">Rob Bauer</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=36">Lynn French</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=37">Ted Scambos</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=58">Mark Serreze</option>
+                <option value="/gallery/coppermine/thumbnails.php?album=57">Andrew Slater</option>
+            </select>
+          </form>
+    
+    <p><a href="/gallery/coppermine/index.php">View Index for All Albums</a></p>
+  </div>
+                
+	  <div class="browseContainerContent" id="browseFavorites">
+
+  		<h2><a href="/gallery/coppermine/thumbnails.php?album=favpics" class="searchBrowseHeader">Browse Favorites</a></h2>
+        
+     	<p><a href="/gallery/coppermine/thumbnails.php?album=topn&cat=0">Most Viewed</a></p>
+     	<p><a href="/gallery/coppermine/thumbnails.php?album=favpics">My Favorites</a></p>
+        
+      </div>
+            
+      <div id="searchContainerContent">
+            
+        <h2><a href="/gallery/coppermine/search.php" class="searchBrowseHeader">Search the Collection</a></h2>
+                    
+        <form method="post" action="/gallery/coppermine/thumbnails.php" name="searchcpg">
+    
+<!-- Start Coppermine maintable -->
+
+                	<table align="center" width="100%" cellspacing="0" cellpadding="0" style="background: #6699CC; border: 0;">
+                    	<tr>
+                        	<td class="tableb" align="center" style="background: #6699CC;">
+                                    <input type="text" style="width: 62%" name="search" maxlength="255" value="" class="textinput" />
+                                    <input type="submit" value="search" class="button" />
+                                    <input type="hidden" name="keywords" id="keywords" class="checkbox" checked="checked" />
+                                    <input type="hidden" name="caption" id="caption" class="checkbox" checked="checked" />
+     	                            <input type="hidden" name="album" value="search" />
+                                    <input type="hidden" name="type" value="AND" />
+                                    
+                     
+                            </td>
+                       </tr>
+                       <tr>
+                       	<td><p><a href="/gallery/coppermine/search.php">Advanced Gallery Search</a></p></td>
+                       </tr>
+                       
+                    </table>
+                    
+<!-- End Coppermine maintable -->
+
+                    
+         </form>
+      </div>
+            
+      <div class="browseContainerContent" id="helpFAQ">
+    
+    	<h2><a href="/gallery/gallery_faq.html" class="searchBrowseHeader">Help/FAQ</a></h2>
+    
+    	<p><a href="/gallery/gallery_faq.html">Photo &amp; Image Gallery FAQ</a></p>
+    
+    	<p>Questions or comments about the NSIDC Photo Gallery? Contact the <a href="/forms/contact.html">NSIDC User Services Office</a>.</p>
+    
+    	<p>Look up snow and ice related words and terminology in our <a href="/cgi-bin/words/glossary.pl">Cryosphere Glossary</a></p>
+    	<p>Visit our <a href="/cryosphere/">Education Center</a> to learn more about snow, ice, glaciers, frozen ground, and research in cold regions. </p>
+    	<p>Read about <a href="/research/index.html">Scientists at NSIDC</a>      </p>
+      </div> 
+
+</div><!-- end toolboxContainer -->
+    
+<!-- end /ssi/gallery/gallery_toolbox.ssi -->
+    
+</div>
+
+	<!-- vvvvvvvvvv SSI BELOW vvvvvvvvvv -->
+<!-- nsidc_footer.ssi -->
+<div id="footerNSIDC" class="clearGroup">
+<div class="footer-column grid_4">
+<h2>Find Data</h2>
+<ul>
+<li><a href="/data/data-search.html">Search NSIDC Data</a></li>
+<li><a href="http://reverb.echo.nasa.gov/reverb/">Reverb (NASA)</a></li>
+<li><a href="/icebridge/portal/">IceBridge Portal</a></li>
+<li><a href="/data/data_pool/index.html">Data Pool (Direct FTP for select data)</a></li>
+<li><a href="/data/collections.html">Data Collections List</a></li>
+</ul>
+</div>
+<div class="footer-column grid_4">
+  <h2>Stay Current</h2>
+  <ul>
+    <li><a href="/arcticseaicenews/">Arctic Sea Ice News and Analysis    </a></li>
+    <li><a href="/data/seaice_index/">Sea Ice Index (Passive microwave satellite data)</a></li>
+    <li><a href="/data/masie/index.html"> MASIE (Daily sea ice extent, multi-source)</a></li>
+    <li><a href="/greenland-today/"> Greenland Today</a></li>
+    <li><a href="/news/newsroom"> Newsroom </a></li>
+  </ul>
+  </div>
+<div class="footer-column grid_4">
+  <h2>Learn About Snow and Ice
+  </h2>
+  <ul>
+    <li><a href="/icelights/">Icelights: Answers to Your Questions</a></li>
+    <li><a href="/cryosphere/quickfacts/"> Cryosphere Quick Facts
+    </a></li>
+    <li><a href="/cryosphere/glaciers/">All About Glaciers</a></li>
+    <li><a href="/cryosphere/snow/"> All About Snow
+    </a></li>
+    <li><a href="/cryosphere/seaice/">All About Sea Ice</a></li>
+    <li> <a href="/arcticmet/">Arctic Climatology - A Primer
+    </a></li>
+  </ul>
+  </div>
+<div class="footer-column grid_4" id="footer-column-last">
+
+  <h2>Get Help</h2>
+  <ul>
+    <li><a href="https://support.nsidc.org/forums">Knowledge Base</a></li>
+    <li><a href="https://nsidc.zendesk.com/account/dropboxes/20123172" onclick="script: Zenbox.show(); return false;">Ask Us</a></li>
+  </ul>
+  <h2>Etc.
+  </h2>
+  <ul>
+    <li><a href="/about/use_copyright.html">Use &amp; Copyright 
+    </a></li>
+    <li><a href="/privacy.html">Web Policy    </a></li>
+    <li><a href="/about/jobs/">Jobs </a></li>
+  </ul>
+    <div class="social-icon-container">
+<a href="http://www.facebook.com/NSIDC">
+<img src="/images/social-media/facebook16x16.png" alt="Facebook" />
+</a>
+<a href="https://twitter.com/NSIDC">
+<img src="/images/social-media/twitter16x16.png" alt="Twitter" />
+</a>
+</div>
+  </div>
+
+<div id="footer-bottom">
+<div class="grid_9">
+<p><img src="/images/logo_nsidc_46x36.gif" alt="NSIDC logo" width="44" height="34" class="floatLeft" style="margin: 3px 8px 0 0;" /><a href="/">Home</a> | <a href="/about/contact.html">Contact Us</a><br />
+  &copy; 2014, <strong>National Snow and Ice Data Center</strong> :: <em>Advancing knowledge of Earth's frozen regions</em>
+</p>
+</div>
+<div class="affiliate-logos grid_7">
+			<a href="http://www.icsu-wds.org/" title="ICSU World Data System"><img src="/images/wds_reverse-79.png" alt="ICSU World Data System" width="79" height="42"></a>&nbsp;&nbsp;&nbsp;
+            <a href="http://cires.colorado.edu/" title="Cooperative Institute for Research in Environmental Sciences (CIRES)"><img src="/images/cires_reverse-78.png" alt="Cooperative Institute for Research in Environmental Sciences (CIRES)" width="68" height="34" /></a>&nbsp;&nbsp;&nbsp;
+			<a href="http://www.colorado.edu/" title="University of Colorado Boulder" id="cu-logo"><img src="/images/cu-navyBkg.png" alt="University of Colorado Boulder" width="173" height="37" /></a>
+	  </div>
+      <div style="clear: both"></div>
+</div>
+</div>
+<!-- ZENDESK SUPPORT WIDGET -->
+<script type="text/javascript" src="https://assets.zendesk.com/external/zenbox/v2.5/zenbox.js"></script>
+<style type="text/css" media="screen, projection">
+  @import url(//assets.zendesk.com/external/zenbox/v2.5/zenbox.css);
+</style>
+<style type="text/css" media="screen, projection">
+#zenbox_tab {
+	border-radius: 5px;
+}
+#zenbox_tab #feedback_tab_text {
+    font-size: 1em;
+}
+</style>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+var pathname = location.pathname; 
+if(pathname !== "/data/polaris/") {
+  if (typeof(Zenbox) !== "undefined") {
+    Zenbox.init({
+      dropboxID:   "20123172",
+      url:         "https://nsidc.zendesk.com",
+      tabID:       "ASK US",
+      tabColor:    "#1A4C79",
+      tabPosition: "Right"
+    });
+  }
+}
+});
+</script>
+<!-- ^^^^^^^^^^ SSI ABOVE ^^^^^^^^^^ -->
+
+<!--Coppermine Photo Gallery 1.4.26 (stable)-->
+</body>
+</html>

@@ -1,0 +1,698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head profile="http://a9.com/-/spec/opensearch/1.1/">
+<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Window-target" content="_top" />
+    <meta http-equiv="Content-Language" content="en-GB" />
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.0)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.0)" />
+
+    <meta name="Keywords" content="data,metadata,Natural Environment Research Council,portal,discovery,NERC,find,search,map,BODC,BADC,EIDC,NGDC,NEODC,PDC,ADS,UKSSDC,archive,centre" />
+
+    <meta name="Description" content="Find environmental data using the NERC Data Catalogue Service" />
+    <meta name="Robots" content="all" />
+    <meta name="Distribution" content="Global" />
+    <meta name="Revisit-After" content="15 days" />
+    <meta name="Rating" content="General" />
+    <meta name="Classification" content="Science" />
+    <meta name="Owner" content="Natural Environment Research Council (NERC)" />
+    <meta name="Author" content="Natural Environment Research Council (NERC)" />
+    <meta name="progid" content="NERC Data Catalogue Service 1.0" />
+
+    <meta name="Reply-to" content="enquiries@bodc.ac.uk" />
+    <meta name="Copyright" content="© 2015 Natural Environment Research Council (NERC)" />
+    <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+
+
+    <title>NERC DCS - Results (page 11 of 112)</title>
+
+    <link href="/css_new/portal.css" rel="stylesheet" type="text/css" />
+    <!--[if IE6]>
+        <link href="/css/ie.css" rel="stylesheet" type="text/css" />
+        <![endif]--> 
+    <link href="/css/ui-lightness/jquery-ui-1.8rc3.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js_new/site.js"></script>
+    
+    <script type="text/javascript" src="/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.8rc3.js"></script>
+    <script type="text/javascript" src="/js/full/common.js"></script>
+    <!-- Additions for social bookmarkers -->
+    <link rel="stylesheet" type="text/css" href="/css_new/superfish.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css_new/superfish-vertical.css" media="screen" />
+   <script type="text/javascript" src="/js_new/full/jquery.hoverIntent.js"></script>
+    <script type="text/javascript" src="/js_new/full/jquery.superfish.js"></script>
+
+    <!--<link rel="stylesheet" type="text/css" href="/css/bookmarking.css" />-->
+     <script type="text/javascript">
+                // initialise social bookmarkers menu
+        $(document).ready(function(){ 
+            $("#social_bookmarkers").superfish({ 
+                animation: {height:'show'},   // slide-down effect without fade-in 
+                delay:     500                // 0.5 second delay on mouseout 
+            }); 
+        });
+    </script>
+
+    
+    
+    <link rel="Start"
+          type="text/html" 
+          href="http://data-search.nerc.ac.uk/search/full/catalogue?i=1"
+          title="Results page 1" />
+    <link rel="Prev"
+          type="text/html" 
+          href="http://data-search.nerc.ac.uk/search/full/catalogue?i=181"
+          title="Results page 10" />
+    <link rel="Next"
+          type="text/html" 
+          href="http://data-search.nerc.ac.uk/search/full/catalogue?i=221"
+          title="Results page 12" />
+    <link rel="alternate"
+          type="application/rss+xml"
+          href="http://data-search.nerc.ac.uk/search/full/catalogue.rss?i=1"
+          title="NERC - Results (page 11 of 112)" />
+    <link rel="alternate"
+          type="application/atom+xml"
+          href="http://data-search.nerc.ac.uk/search/full/catalogue.atom?i=1"
+          title="NERC - Results (page 11 of 112)" />
+
+    <meta name="totalResults" content="2227"/>
+    <meta name="startIndex" content="201"/>
+    <meta name="itemsPerPage" content="20"/>
+
+    <style type="text/css">
+        #map {
+            /* it is important to assign absolute pixel sizes for IE
+            in map divs that are initially hidden (see
+            http://stackoverflow.com/questions/1081812/javascript-unspecified-error-in-open-layers) */
+            width: 400px;
+            height: 400px;
+            border: 1px solid #ADACA8;
+        }
+        #map-holder {
+            margin-top: 0.5em;
+        }
+    </style>
+
+    <script type="text/javascript" src="/js/jquery.alignwith.js"></script>
+    <script type="text/javascript" src="/js/jquery.ba-resize.js"></script>
+    <script type="text/javascript" src="/js/openlayers/OpenLayers.js"></script>
+    <script type="text/javascript" src="/js/full/catalogue.js"></script>
+    <script type="text/javascript">
+      <!--        
+      var map;
+      var script_root = 'http://data-search.nerc.ac.uk/search';
+
+      var max_bbox = [-24.0, 49.76, 3.4, 63.9];
+      var start_index = 201
+      var search_bboxes = [[-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 201, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605444.xml", "Map based index (GeoIndex) 1:50000 Series Geological Maps", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605444.xml", "This layer of the map based index (GeoIndex) shows the availability of 1:50000 series geological maps. For England and Wales (and Northern Ireland), map sheets normally cover an area 30 km east-west and 20 km north-south; in Scotland the coverage is 20 km east-west and 30 km north-south. The 1:50 000 geological map grids are based on an early Ordnance Survey 1:63 360 (one inch to one mile) scale map grid and are not related to the current Ordnance Survey 1:50 000 map sheets. Maps are normally available in both flat and folded formats."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 202, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605445.xml", "Map based index (GeoIndex) digital geological map availability 1:10k", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605445.xml", "This layer of the GeoIndex shows the location of available 1:10000 scale digital geological maps within Great Britain. The Digital Geological Map of Great Britain project (DiGMapGB) has prepared 1:625 000, 1:250 000 and 1:50 000 scale datasets for England, Wales and Scotland. The datasets themselves are available as vector data in a variety of formats in which they are structured into themes primarily for use in geographical information systems (GIS) where they can be integrated with other types of spatial data for analysis and problem solving in many earth-science-related issues. The DiGMapGB-10 dataset is as yet incomplete, current work is concentrated on extending the geographical cover, especially to cover high priority urban areas."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 203, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605446.xml", "Map based index (GeoIndex) 1:10000 Series Geological Maps", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605446.xml", "This layer of the map based index (GeoIndex) shows the location of available 1:10000 or 1:10560 series geological maps. Since the 1960s the standard large scale map for recording geological information has been the Ordnance Survey (OS) quarter sheet, covering a 5km by 5km area. The maps themselves are supplied in different formats depending on their age and the method of compliation or reproduction used. Only the latest and most up-to-date version is listed."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 204, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605447.xml", "Map based index (GeoIndex) geological memoirs", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605447.xml", "This layer of the map based index (GeoIndex) shows areas covered by explanatory sheet Memoirs, along with basic information such as memoir title and publication date. The memoirs themselves,compiled by BGS geologists, date from the late 1890s to present day and provide a comprehensive and detailed account of all aspects of the geology of the areas covered by the 1:50,000 (and 1:63,360) map series. Some memoirs may cover more than one geological sheet area and a few cover key geological themes (eg Jurassic rocks) across a large region. Sheet Descriptions are fully colour-illustrated, shortened accounts of the geology that are available for some of the newer published geological sheets."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 205, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605448.xml", "Map based index (GeoIndex) modern and historical recorded earthquakes", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605448.xml", "This layer of the map based index (GeoIndex) shows the location of earthquakes within the UK. The historical catalogue has been compiled, in general, from macroseismic observations (ie felt effects). Before 1700, only earthquakes with magnitudes of 4.0 ML or greater are included. After 1700, all known events with magnitudes of 3.0 ML or greater are included together with some other, smaller ones. Accuracies of magnitude, location, and origin time vary with the quality of information available for this period as they do for instrumental measurements in the post 1970 period. In that case, variations are largely a function of the seismograph station coverage, which has been improving up to the present day."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 206, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605449.xml", "Map based index (GeoIndex) top soil", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605449.xml", "This layer shows data collected mainly by the Geochemical Baseline Survey of the Environment (G-BASE) programme. Geochemical data are available for soil samples for the Humber-Trent and East Anglia atlas areas (see the Geochemical atlas areas layer). Samples for East Midlands and part of Southeast England have been collected and are currently either undergoing analysis or data conditioning. More than twenty urban areas have also been sampled and top soil analyses are available for these urban areas (Belfast, Cardiff, Corby, Coventry, Derby, Doncaster, Glasgow, Hull, Ipswich, Leicester, Lincoln, Manchester, Mansfield, Northampton, Nottingham, Peterborough, Scunthorpe, Sheffield, Swansea, Stoke, Telford, Wolverhampton and York). Regional samples are collected at an average density of one site per 2 square kilometres, urban sampling is at a density of 4 samples per square kilometre. Top soil samples are collected at a depth of 5 - 20cm. It is sieved through a 2mm mesh and milled to less than 150 microns. The data include analyses for some or all of the following elements by XRFS: Mg, P, K, Ca, Ti, Mn, Fe, V, Cr, Co, Ba, Ni, Cu, Zn, Ga, As, Se, Rb, Sr, Y, Zr, Nb, Mo, Pb, Bi, Th, U, Ag, Cd, Sn, Sb, Cs, La, Ce, Ge, Sc, Se, Br, Hf, Ta, W, Tl, Te and I. Loss on Ignition (LOI) and pH (in a slurry of 0.01 M CaCl2 ) is now routinely determined on 50% of regional and all urban samples."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 207, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605450.xml", "Map based index (GeoIndex) profile soil", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605450.xml", "Profile soil analyses are available from a number of BGS programmes, notably the Mineral Reconnaissance Programme (MRP) and the Geochemical Baseline Survey of the Environment (G-BASE) programme. Sampling depth and range of analytes determined is very variable for the MRP. G-BASE samples are consistently from 35 - 50 cm though since 2003 it has become routine practice in the G-BASE project to collect a top soil and deeper profile sample from the same site but only analyses the top soil and store the profile soil. This also applies in urban areas. The G-BASE profile soils were generally sieved to 150 microns before analysis and determined by XRFS for some or all of: Mg, P, K, Ca, Ti, Mn, Fe, V, Cr, Co, Ba, Ni, Cu, Zn, Ga, As, Se, Rb, Sr, Y, Zr, Nb, Mo, Pb, Bi, Th, U, Ag, Cd, Sn, Sb, Cs, La, Ce, Ge, Sc, Se, Br, Hf, Ta, W, Tl, Te and I. MRP samples can include profile samples from greater than 1 meter collected using a power auger and also include till samples. The G-BASE samples are collected at a density of 1 sample per two square kilometres in rural areas and 4 samples every kilometre square in urban areas. MRP sampling was more site specific generally collecting soil samples along lines at spacing intervals generally 25 - 250 m."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 208, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605451.xml", "Map based index (GeoIndex) stream sediment", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605451.xml", "This layer of the map based index (GeoIndex) shows the locations where stream sediment samples are collected under the G-BASE (Geochemical Baseline Survey of the Environment) programme at an average density of approximately one site per 1.5 km square. Analytical data for the minus 150 micron fraction of stream sediment samples are available for some or all of the following elements by a variety of analytical methods (now predominantly XRFS): Mg, P, K, Ca, Ti, Mn, Fe, V, Cr, Co, Ba, Ni, Cu, Zn, Ga, As, Se, Rb, Sr, Y, Zr, Nb, Mo, Pb, Bi, Th, U, Ag, Cd, Sn, Sb, Cs, La, Ce, Ge, Sc, Se, Br, Hf, Ta, W, Tl, Te and I. Stream sediment samples were also collected by the now defunct MRP programme and analytical data for the minus 150 micron fraction of samples is available for a variety of elements including Ag, As, Au, Ba, Bi, Ca, Ce, Cu, Fe, Mn, Mo, Ni, Pb, Sb, Sn, Sr, Ti, U, V, W, Zn and Zr. Some of the MRP samples may have undergone several stages of analysis, some for inclusion in the G-BASE project. The samples may have been assigned a different sample number but will plot at the same site. Data is available for most Great Britain, apart from some parts of Southern England which have yet to be surveyed."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 209, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605452.xml", "Map based index (GeoIndex) stream water", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605452.xml", "Water samples have predominantly been collected by the G-BASE (Geochemical Baseline Survey of the Environment) project at an average sampling density of one sample per 1.5 km square. Samples have been collected from approximately 85% of Great Britain but it is only from Wales and Humber-Trent southwards that a wide range of analytes have been determined. Currently G-BASE stream water samples collected from high order streams are determined by ICP-AES for 27 elements - Sr, Cd, Ba, Si, Mn, Fe, P, S (as SO42-), B, Mg, V, Na, Mo, Al, Be, Ca, Zn, Cu, Pb, Li, Zr, Co, Ni, Y, La, K and Cr; and by quadrupole ICP-MS for 24 trace elements - Li, Be, Al, V, Cr, Co, Ni, Cu, As, Rb, Y, Zr, Mo, Ag, Cd, Sn, Sb, Ba, La, Ce, Tl, Pb, Th and U. Automated colorimetric methods are used to determine Cl and NO3- and ion selective electrode is used to determine F. Waters are also analysed for non-purgeable organic carbon (NPOC) to determine dissolved organic carbon content. All samples have routinely been analysed for pH, conductivity and bicarbonate. Much of the UK coverage also includes uranium and fluoride analyses."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 210, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605453.xml", "Map based index (GeoIndex) panned drainage sediment", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605453.xml", "This layer of the map based index (GeoIndex) shows the locations of panned drainage sediment samples. At most drainage sampling sites a panned heavy mineral concentrate is collected from the &lt;2mm sediment fraction using a wooden dulang pan. For the Mineral Reconnaissance Programme these pans would be routinely analysed for mineral exploration purposes. The G-BASE project collects them at every drainage site but does not routinely submit them for chemical analyses and the samples are archived. Usually they are inspected when collected with a hand lens and the presence of mineralisation or contamination is recorded in the site information on field cards. The MRP has collected heavy mineral concentrates from some 33,000 drainage sites and analysed these for a variety of elements (predominantly by XRFS) including Ag, As, Au, Ba, Bi, Ca, Ce, Cu, Fe, Mn, Mo, Ni, Pb, Sb, Sn, Sr, Ti, U, V, W, Zn and Zr."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 211, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605454.xml", "Map based index (GeoIndex) rock", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605454.xml", "This layer of the map based index (GeoIndex) shows the locations of over 12,500 rock samples from the land area of the United Kingdom gathered as part of the Mineral Reconnaissance Programme (MRP). The Mineral Reconnaissance Programme (MRP), funded by the DTI, carried out baseline mineral exploration in Great Britain between 1972 and 1997. The programme has been subsumed into the new BGS Minerals Programme, also funded by the DTI. The rock samples have been analysed for a variety of major and trace elements, mainly by XRF."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 212, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605455.xml", "Map based index (GeoIndex) mineral reconnaissance programme borehole rock samples", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605455.xml", "This layer of the map based index (GeoIndex) providex an index to 17,500 borehole rock samples (drillcore) from the Mineral Reconnaissance Programme (MRP) and related studies. The UK Government's Department of Trade and Industry (DTI) funded BGS to provide baseline information on areas prospective for the occurrence of metallic minerals in Great Britain. This programme, known as the MRP, ran continuously from 1973 to 1997 and covered particular locations across Great Britain. It was designed to stimulate private sector exploration and to encourage the development of Britain's indigenous mineral resources. Under the programme a number of boreholes were drilled to gather information."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 213, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605456.xml", "Map based index (GeoIndex) geochemical atlas areas", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605456.xml", "This layer of the map based index (GeoIndex) shows the boundaries of the G-BASE (Geochemical Baseline Survey of the Environment) project mapping areas which are reported as geochemical atlases. The majority of atlases are for stream sediments, with data on stream waters and soils included when available. Separate stream sediment, soil and stream water atlases have been published for Wales. Wales and north of Humber-Trent are reported as hardcopy generally A3 sized publications. The Humber-Trent atlas is available as a pdf file on a CD-ROM. Atlases are available for Shetland, Orkney, South Orkney and Caithness, Sutherland, Hebrides, Great Glen, East Grampians, Argyll, Southern Scotland, Lake District, NE England, NW England and N Wales, Humber-Trent, Wales and West Midlands. Atlases are not available yet for the East Midlands, East Anglia, SE England and SW England."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 214, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605458.xml", "Map based index (GeoIndex) urban geochemical reports", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605458.xml", "This layer displays the urban areas for which there is an \"urban geochemical mapping\" report. An integral part of the G-BASE (Geochemical Baseline Survey of the Environment) mapping programme is to map and establish the soil geochemical baselines of urban areas. These data provide unique soil chemical information for the urban environment and are used to; assess the condition of soils within populated areas, identify and quantify human impact on soils in urban areas through comparison with the rural, natural soil geochemical background and Indicate elevated concentrations of potential harmful elements. 27 urban areas which have been sampled by the project to date.These include Glasgow, Nottingham, Ipswich and Cardiff."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 215, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605459.xml", "Map based index (GeoIndex) Coal Authority digital geophysical logs", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605459.xml", "The map shows the location and names of boreholes with digital geophysical logs acquired by the former National Coal Board and British Coal during their exploration for coal in the UK. Ownership of UK coal exploration data was transferred to the Coal Authority (Coal Authority) following privatisation of the UK coal industry. The Coal Authority have appointed the British Geological Survey as custodian of this important national geological data archive. These data are in general publicly available; however, access to data within active mining licences is restricted in that it requires the consent of the mining licensee. The Coal Authority data archive includes digital data for some of the geophysical borehole logging. These are mainly in the form of original field tapes; however, also available are some data transcribed onto more modern media during BGS projects. The BGS will be pleased to provide information on data availability for named boreholes or within specified geographic areas, together with cost estimates and options for supplying copies."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 216, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605460.xml", "Map based index (GeoIndex) Coal Authority seismic data", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605460.xml", "The map shows the location and line-identifiers of reflection seismic profiles acquired by the former National Coal Board and British Coal during their exploration for coal in the UK. Ownership of UK coal exploration data was transferred to the Coal Authority following privatisation of the UK coal industry. The Coal Authority have appointed the British Geological Survey as custodian of this important national geological data archive. These data are, in general, publicly available; however, access to data within active mining licences is restricted in that it requires the consent of the mining licensee. The Coal Authority data archive includes hardcopy and digital data for the reflection seismic profiles, such as film and paper prints, original field tapes, demultiplexed data, processed stacked data, navigation (location) data and observers' and surveyors' acquisition reports. But please note that not all data types are available for all profiles. The BGS will be pleased to provide information on data availability for named profiles or within specified geographic areas, together with cost estimates and options for supplying copies."], [-7.5599999999999996, 49.759999999999998, 2.1800000000000002, 61.57, 217, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605461.xml", "Map based index (GeoIndex) gravity readings", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605461.xml", "This layer of the map based index (GeoIndex) shows the location of land and marine gravity observations on the UK mainland, Northern Ireland, offshore islands, tidal estuaries and seabed. Most of the surveys were carried out by the BGS but the database includes data originally acquired by other organisations and subsequently given to the BGS to be managed as part of the national archive. Complete coverage of the UK mainland with a station density of 1-2 stations per square kilometre. Unadjusted ship gravity, magnetic and bathymetry data acquired by BGS as part of its Offshore Reconnaisance Mapping Programme. Unadjusted ship gravity, magnetic and bathymetry data acquired by BGS as part of its Offshore Reconnaisance Mapping Programme. This programme commenced in 1967, and was funded mainly by the Department of Energy. Marine gravity readings are from unadjusted ship gravity and bathymetry data from various commercial and academic surveys between 1965 and 1994. Confidential M.O.D Hydrographic Office integrated ship gravity and magnetics surveys of NW Europe marine areas for which BGS acts as agent. Network adjusted gravity and magnetic compilations of data from BGS and non-BGS sources."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 218, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605462.xml", "Map based index (GeoIndex) high resolution airborne surveys", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605462.xml", "The high-resolution airborne surveys shown on the map based index (GeoIndex) are classed as those flown with low terrain clearance (typically below 200m) and flight line spacing of less than 300m. The surveys were flown with various combinations of magnetic, radiometric and EM techniques, and include; Surveys flown for the DTI mineral reconnaissance programme, Commercial surveys flown for mineral exploration and subsequently donated to the BGS and Surveys flown for the BGS for research and other purposes."], [-24.0, 49.899999999999999, 3.3999999999999999, 63.899999999999999, 219, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605463.xml", "Map based index (GeoIndex) regional airborne magnetic surveys and flight lines", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605463.xml", "The surveys shown on the map based index (GeoIndex) include; Analogue airborne magnetic surveys of Great Britain for the Geological Survey (GSGB), commercial analogue survey of North Sea by Aeroservices Inc, subsequently digitised by BGS, commercial digital (+ one analogue) surveys off NW/N/NE of Britain by Huntings Geology and Geophysics, purchased outright by BGS and Local surveys, digital and analogue aeromagnetic (+ other methods) surveys for BGS and commercial companies."], [-8.6500000000000004, 49.770000000000003, 1.78, 60.859999999999999, 220, "bgs.nerc.ac.uk__NERC_DMS_0.7__13605464.xml", "Map based index (GeoIndex) local geophysical surveys, survey lines and survey points", "http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605464.xml", "An index to over 600 ground geophysical surveys carried out in the UK for a variety of projects. A large number of these surveys were done in conjunction with the DTI Mineral Reconnaissance Programme in the 1970's and 80's, and many others were carried out at the request of BGS field mapping groups. Information held describes the survey objective, location of measurements, geophysical methods and equipment used, reports and publications, storage locations of data and results (for analogue and digital data), dates and personnel. There are two datasets; one shows the outline of the survey areas, and the other shows the actual survey lines within each area."]];
+  
+// Initialise the page once loaded
+$(function() {
+
+    // toggle the ordering images (ascending or descending) when the
+    // mouse moves over the column heading.
+    $('span.sort').each(function(index) {
+        var self = $(this);
+        var img = self.find('img.sort')
+        var cls = (img.hasClass('asc') || img.hasClass('desc')) ? 'asc desc' : 'desc';
+        var old_class = img.attr('class');
+
+        function toggle() {
+            img.toggleClass(cls);
+        }
+
+        // toggle the image class on hover
+        self.find('a').hover(toggle, toggle);
+
+        // set the image back to its original stage
+        $(window).unload(function() {
+            img.attr('class', old_class);
+        });
+    });
+
+	// initialise the tooltips
+	function align() {
+        $('#bookmark-tip').alignWith('#bookmark', 'clcr', {x:-5})
+    }
+	align();
+	$(window).resize(function() { align(); });
+});
+      -->
+    </script>
+    
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    function toggleDetail(link, text, label) {
+        var span = link.parentNode.children[0];
+        
+        var nextText = $(span).text();
+        span.removeChild(span.firstChild);
+        span.appendChild(document.createTextNode(text));
+        
+        var nextLabel = $(link).text();
+        link.removeChild(link.firstChild);
+        link.appendChild(document.createTextNode(label));
+        
+        link.onclick = function() {
+            toggleDetail(link, nextText, nextLabel);
+        }
+    }
+    /* ]]> */
+    </script>
+
+    
+    <link href="/css_new/site.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+    
+        setstyle();
+        <!--
+        // -->
+    </script>
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="search"
+          type="application/opensearchdescription+xml" 
+          href="http://data-search.nerc.ac.uk/search/opensearch/catalogue/full.xml"
+          title="NERC Catalogue" />
+<script type="text/javascript">
+<!--
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19960979-1']);
+if (window.location.host=="data-search.nerc.ac.uk") {
+  _gaq.push(['_trackPageview']);
+}
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+$(document).ready(function(){
+  $('a').mouseup(function(){
+    href = $(this).attr('href');
+    href_lower = href.toLowerCase();
+    if((href_lower.substr(0, 4) == "http" || href_lower.substr(0, 5) == "https") && (! href.match(document.domain)) ) {
+      _gaq.push(['_trackEvent', 'external_link', 'open', href]);
+    }
+  });
+});
+// -->
+</script>
+
+  </head>
+
+  <body>
+    <!-- SwishCommand noindex -->
+    <div id="frame">
+      <div id="header"><!--<img id="banner" src="http://www.nerc.ac.uk/images/logos/nerc/logo.gif" alt="Natural Environment Research Council" />-->
+			<a href="http://www.nerc.ac.uk" accesskey="1" title="Access key 1 - Home page" class="homeLink">
+            <span>Data Catalogue Service Home</span></a>
+<div id="nav">
+<span><a href="/" title="Go back to the homepage" tabindex="1">Home</a></span>
+        <ul>
+            <li><a href="/privacy_and_cookies.html" tabindex="7">Privacy and cookies</a></li>
+            <li><a href="/contact_us.html" tabindex="2">Contact us</a></li>
+            <li><a href="/nerc_science.html" tabindex="3">About NERC science</a></li>
+            <li><a href="/comments/" tabindex="4">Your comments</a></li>
+            <li><a href="/search/full" tabindex="5">Search for data</a></li>
+            <li><a href="/about_dds.html" tabindex="6">About the DCS</a></li>
+        </ul>
+      </div>
+     
+      
+      <div class="clear"></div>
+      </div>
+      <div id="main">
+
+        <div id="lh_col">
+<div id="submenu">
+					<ul>
+						<li><a href="/about_dds.html" title="About the DCS" tabindex="7">About the DCS</a></li>
+						<li><a href="/search/full" title="Data search" tabindex="8">Search for data </a></li>
+                                                  <li><a href="/search/full/catalogue?i=201" title="Results" tabindex="9">Results</a></li>
+						
+					</ul>
+				</div>
+        <div class="clear"></div>
+        
+        <div id="search-options">
+    <h2>You are searching for...</h2>
+    <span id="criteria-term">
+      <strong>everything</strong> in the catalogue.
+    </span><span id="criteria-date">
+    </span><span id="criteria-area">
+    </span>
+    <span id="reslocspan">
+    
+    </span>
+    <br/>
+    <p id="result-count" class="tip"><strong>2227</strong> 
+    results
+    returned in <strong>0.36</strong> seconds.</p>
+</div>
+
+<div id="search">
+  <ul>
+<li><a href="http://data-search.nerc.ac.uk/search/full?i=201" title="Edit the current search criteria">Edit this search</a></li>
+  </ul>
+ <ul id="social_bookmarkers" class="social_bookmarkers sf-menu sf-vertical">
+            <li><a href="javascript:void(0)">Bookmark these results with:</a>
+            <ul>
+                  <li class="delicious">
+                    <a id="bookmarker_delicious" target="_blank" title="Go to the del.icio.us bookmarking website" href="http://del.icio.us/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%3Fi%3D201&amp;title=Results+%28page+11+of+112%29"><img src="/images/delicious.gif" alt="Delicious logo" /> Delicious</a>
+
+                  </li>
+                  <li class="digg">
+                    <a id="bookmarker_digg" target="_blank" title="Go to the Digg bookmarking website" href="http://digg.com/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%3Fi%3D201&amp;title=Results+%28page+11+of+112%29"><img src="/images/digg.gif" alt="Digg logo" /> Digg</a>
+                  </li>
+                  <li class="facebook">
+                    <a id="bookmarker_facebook" target="_blank" title="Post this page to Facebook" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%3Fi%3D201"><img src="/images/facebook.gif" alt="Facebook logo" /> Facebook</a>
+                  </li>
+                  <li class="reddit">
+
+                    <a id="bookmarker_reddit" target="_blank" title="Go to the reddit bookmarking website" href="http://reddit.com/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%3Fi%3D201&amp;title=Results+%28page+11+of+112%29"><img src="/images/reddit.gif" alt="Reddit logo" /> reddit</a>
+                  </li>
+                  <li class="stumbleupon">
+                    <a id="bookmarker_stumbleupon" target="_blank" title="Go to the StumbleUpon bookmarking website" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%3Fi%3D201&amp;title=Results+%28page+11+of+112%29"><img src="/images/stumbleupon.gif" alt="StumbleUpon logo" /> StumbleUpon</a>
+                  </li>
+                  <li class="twitter">
+                  <a id="bookmarker_twitter" target="_blank" title="Go to the Twitter website" href="http://twitter.com/home?status=title=Results+%28page+11+of+112%29%20-%20http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%3Fi%3D201"><img src="/images/twitter.gif" alt="Twitter logo" /> Twitter</a>
+              </li>
+                </ul>
+                </li>
+              </ul>
+</div>
+
+               
+
+        </div>
+
+        <div id="bodycontent_wide">
+
+          <!-- SwishCommand index -->
+          
+          
+          
+
+<div id="messages">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="content-top">
+  <h1>Results</h1>
+  <div class="right syndicate">
+  <a href="http://data-search.nerc.ac.uk/search/full/catalogue.rss?i=1" title="Subscribe to these results using RSS"><img alt="Subscribe" src="/images/feed-icon.gif" class="image_no_border"/> RSS</a> 
+  <a href="http://data-search.nerc.ac.uk/search/full/catalogue.atom?i=1" title="Subscribe to these results using Atom"><img alt="Subscribe" src="/images/feed-icon.gif" class="image_no_border"/> Atom</a>
+</div>
+</div>
+
+
+<p >Your search returned <span class="bold">2227</span>
+results.
+
+ Showing <strong>
+201 - 220
+
+
+</strong> (<a href="javascript:toggle('results-help', 'help', 'hide help')" id="results-link">help</a>).
+
+<div id="results-help" style="display:none;">
+<h3>Results help</h3>
+<p>The first 20 records of your search are presented below however you can adjust the number presented per page as required. Results can be sorted via the table column headings.</p>
+<p>A title and abstract is displayed for each record. This should allow you to identify which records to investigate further. In some cases, the abstract is too long to be displayed in full in the first instance click on 'more' to view the full abstract. To access all information for a record, including fields such as conditions that apply to access and use, click on the record title.</p>
+<p>To view the geographic coverage of your results, click on the Earth icon to open a map. The results are displayed as boxes on the map; however if a record has global coverage it is not presented. Click on the box to find out which record it applies to.</p>
+</div>
+
+<div class="content" style="float:right;text-align:left;" id="spatial-coverage-holder" >
+    
+    <a href="javascript:show_spatial_coverage()" id="spatial-coverage-link"><img id="spatial-coverage"   class="image_no_border"  src="/images/earth-from-space.jpg" width="90" height="90" style="float:right;" alt="Geographical coverage"/><br/><span style="float:right;">view geographic coverage</span> </a>
+   
+</div>
+
+<div style="display: none" id="spatial-coverage-content">
+    <div id="map"></div>
+</div>
+
+<div class="nav">
+<div class="results-nav left" style="margin-top:0.75em">
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=1" title="Results page 1">&laquo;&nbsp;First</a>
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=181" title="Results page 10">&lsaquo;&nbsp;Previous</a> 
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=101" title="Results page 6">6</a> 
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=121" title="Results page 7">7</a> 
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=141" title="Results page 8">8</a> 
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=161" title="Results page 9">9</a> 
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=181" title="Results page 10">10</a> 
+
+<strong>11</strong> 
+
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=221" title="Results page 12">12</a> 
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=241" title="Results page 13">13</a> 
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=261" title="Results page 14">14</a> 
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=281" title="Results page 15">15</a> 
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=301" title="Results page 16">16</a> 
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=221" title="Results page 12">Next&nbsp;&rsaquo;</a> 
+<a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=2221" title="Results page 112">Last&nbsp;&raquo;</a>
+</div>
+
+</div>
+<br/>
+
+
+    <div style="float:left;clear:both;">
+    <form action="http://data-search.nerc.ac.uk/search/full/catalogue" method="get" class="change-result-count">
+    <p>
+      <select  name="c">
+        <option value="10"    >10</option>
+        <option value="15"    >15</option>
+        <option value="20"     selected="selected"    >20</option>
+        <option value="30"    >30</option>
+        <option value="50"    >50</option>
+        <option value="100"    >100</option>
+        <option value="200"    >200</option>
+      </select>
+      <input type="hidden" name="i" value="201"/>
+      <button type="submit" class="button" >Change</button> the number of results per page.
+    </p>
+    </form>
+    </div>
+
+
+
+<div class="clear"></div>
+
+
+
+
+<table summary="Table of results" class="tabulate">
+  <thead>
+  <tr>
+    <th colspan="2">
+
+<span class="sort"><a href="http://data-search.nerc.ac.uk/search/full/catalogue?i=201&amp;s=title%2C0" title="Toggle ordering of results">Dataset description</a>
+<img class="sort" src="/images/transparent.png" alt=""/></span>
+</th>
+    <th>Resource type&nbsp;&nbsp;</th>
+    <th>Online resource</th>
+  </tr>
+  </thead>
+  <tbody>
+
+  <tr>
+    <td>201.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605444.xml" title="Map based index (GeoIndex) 1:50000 Series Geological Maps">Map based index (GeoIndex) 1:50000 Series Geological Maps</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer of the map based index (GeoIndex) shows the availability of 1:50000 series geological maps. For England and Wales (and Northern Ireland), map sheets normally cover an area 30 km east-west and 20 km north-south; in Scotland the coverage ...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer of the map based index (GeoIndex) shows the availability of 1:50000 series geological maps. For England and Wales (and Northern Ireland), map sheets normally cover an area 30 km east-west and 20 km north-south; in Scotland the coverage is 20 km east-west and 30 km north-south. The 1:50 000 geological map grids are based on an early Ordnance Survey 1:63 360 (one inch to one mile) scale map grid and are not related to the current Ordnance Survey 1:50 000 map sheets. Maps are normally available in both flat and folded formats.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>202.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605445.xml" title="Map based index (GeoIndex) digital geological map availability 1:10k">Map based index (GeoIndex) digital geological map availability 1:10k</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer of the GeoIndex shows the location of available 1:10000 scale digital geological maps within Great Britain. The Digital Geological Map of Great Britain project (DiGMapGB) has prepared 1:625 000, 1:250 000 and 1:50 000 scale datasets for...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer of the GeoIndex shows the location of available 1:10000 scale digital geological maps within Great Britain. The Digital Geological Map of Great Britain project (DiGMapGB) has prepared 1:625 000, 1:250 000 and 1:50 000 scale datasets for England, Wales and Scotland. The datasets themselves are available as vector data in a variety of formats in which they are structured into themes primarily for use in geographical information systems (GIS) where they can be integrated with other types of spatial data for analysis and problem solving in many earth-science-related issues. The DiGMapGB-10 dataset is as yet incomplete, current work is concentrated on extending the geographical cover, especially to cover high priority urban areas.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>203.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605446.xml" title="Map based index (GeoIndex) 1:10000 Series Geological Maps">Map based index (GeoIndex) 1:10000 Series Geological Maps</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer of the map based index (GeoIndex) shows the location of available 1:10000 or 1:10560 series geological maps. Since the 1960s the standard large scale map for recording geological information has been the Ordnance Survey (OS) quarter she...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer of the map based index (GeoIndex) shows the location of available 1:10000 or 1:10560 series geological maps. Since the 1960s the standard large scale map for recording geological information has been the Ordnance Survey (OS) quarter sheet, covering a 5km by 5km area. The maps themselves are supplied in different formats depending on their age and the method of compliation or reproduction used. Only the latest and most up-to-date version is listed.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>204.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605447.xml" title="Map based index (GeoIndex) geological memoirs">Map based index (GeoIndex) geological memoirs</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer of the map based index (GeoIndex) shows areas covered by explanatory sheet Memoirs, along with basic information such as memoir title and publication date. The memoirs themselves,compiled by BGS geologists, date from the late 1890s to p...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer of the map based index (GeoIndex) shows areas covered by explanatory sheet Memoirs, along with basic information such as memoir title and publication date. The memoirs themselves,compiled by BGS geologists, date from the late 1890s to present day and provide a comprehensive and detailed account of all aspects of the geology of the areas covered by the 1:50,000 (and 1:63,360) map series. Some memoirs may cover more than one geological sheet area and a few cover key geological themes (eg Jurassic rocks) across a large region. Sheet Descriptions are fully colour-illustrated, shortened accounts of the geology that are available for some of the newer published geological sheets.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>205.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605448.xml" title="Map based index (GeoIndex) modern and historical recorded earthquakes">Map based index (GeoIndex) modern and historical recorded earthquakes</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer of the map based index (GeoIndex) shows the location of earthquakes within the UK. The historical catalogue has been compiled, in general, from macroseismic observations (ie felt effects). Before 1700, only earthquakes with magnitudes o...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer of the map based index (GeoIndex) shows the location of earthquakes within the UK. The historical catalogue has been compiled, in general, from macroseismic observations (ie felt effects). Before 1700, only earthquakes with magnitudes of 4.0 ML or greater are included. After 1700, all known events with magnitudes of 3.0 ML or greater are included together with some other, smaller ones. Accuracies of magnitude, location, and origin time vary with the quality of information available for this period as they do for instrumental measurements in the post 1970 period. In that case, variations are largely a function of the seismograph station coverage, which has been improving up to the present day.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>206.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605449.xml" title="Map based index (GeoIndex) top soil">Map based index (GeoIndex) top soil</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer shows data collected mainly by the Geochemical Baseline Survey of the Environment (G-BASE) programme. Geochemical data are available for soil samples for the Humber-Trent and East Anglia atlas areas (see the Geochemical atlas areas laye...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer shows data collected mainly by the Geochemical Baseline Survey of the Environment (G-BASE) programme. Geochemical data are available for soil samples for the Humber-Trent and East Anglia atlas areas (see the Geochemical atlas areas layer). Samples for East Midlands and part of Southeast England have been collected and are currently either undergoing analysis or data conditioning. More than twenty urban areas have also been sampled and top soil analyses are available for these urban areas (Belfast, Cardiff, Corby, Coventry, Derby, Doncaster, Glasgow, Hull, Ipswich, Leicester, Lincoln, Manchester, Mansfield, Northampton, Nottingham, Peterborough, Scunthorpe, Sheffield, Swansea, Stoke, Telford, Wolverhampton and York). Regional samples are collected at an average density of one site per 2 square kilometres, urban sampling is at a density of 4 samples per square kilometre. Top soil samples are collected at a depth of 5 - 20cm. It is sieved through a 2mm mesh and milled to less than 150 microns. The data include analyses for some or all of the following elements by XRFS: Mg, P, K, Ca, Ti, Mn, Fe, V, Cr, Co, Ba, Ni, Cu, Zn, Ga, As, Se, Rb, Sr, Y, Zr, Nb, Mo, Pb, Bi, Th, U, Ag, Cd, Sn, Sb, Cs, La, Ce, Ge, Sc, Se, Br, Hf, Ta, W, Tl, Te and I. Loss on Ignition (LOI) and pH (in a slurry of 0.01 M CaCl2 ) is now routinely determined on 50% of regional and all urban samples.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>207.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605450.xml" title="Map based index (GeoIndex) profile soil">Map based index (GeoIndex) profile soil</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>Profile soil analyses are available from a number of BGS programmes, notably the Mineral Reconnaissance Programme (MRP) and the Geochemical Baseline Survey of the Environment (G-BASE) programme. Sampling depth and range of analytes determined is v...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'Profile soil analyses are available from a number of BGS programmes, notably the Mineral Reconnaissance Programme (MRP) and the Geochemical Baseline Survey of the Environment (G-BASE) programme. Sampling depth and range of analytes determined is very variable for the MRP. G-BASE samples are consistently from 35 - 50 cm though since 2003 it has become routine practice in the G-BASE project to collect a top soil and deeper profile sample from the same site but only analyses the top soil and store the profile soil. This also applies in urban areas. The G-BASE profile soils were generally sieved to 150 microns before analysis and determined by XRFS for some or all of: Mg, P, K, Ca, Ti, Mn, Fe, V, Cr, Co, Ba, Ni, Cu, Zn, Ga, As, Se, Rb, Sr, Y, Zr, Nb, Mo, Pb, Bi, Th, U, Ag, Cd, Sn, Sb, Cs, La, Ce, Ge, Sc, Se, Br, Hf, Ta, W, Tl, Te and I. MRP samples can include profile samples from greater than 1 meter collected using a power auger and also include till samples. The G-BASE samples are collected at a density of 1 sample per two square kilometres in rural areas and 4 samples every kilometre square in urban areas. MRP sampling was more site specific generally collecting soil samples along lines at spacing intervals generally 25 - 250 m.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>208.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605451.xml" title="Map based index (GeoIndex) stream sediment">Map based index (GeoIndex) stream sediment</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer of the map based index (GeoIndex) shows the locations where stream sediment samples are collected under the G-BASE (Geochemical Baseline Survey of the Environment) programme at an average density of approximately one site per 1.5 km squ...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer of the map based index (GeoIndex) shows the locations where stream sediment samples are collected under the G-BASE (Geochemical Baseline Survey of the Environment) programme at an average density of approximately one site per 1.5 km square. Analytical data for the minus 150 micron fraction of stream sediment samples are available for some or all of the following elements by a variety of analytical methods (now predominantly XRFS): Mg, P, K, Ca, Ti, Mn, Fe, V, Cr, Co, Ba, Ni, Cu, Zn, Ga, As, Se, Rb, Sr, Y, Zr, Nb, Mo, Pb, Bi, Th, U, Ag, Cd, Sn, Sb, Cs, La, Ce, Ge, Sc, Se, Br, Hf, Ta, W, Tl, Te and I. Stream sediment samples were also collected by the now defunct MRP programme and analytical data for the minus 150 micron fraction of samples is available for a variety of elements including Ag, As, Au, Ba, Bi, Ca, Ce, Cu, Fe, Mn, Mo, Ni, Pb, Sb, Sn, Sr, Ti, U, V, W, Zn and Zr. Some of the MRP samples may have undergone several stages of analysis, some for inclusion in the G-BASE project. The samples may have been assigned a different sample number but will plot at the same site. Data is available for most Great Britain, apart from some parts of Southern England which have yet to be surveyed.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>209.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605452.xml" title="Map based index (GeoIndex) stream water">Map based index (GeoIndex) stream water</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>Water samples have predominantly been collected by the G-BASE (Geochemical Baseline Survey of the Environment) project at an average sampling density of one sample per 1.5 km square. Samples have been collected from approximately 85% of Great Brit...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'Water samples have predominantly been collected by the G-BASE (Geochemical Baseline Survey of the Environment) project at an average sampling density of one sample per 1.5 km square. Samples have been collected from approximately 85% of Great Britain but it is only from Wales and Humber-Trent southwards that a wide range of analytes have been determined. Currently G-BASE stream water samples collected from high order streams are determined by ICP-AES for 27 elements - Sr, Cd, Ba, Si, Mn, Fe, P, S (as SO42-), B, Mg, V, Na, Mo, Al, Be, Ca, Zn, Cu, Pb, Li, Zr, Co, Ni, Y, La, K and Cr; and by quadrupole ICP-MS for 24 trace elements - Li, Be, Al, V, Cr, Co, Ni, Cu, As, Rb, Y, Zr, Mo, Ag, Cd, Sn, Sb, Ba, La, Ce, Tl, Pb, Th and U. Automated colorimetric methods are used to determine Cl and NO3- and ion selective electrode is used to determine F. Waters are also analysed for non-purgeable organic carbon (NPOC) to determine dissolved organic carbon content. All samples have routinely been analysed for pH, conductivity and bicarbonate. Much of the UK coverage also includes uranium and fluoride analyses.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>210.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605453.xml" title="Map based index (GeoIndex) panned drainage sediment">Map based index (GeoIndex) panned drainage sediment</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer of the map based index (GeoIndex) shows the locations of panned drainage sediment samples. At most drainage sampling sites a panned heavy mineral concentrate is collected from the &lt;2mm sediment fraction using a wooden dulang pan. For th...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer of the map based index (GeoIndex) shows the locations of panned drainage sediment samples. At most drainage sampling sites a panned heavy mineral concentrate is collected from the &lt;2mm sediment fraction using a wooden dulang pan. For the Mineral Reconnaissance Programme these pans would be routinely analysed for mineral exploration purposes. The G-BASE project collects them at every drainage site but does not routinely submit them for chemical analyses and the samples are archived. Usually they are inspected when collected with a hand lens and the presence of mineralisation or contamination is recorded in the site information on field cards. The MRP has collected heavy mineral concentrates from some 33,000 drainage sites and analysed these for a variety of elements (predominantly by XRFS) including Ag, As, Au, Ba, Bi, Ca, Ce, Cu, Fe, Mn, Mo, Ni, Pb, Sb, Sn, Sr, Ti, U, V, W, Zn and Zr.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>211.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605454.xml" title="Map based index (GeoIndex) rock">Map based index (GeoIndex) rock</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer of the map based index (GeoIndex) shows the locations of over 12,500 rock samples from the land area of the United Kingdom gathered as part of the Mineral Reconnaissance Programme (MRP). The Mineral Reconnaissance Programme (MRP), funde...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer of the map based index (GeoIndex) shows the locations of over 12,500 rock samples from the land area of the United Kingdom gathered as part of the Mineral Reconnaissance Programme (MRP). The Mineral Reconnaissance Programme (MRP), funded by the DTI, carried out baseline mineral exploration in Great Britain between 1972 and 1997. The programme has been subsumed into the new BGS Minerals Programme, also funded by the DTI. The rock samples have been analysed for a variety of major and trace elements, mainly by XRF.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>212.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605455.xml" title="Map based index (GeoIndex) mineral reconnaissance programme borehole rock samples">Map based index (GeoIndex) mineral reconnaissance programme borehole rock samples</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer of the map based index (GeoIndex) providex an index to 17,500 borehole rock samples (drillcore) from the Mineral Reconnaissance Programme (MRP) and related studies. The UK Government&#39;s Department of Trade and Industry (DTI) funded BGS t...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer of the map based index (GeoIndex) providex an index to 17,500 borehole rock samples (drillcore) from the Mineral Reconnaissance Programme (MRP) and related studies. The UK Government\&#39;s Department of Trade and Industry (DTI) funded BGS to provide baseline information on areas prospective for the occurrence of metallic minerals in Great Britain. This programme, known as the MRP, ran continuously from 1973 to 1997 and covered particular locations across Great Britain. It was designed to stimulate private sector exploration and to encourage the development of Britain\&#39;s indigenous mineral resources. Under the programme a number of boreholes were drilled to gather information.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>213.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605456.xml" title="Map based index (GeoIndex) geochemical atlas areas">Map based index (GeoIndex) geochemical atlas areas</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer of the map based index (GeoIndex) shows the boundaries of the G-BASE (Geochemical Baseline Survey of the Environment) project mapping areas which are reported as geochemical atlases. The majority of atlases are for stream sediments, wit...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer of the map based index (GeoIndex) shows the boundaries of the G-BASE (Geochemical Baseline Survey of the Environment) project mapping areas which are reported as geochemical atlases. The majority of atlases are for stream sediments, with data on stream waters and soils included when available. Separate stream sediment, soil and stream water atlases have been published for Wales. Wales and north of Humber-Trent are reported as hardcopy generally A3 sized publications. The Humber-Trent atlas is available as a pdf file on a CD-ROM. Atlases are available for Shetland, Orkney, South Orkney and Caithness, Sutherland, Hebrides, Great Glen, East Grampians, Argyll, Southern Scotland, Lake District, NE England, NW England and N Wales, Humber-Trent, Wales and West Midlands. Atlases are not available yet for the East Midlands, East Anglia, SE England and SW England.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>214.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605458.xml" title="Map based index (GeoIndex) urban geochemical reports">Map based index (GeoIndex) urban geochemical reports</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>This layer displays the urban areas for which there is an &#34;urban geochemical mapping&#34; report. An integral part of the G-BASE (Geochemical Baseline Survey of the Environment) mapping programme is to map and establish the soil geochemical baselines ...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'This layer displays the urban areas for which there is an &#34;urban geochemical mapping&#34; report. An integral part of the G-BASE (Geochemical Baseline Survey of the Environment) mapping programme is to map and establish the soil geochemical baselines of urban areas. These data provide unique soil chemical information for the urban environment and are used to; assess the condition of soils within populated areas, identify and quantify human impact on soils in urban areas through comparison with the rural, natural soil geochemical background and Indicate elevated concentrations of potential harmful elements. 27 urban areas which have been sampled by the project to date.These include Glasgow, Nottingham, Ipswich and Cardiff.', '[less]')">[more]</a>
+</dd>
+      </dl>
+    </td>
+    <td>dataset</td>
+    <td style="text-align:center">yes</td>
+    
+  </tr>
+  <tr>
+    <td>215.</td>
+    <td>
+      <dl>
+        <!--<dt>Title</dt>-->
+        <dd><a href="http://data-search.nerc.ac.uk/search/full/catalogue/bgs.nerc.ac.uk__NERC_DMS_0.7__13605459.xml" title="Map based index (GeoIndex) Coal Authority digital geophysical logs">Map based index (GeoIndex) Coal Authority digital geophysical logs</a></dd>
+        <!--<dt>Abstract</dt>-->
+        <dd class="abstract">
+  
+	  
+  
+      <span>The map shows the location and names of boreholes with digital geophysical logs acquired by the former National Coal Board and British Coal during their exploration for coal in the UK. Ownership of UK coal exploration data was transferred to the C...</span> <a href="javascript:void(0);" onclick="toggleDetail(this, 'The map shows the location and names of boreholes with digital geophysical logs acquired by the former National Coal Board and British Coal during their exploration for coal in the UK. Ownership of UK coal exploration data was transferred to the Coal Authority (Coal Authority) following privatisation of the UK coal industry. The Coal Authority have appointed the British Geological Survey as custodian of this important national geological data archive. These data are in general publicly available; however, access to data within active mining licences is restricted in that it requires the consent of the mining licensee. The Coal Authority data archive includes digital data for some of the geophysical borehole logging. These are mainly in the form of original field tapes; however, also available are some data transcribed onto more modern media during BGS projects. The BGS will be pleased to provide 

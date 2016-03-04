@@ -1,0 +1,848 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head profile="http://a9.com/-/spec/opensearch/1.1/">
+<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Window-target" content="_top" />
+    <meta http-equiv="Content-Language" content="en-GB" />
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.0)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.0)" />
+
+    <meta name="Keywords" content="data,metadata,Natural Environment Research Council,portal,discovery,NERC,find,search,map,BODC,BADC,EIDC,NGDC,NEODC,PDC,ADS,UKSSDC,archive,centre" />
+
+    <meta name="Description" content="Find environmental data using the NERC Data Catalogue Service" />
+    <meta name="Robots" content="all" />
+    <meta name="Distribution" content="Global" />
+    <meta name="Revisit-After" content="15 days" />
+    <meta name="Rating" content="General" />
+    <meta name="Classification" content="Science" />
+    <meta name="Owner" content="Natural Environment Research Council (NERC)" />
+    <meta name="Author" content="Natural Environment Research Council (NERC)" />
+    <meta name="progid" content="NERC Data Catalogue Service 1.0" />
+
+    <meta name="Reply-to" content="enquiries@bodc.ac.uk" />
+    <meta name="Copyright" content="© 2015 Natural Environment Research Council (NERC)" />
+    <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+
+
+    <title>NERC DCS - Metadata g: United Kingdom Butterfly Monitoring Scheme: species trends 2012</title>
+
+    <link href="/css_new/portal.css" rel="stylesheet" type="text/css" />
+    <!--[if IE6]>
+        <link href="/css/ie.css" rel="stylesheet" type="text/css" />
+        <![endif]--> 
+    <link href="/css/ui-lightness/jquery-ui-1.8rc3.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js_new/site.js"></script>
+    
+    <script type="text/javascript" src="/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.8rc3.js"></script>
+    <script type="text/javascript" src="/js/full/common.js"></script>
+    <!-- Additions for social bookmarkers -->
+    <link rel="stylesheet" type="text/css" href="/css_new/superfish.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css_new/superfish-vertical.css" media="screen" />
+   <script type="text/javascript" src="/js_new/full/jquery.hoverIntent.js"></script>
+    <script type="text/javascript" src="/js_new/full/jquery.superfish.js"></script>
+
+    <!--<link rel="stylesheet" type="text/css" href="/css/bookmarking.css" />-->
+     <script type="text/javascript">
+                // initialise social bookmarkers menu
+        $(document).ready(function(){ 
+            $("#social_bookmarkers").superfish({ 
+                animation: {height:'show'},   // slide-down effect without fade-in 
+                delay:     500                // 0.5 second delay on mouseout 
+            }); 
+        });
+    </script>
+
+    
+    
+    <link rel="alternate"
+          type="application/vnd.google-earth.kml+xml"
+          href="http://data-search.nerc.ac.uk/search/full/catalogue/ceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml/kml"
+          title="NERC - Metadata g: United Kingdom Butterfly Monitoring Scheme: species trends 2012"/>
+    
+    
+    <script type="text/javascript">
+        function update_comments() {
+          var item = $("#comments_contact_item");
+          //alert($("#comments_response_required_true").attr("checked"));
+           if ($("#comments_response_required_true").attr("checked")){
+            //alert('checked');
+              item.show();
+          } else {
+              item.hide();
+          }
+          }
+          
+        
+        
+        $(function() {
+          //$('#feedback_link').click(function(e){
+          //  e.preventDefault();
+          //  $('#feedback_form').show();
+          //});
+          clicked = true;
+          clicked2 = true;
+          $('#name').focus(function(){
+            if(clicked){
+            $('#name').val('');
+            clicked = false;
+            }
+          })
+          $('#gen_com').focus(function(){
+            if(clicked2){
+            $('#gen_com').val('');
+            clicked2 = false;
+            }
+          })
+          
+          $("#comments_response_required_true").click(function(){
+            update_comments();
+            });
+          $("#comments_response_required_false").click(function(){
+            update_comments();
+            });
+           update_comments();
+      
+          
+          $("#send_com_form").click(function(e) {
+            e.preventDefault()
+            var url = window.location.href;
+            var comment = $('#gen_com').val();
+            $('#gen_com').val(comment+' -- submitted from URL:'+url);
+            var email = $('#name').val();
+            var met_id = $('#met_id').val();
+            var resp = $('#comments_response_required_false').val();
+            var form_vars = $("#feedback").serialize(); 
+            //alert(form_vars);
+            if(comment==''||email==''||met_id==''){
+              alert('nothing typed : form not sending!!');
+              //maybe do something else if this is tripped
+            }
+            else {
+              var dataString = 'name='+ email + '&comment=' + comment + '&metadata_id=' + met_id + '&response_required=' + resp;
+              
+              $.ajax({
+                type: "POST",
+                url: "http://data-search.nerc.ac.uk/comments/",
+                data: form_vars,
+                success: function() {
+                  //alert('message accepted by comments application');
+                  $('#feedback_form_resp').html('<p style="color:green">Your feedback has been received, if requested you shall be contacted shortly</p>');
+                  $('#feedback_form').hide();
+                  $('#feedback_form_resp').show('slow');
+                  
+                },
+                error: function() {
+                  $('#feedback_form_resp').html('<p style="color:red">There was an error sending your feedback, our engineers have been notified</p>');
+                }
+              });
+
+            }
+          });
+        });
+
+    </script>
+
+    
+    <link href="/css_new/site.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+    
+        setstyle();
+        <!--
+        // -->
+    </script>
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="search"
+          type="application/opensearchdescription+xml" 
+          href="http://data-search.nerc.ac.uk/search/opensearch/catalogue/full.xml"
+          title="NERC Catalogue" />
+<script type="text/javascript">
+<!--
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19960979-1']);
+if (window.location.host=="data-search.nerc.ac.uk") {
+  _gaq.push(['_trackPageview']);
+}
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+$(document).ready(function(){
+  $('a').mouseup(function(){
+    href = $(this).attr('href');
+    href_lower = href.toLowerCase();
+    if((href_lower.substr(0, 4) == "http" || href_lower.substr(0, 5) == "https") && (! href.match(document.domain)) ) {
+      _gaq.push(['_trackEvent', 'external_link', 'open', href]);
+    }
+  });
+});
+// -->
+</script>
+
+  </head>
+
+  <body>
+    <!-- SwishCommand noindex -->
+    <div id="frame">
+      <div id="header"><!--<img id="banner" src="http://www.nerc.ac.uk/images/logos/nerc/logo.gif" alt="Natural Environment Research Council" />-->
+			<a href="http://www.nerc.ac.uk" accesskey="1" title="Access key 1 - Home page" class="homeLink">
+            <span>Data Catalogue Service Home</span></a>
+<div id="nav">
+<span><a href="/" title="Go back to the homepage" tabindex="1">Home</a></span>
+        <ul>
+            <li><a href="/privacy_and_cookies.html" tabindex="7">Privacy and cookies</a></li>
+            <li><a href="/contact_us.html" tabindex="2">Contact us</a></li>
+            <li><a href="/nerc_science.html" tabindex="3">About NERC science</a></li>
+            <li><a href="/comments/" tabindex="4">Your comments</a></li>
+            <li><a href="/search/full" tabindex="5">Search for data</a></li>
+            <li><a href="/about_dds.html" tabindex="6">About the DCS</a></li>
+        </ul>
+      </div>
+     
+      
+      <div class="clear"></div>
+      </div>
+      <div id="main">
+
+        <div id="lh_col">
+<div id="submenu">
+					<ul>
+						<li><a href="/about_dds.html" title="About the DCS" tabindex="7">About the DCS</a></li>
+						<li><a href="/search/full" title="Data search" tabindex="8">Search for data </a></li>
+                                                  <li><a href="/search/full/catalogue" title="Results" tabindex="9">Results</a></li>
+						
+					</ul>
+				</div>
+        <div class="clear"></div>
+        
+          
+    <div id="search-options">
+    <h2>You are searching for...</h2>
+    <span id="criteria-term">
+      <strong>everything</strong> in the catalogue.
+    </span><span id="criteria-date">
+    </span><span id="criteria-area">
+    </span>
+    <span id="reslocspan">
+    
+    </span>
+    <br/>
+    <p id="result-count" class="tip"><strong>2227</strong> 
+    results
+    returned in <strong>0.34</strong> seconds.</p>
+</div>
+
+    
+  <div id="search">	
+      <ul>
+<li><a href="http://data-search.nerc.ac.uk/search/full/catalogue" title="View the catalogue contents">View the catalogue</a></li>	      <li><a href="http://data-search.nerc.ac.uk/search/full" title="Edit the current search criteria">Edit this search</a></li>
+	      
+      </ul>
+      <ul id="social_bookmarkers" class="social_bookmarkers sf-menu sf-vertical">
+            <li><a href="javascript:void(0)">Bookmark this record with:</a>
+            <ul>
+                  <li class="delicious">
+                    <a id="bookmarker_delicious" target="_blank" title="Go to the del.icio.us bookmarking website" href="http://del.icio.us/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml&amp;title=Metadata+g%3A+United+Kingdom+Butterfly+Monitoring+Scheme%3A+species+trends+2012"><img src="/images/delicious.gif" alt="Delicious logo" /> Delicious</a>
+
+                  </li>
+                  <li class="digg">
+                    <a id="bookmarker_digg" target="_blank" title="Go to the Digg bookmarking website" href="http://digg.com/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml&amp;title=Metadata+g%3A+United+Kingdom+Butterfly+Monitoring+Scheme%3A+species+trends+2012"><img src="/images/digg.gif" alt="Digg logo" /> Digg</a>
+                  </li>
+                  <li class="facebook">
+                    <a id="bookmarker_facebook" target="_blank" title="Post this page to Facebook" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml"><img src="/images/facebook.gif" alt="Facebook logo" /> Facebook</a>
+                  </li>
+                  <li class="reddit">
+
+                    <a id="bookmarker_reddit" target="_blank" title="Go to the reddit bookmarking website" href="http://reddit.com/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml&amp;title=Metadata+g%3A+United+Kingdom+Butterfly+Monitoring+Scheme%3A+species+trends+2012"><img src="/images/reddit.gif" alt="Reddit logo" /> reddit</a>
+                  </li>
+                  <li class="stumbleupon">
+                    <a id="bookmarker_stumbleupon" target="_blank" title="Go to the StumbleUpon bookmarking website" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml&amp;title=Metadata+g%3A+United+Kingdom+Butterfly+Monitoring+Scheme%3A+species+trends+2012"><img src="/images/stumbleupon.gif" alt="StumbleUpon logo" /> StumbleUpon</a>
+                  </li>
+                  <li class="twitter">
+                  <a id="bookmarker_twitter" target="_blank" title="Go to the Twitter website" href="http://twitter.com/home?status=title=Metadata+g%3A+United+Kingdom+Butterfly+Monitoring+Scheme%3A+species+trends+2012%20-%20http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml"><img src="/images/twitter.gif" alt="Twitter logo" /> Twitter</a>
+              </li>
+                </ul>
+                </li>
+              </ul>
+  </div>
+   <div class="clear"></div>
+  <div id="download">
+    <h2>Download</h2>
+    <p>The metadata is available for downloading in the following formats:</p>
+    <ul>
+      <li><a href="http://data-search.nerc.ac.uk/search/full/catalogue/ceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml/csv">NERC format</a> (<abbr title="Comma Separated Values">CSV</abbr>)</li>
+      <li><a href="http://data-search.nerc.ac.uk/search/full/catalogue/ceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml/NERC_DMS_0.7">NERC format</a> (XML version 0.7)</li>
+      
+    </ul>
+    <p>This metadata complies with <a href="http://www.inspire-geoportal.eu" title="Infrastructure for Spatial Information in the European Community">INSPIRE</a> and <a href="http://www.agi.org.uk/uk-gemini" title="Geo-spatial Metadata Interoperability Initiative">GEMINI 2</a> standards.</p>
+  </div>
+
+               
+
+        </div>
+
+        <div id="bodycontent_wide">
+
+          <!-- SwishCommand index -->
+          
+          
+          
+
+<div id="messages">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="content-top">
+<h1>Details</h1>
+<ul style="position:relative;top:8px;">
+        <li><img src="/images_new/feedback.png" alt="feedback icon"/><a href="javascript:toggle('feedback_form', 'provide feedback', 'provide feedback (hide)')" tabindex="" title="" id="feedback_form_link">Provide feedback</a></li>
+</ul>
+</div>
+
+<div id="feedback_form" style="display:none;clear:both;">
+      <form id="feedback" name="feedback" class="myform">
+        <fieldset id="feedback_fieldset" >
+        <legend>Feedback form</legend>
+        <input type="hidden" name="metadata_id" id="met_id" value="ceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml"/>
+        <textarea name="general" id="gen_com" rows="6" cols="35">Please type any feedback relating to the metadata record here
+(the URL and metadata ID will be sent with your feedback)</textarea><br/>
+        <input type="text" name="name" id="name" size="35" value="Name (optional)"/><br/>
+        Would you like a response to your comments? <label for="comments_response_required_true">Yes</label> <input type="radio" id="comments_response_required_true" name="response_required" value="true" />
+        <label for="comments_response_required_false">No</label>
+        <input type="radio" id="comments_response_required_false" name="response_required" value="false" />
+        <div class="form-item" id="comments_contact_item">
+        <label for="comment">Contact details</label>
+        <br />
+        <input type="text" id="comment-contact" name="contact" value="" />
+
+        <br />
+        <span class="tip">(E-mail or telephone)</span>
+        </div>
+        </fieldset>
+      </form>
+      <button id="send_com_form" class="button">Submit</button><p>&nbsp;</p>
+</div>
+<div id="feedback_form_resp" style="clear:both;"></div>
+
+<!-- Element 12 -->
+<div class="extent right">
+  <div class="info">
+  <h3>Geographic extent</h3>
+  <img class="extent" src="http://data-search.nerc.ac.uk/search/full/catalogue/ceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml/extent.png" alt="Geographic bounding box" title="Geographic extent of the data"/>
+  <p class="no-bottom">
+  The metadata covers the area West - East from -9.227701&deg; to
+  2.687637&deg; and North - South from 60.850441&deg; to
+  49.83726&deg;.
+
+  <a
+  href="http://data-search.nerc.ac.uk/search/full/catalogue?bbox=-9.227701,49.83726,2.687637,60.850441"
+  title="Area search for metadata">Search</a> for all metadata within
+  this area.
+  </p>
+  </div>
+  <p class="lower-link right">
+    <a href="http://data-search.nerc.ac.uk/search/full/catalogue/ceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml/kml" title="View the extent as a KML file"><img alt="KML" width="16" height="16" src="/images/kml.png" class="image_no_border"/> KML</a>
+  </p>
+</div>
+
+<!-- Element 3 -->
+
+<p><strong>Title:</strong> United Kingdom Butterfly Monitoring Scheme: species trends 2012</p>
+<p><strong>Abstract:</strong> This dataset provides linear trends, over varying time periods, for the UK Butterfly Monitoring Scheme (UKBMS) Collated Indices of individual butterfly species across the UK. The main statistical values derived from a linear regression (slope, standard error, P-value) are presented for the entire time series for each species (1976 to 2012), for the last 20 years, and for the last decade. In addition a trend class, based on slope direction and its significance, and a percentage change for that time period are provided to describe the statistical trends. These trend data are provided for 59 UK butterfly species. Trends across different time series allow us to determine the long and short-term trends for individual species. This is enables us to focus conservation and research and also to assess species responses to conservation already in place. The Centre for Ecology &amp; Hydrology (CEH) and Butterfly Conservation (BC) are responsible for the calculation and interpretation of this trend datasets. The collection of the underlying UKBMS data is reliant on a large volunteer community. The UK Butterfly Monitoring Scheme is funded by a consortium of organisations led by the Joint Nature Conservation Committee (JNCC).</p>
+ <p><strong>Resource locator:</strong>
+    
+    
+ 
+    
+    
+ 
+    
+    
+ 
+    
+    
+ 
+    
+    
+ 
+    
+    <h3>miscellaneous</h3>
+            
+            <p ><a href="http://www.ukbms.org/" title="External link">            External link
+            </a>
+            
+            
+            <p ><a href="http://eidchub.ceh.ac.uk/metadata/5afbbd36-2c63-4aa1-8177-695bed98d7a9" title="External link">            External link
+            </a>
+            
+            
+            <p ><a href="http://gateway.ceh.ac.uk/download?fileIdentifier=5afbbd36-2c63-4aa1-8177-695bed98d7a9" title="External link">            External link
+            </a>
+            
+    
+    
+ 
+  
+  
+  
+ 
+  
+
+<p><strong>Conditions for access and use constraints</strong>:
+
+</p>
+    
+<p>  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+</p>  
+
+
+
+
+
+<div class="clear"><br/><br/> </div>
+<div id="content-top">
+<h3>Full metadata details</h3>
+</div>
+<!--<p class="no-bottom">Details for the metadata are as follows:</p>-->
+
+<table summary="Metadata details"  id="detail-table">
+
+  <!-- Element 6 -->
+  <tr>
+    <td class="heading">
+      
+        <strong>Unique resource identifier</strong> (<a href="javascript:toggle('element-6', 'info', 'hide info')" id="element-6-link" title="Show or hide the element information">info</a>)
+      
+    </td>
+    <td class="content">
+      <div id="element-6" class="cell element-info">
+        <p>A Unique Resource Identifier allows a dataset to be identified
+        by a code. This code is generally assigned by the data owner
+        and commonly consists of the organisation which manages the
+        dataset and a number or code which is used to uniquely
+        identify it within the databases of the organisation. If this
+        code is unique then it is possible for an organisation to
+        identify a dataset that a 3rd party may be referring to and
+        also to quickly identify where dataset records may be
+        duplicated in a portal.</p>
+      </div>
+      <div class="cell">
+        
+    
+      1368011698524
+        
+
+      </div>
+    </td>
+  </tr>
+  <!-- Element 5 -->
+  <tr>
+    <td class="heading">
+      <div class="cell">
+        <strong>Resource locator</strong> (<a href="javascript:toggle('element-5', 'info', 'hide info')" id="element-5-link" title="Show or hide the element information">info</a>)
+      </div>
+    </td>
+    <td class="content">
+      <div id="element-5" class="cell element-info">
+        <p>The online location of the resource.</p>
+      </div>
+      <div class="cell">
+        
+    
+    
+    
+ 
+    
+    
+ 
+    
+    
+ 
+    
+    
+ 
+    
+    
+ 
+    
+    <h3>miscellaneous</h3>
+            
+            <p ><a href="http://www.ukbms.org/" title="External link">            External link
+            </a>
+            
+            
+            <p ><a href="http://eidchub.ceh.ac.uk/metadata/5afbbd36-2c63-4aa1-8177-695bed98d7a9" title="External link">            External link
+            </a>
+            
+            
+            <p ><a href="http://gateway.ceh.ac.uk/download?fileIdentifier=5afbbd36-2c63-4aa1-8177-695bed98d7a9" title="External link">            External link
+            </a>
+            
+    
+    
+ 
+        
+
+      </div>
+    </td>
+  </tr>
+  <!-- Element 20 -->
+  <tr>
+    <td class="heading">
+      <div class="cell">
+        <strong>Limitations on public access</strong> (<a href="javascript:toggle('element-20', 'info', 'hide info')" id="element-20-link" title="Show or hide the element information">info</a>)
+      </div>
+    </td>
+    <td class="content">
+      <div id="element-20" class="cell element-info">
+        <p>This element describes any restrictions imposed on the
+        resource for security and other reasons using the controlled
+        ISO vocabulary RestrictionCode. If there are no limitations on
+        public access, this must be indicated. All terms are can be
+        found in the NERC discovery standard.</p>
+      </div>
+      <div class="cell">
+        
+    
+        <div>
+          <a href="http://data-search.nerc.ac.uk/search/full/catalogue?q=al:"
+             title="Search for all metadata having the access limit ''"></a>
+          <br/>Definition: Unknown term
+        </div>
+        <div class="sibling">
+          <a href="http://data-search.nerc.ac.uk/search/full/catalogue?q=al:"
+             title="Search for all metadata having the access limit ''"></a>
+          <br/>Definition: Unknown term
+        </div>
+        
+
+      </div>
+    </td>
+  </tr>
+  <!-- Element 7 to be implemented -->
+
+  <!-- Element 15 -->
+  <tr>
+    <td class="heading">
+      <div class="cell">
+        <strong>Spatial reference system</strong> (<a href="javascript:toggle('element-15', 'info', 'hide info')" id="element-15-link" title="Show or hide the element information">info</a>)
+      </div>
+    </td>
+    <td class="content">
+      <div id="element-15" class="cell element-info">
+	<p>Describes the system of spatial referencing (typically a coordinate reference system) used in the resource. 
+	 This should be derived from the EPSG register of geodetic parameters. To find a definition for a code click on 
+	the 'Source' link and then select the 'retrieve by code' option and enter the 'Identifier' numeric code.</p>
+      </div>
+      <div class="cell">
+        
+    
+        <div>
+          Identifier: 27700
+        </div>
+        <div class="sibling">
+          Source: <a href="http://www.epsg-registry.org">European Petroleum Survey Group (EPSG)</a>
+        </div>
+        
+
+      </div>
+    </td>
+  </tr>
+  <!-- Element 9 -->
+  <tr>
+    <td class="heading">
+      <div class="cell">
+        <strong>Topic category</strong> (<a href="javascript:toggle('element-9', 'info', 'hide info')" id="element-9-link" title="Show or hide the element information">info</a>)
+      </div>
+    </td>
+    <td class="content">
+      <div id="element-9" class="cell element-info">
+        <p>This element is mandatory for INSPIRE and must be
+        included. This indicates the main theme(s) of the data
+        resource.  It is required for INSPIRE compliance.  The
+        relevant topic category should be selected from the <a
+        href="http://vocab.ndg.nerc.ac.uk/clients/getList?recordKeys=http%3A%2F%2Fvocab.ndg.nerc.ac.uk%2Flist%2FP051%2Fcurrent&amp;earliestRecord=&amp;submit=submit">ISO
+        19115/TC 211 Topic Category list</a>. </p>
+      </div>
+      <div class="cell">
+        
+    
+        <div>
+          <a href="http://data-search.nerc.ac.uk/search/full/catalogue?q=tc:biota"
+             title="Search for all metadata having the topic category 'biota'">biota</a>
+          <br/>Definition: Flora and/or fauna in the natural environment.  Examples: wildlife; vegetation; biological sciences; ecology; wilderness; sealife; wetlands; habitat.
+        </div>
+        
+
+      </div>
+    </td>
+  </tr>
+  <!-- Element 17 -->
+  <tr>
+    <td class="heading">
+      <div class="cell">
+        <strong>Lineage</strong> (<a href="javascript:toggle('element-17', 'info', 'hide info')" id="element-17-link" title="Show or hide the element information">info</a>)
+      </div>
+    </td>
+    <td class="content">
+      <div id="element-17" class="cell element-info">
+        <p>Lineage includes the background information, history of the
+        sources of data used and can include data quality statements.
+        The lineage element can include information about: source
+        material; data collection methods used; data processing
+        methods used; quality control processes.  This should include
+        any data collection standards used.  Additional information
+        source to record relevant references to the data e.g. reports,
+        articles, website.</p>
+      </div>
+      <div class="cell">
+        
+    
+      Trends are calculated by performing a linear regression on the annual Collated Indices for each species. Collated indices are calculated from UKBMS data using a log-linear model incorporating individual site indices from all monitored sites across the UK for a given species in a given year. They give a statistical measure of how the abundance of each species has changed on monitored sites since 1976, over the last 20 years, and over the last decade. Because the Collated indices are only calculated for each species in years in which it was recorded on five or more sites, the starting year for the series is later than 1976 for a number of rarer species.
+        
+
+      </div>
+    </td>
+  </tr>
+  <!-- Element 22 -->
+  <tr>
+    <td class="heading">
+      <div class="cell">
+        <strong>Responsible party</strong> (<a href="javascript:toggle('element-22', 'info', 'hide info')" id="element-22-link" title="Show or hide the element information">info</a>)
+      </div>
+    </td>
+    <td class="content">
+      <div id="element-22" class="cell element-info">
+        <p>Provides a description of an organization or person who has
+        a role for the dataset or resource. The role of ‘Distributor’ and the ‘Metadata
+        point of contact’ are mandatory. Other types of
+        responsible party may be specified.</p>
+      </div>
+      <div class="cell">
+        
+    
+    
+        <div>
+    <strong>
+      Centre for Ecology &amp; Hydrology
+    </strong><br/>
+    Email: enquiries(at)ceh(dot)ac(dot)uk<br/>
+    Roles:
+    <ul>
+      <li>Party who can be contacted for acquiring knowledge about or acquisition of the resource.</li>
+        </ul>
+    </div>
+        <div class="sibling">
+    <strong>
+      Butterfly Conservation
+    </strong><br/>
+    Email: info(at)butterfly-conservation(dot)org<br/>
+    Roles:
+    <ul>
+      <li>Party who can be contacted for acquiring knowledge about or acquisition of the resource.</li>
+        </ul>
+    </div>
+        <div class="sibling">
+    <strong>
+      UK Butterfly Monitoring Scheme
+    </strong><br/>
+    Email: ukbms(at)ceh(dot)ac(dot)uk<br/>
+    Roles:
+    <ul>
+      <li>Party that supplies the resource.</li>
+        </ul>
+    </div>
+        <div class="sibling">
+    <strong>
+      EIDC Hub
+    </strong><br/>
+    Email: eidc(at)ceh(dot)ac(dot)uk<br/>
+    Roles:
+    <ul>
+      <li>Party that accepts accountability and responsibility for the data and ensures appropriate care and maintenance of the resource.</li>
+        </ul>
+    </div>
+
+        
+
+      </div>
+    </td>
+  </tr>
+  <!-- Element 25 to be implemented -->
+
+  <!-- Element 8 -->
+  <tr>
+    <td class="heading">
+      <div class="cell">
+        <strong>Resource language</strong> (<a href="javascript:toggle('element-8', 'info', 'hide info')" id="element-8-link" title="Show or hide the element information">info</a>)
+      </div>
+    </td>
+    <td class="content">
+      <div id="element-8" class="cell element-info">
+        Describes the language(s) of any textual information contained within the resource.
+      </div>
+      <div class="cell">
+        
+    
+        English
+        
+
+      </div>
+    </td>
+  </tr>
+  <!-- Element 26 -->
+  <tr>
+    <td class="heading">
+      <div class="cell">
+        <strong>Date of update of metadata</strong> (<a href="javascript:toggle('element-26', 'info', 'hide info')" id="element-26-link" title="Show or hide the element information">info</a>)
+      </div>
+    </td>
+    <td class="content">
+      <div id="element-26" class="cell element-info">
+        This describes the last date the metadata was updated on. If
+        the metadata has not been updated it should give the date on
+        which it was created.
+      </div>
+      <div class="cell">
+        
+    
+        Wednesday 13 November 2013
+        
+
+      </div>
+    </td>
+  </tr>
+  <!-- Element 27 -->
+  <tr>
+    <td class="heading">
+      <div class="cell">
+        <strong>Metadata standard name</strong> (<a href="javascript:toggle('element-27', 'info', 'hide info')" id="element-27-link" title="Show or hide the element information">info</a>)
+      </div>
+    </td>
+    <td class="content">
+      <div id="element-27" class="cell element-info">
+        Identify the metadata standard used to create the metadata.
+      </div>
+      <div class="cell">
+        
+    
+        NERC profile of ISO19115:2003
+        
+
+      </div>
+    </td>
+  </tr>
+  <!-- Element 28 -->
+  <tr>
+    <td class="heading">
+      <div class="cell">
+        <strong>Metadata standard version</strong> (<a href="javascript:toggle('element-28', 'info', 'hide info')" id="element-28-link" title="Show or hide the element information">info</a>)
+      </div>
+    </td>
+    <td class="content">
+      <div id="element-28" class="cell element-info">
+        Identify the version of the metadata standard used to create the metadata.
+      </div>
+      <div class="cell">
+        
+    
+        1.0
+        
+
+      </div>
+    </td>
+  </tr>
+</table>
+
+
+
+          <!-- SwishCommand noindex -->
+ 
+
+         <!--<form id="comment-form" method="post" action="" enctype="application/x-www-form-urlencoded">
+            <fieldset id="comment" class="off">
+              <legend><a href="javascript:toggle_fieldset('comment')" title="Show or hide the comment form">Submit a comment</a></legend>
+              <div class="content" style="display:none">
+                <p>Feedback is welcome! In addition to your comment below, the title and URL of the current page will be noted.</p>
+                <textarea name="comment" cols="40" rows="8"></textarea>
+                <p><input type="text" id="comment-name" name="comment-name" value=""/> <label for="comment-name">Optionally add your name.</label></p>
+                <p><input type="text" id="comment-email" name="comment-email" value=""/> <label for="comment-email">Add your email address if you would like a response.</label></p>
+                <p style="display:none"><input type="text" name="comment-check" value=""/></p>
+                <p><input type="submit" value="comment"/></p>
+                <input type="hidden" name="comment-title" value="Metadata g: United Kingdom Butterfly Monitoring Scheme: species trends 2012"/>
+              </div>
+            </fieldset>
+          </form>
+-->
+        </div>
+        
+      </div>
+      <div class="clear">
+	<hr/>
+        <!--<ul id="social_bookmarkers" class="social_bookmarkers">-->
+        <!--    <li>Bookmark with:</li>-->
+        <!--          <li class="delicious">-->
+        <!--            <a id="bookmarker_delicious" target="_blank" title="Go to the del.icio.us bookmarking website" href="http://del.icio.us/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml&amp;title=Metadata+g%3A+United+Kingdom+Butterfly+Monitoring+Scheme%3A+species+trends+2012">Delicious</a>-->
+        <!---->
+        <!--          </li>-->
+        <!--          <li class="digg">-->
+        <!--            <a id="bookmarker_digg" target="_blank" title="Go to the Digg bookmarking website" href="http://digg.com/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml&amp;title=Metadata+g%3A+United+Kingdom+Butterfly+Monitoring+Scheme%3A+species+trends+2012">Digg</a>-->
+        <!--          </li>-->
+        <!--          <li class="facebook">-->
+        <!--            <a id="bookmarker_facebook" target="_blank" title="Post this page to Facebook" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml">Facebook</a>-->
+        <!--          </li>-->
+        <!--          <li class="reddit">-->
+        <!---->
+        <!--            <a id="bookmarker_reddit" target="_blank" title="Go to the reddit bookmarking website" href="http://reddit.com/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml&amp;title=Metadata+g%3A+United+Kingdom+Butterfly+Monitoring+Scheme%3A+species+trends+2012">reddit</a>-->
+        <!--          </li>-->
+        <!--          <li class="stumbleupon">-->
+        <!--            <a id="bookmarker_stumbleupon" target="_blank" title="Go to the StumbleUpon bookmarking website" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml&amp;title=Metadata+g%3A+United+Kingdom+Butterfly+Monitoring+Scheme%3A+species+trends+2012">StumbleUpon</a>-->
+        <!--          </li>-->
+        <!--          <li class="twitter">-->
+        <!--          <a id="bookmarker_twitter" target="_blank" title="Go to the Twitter website" href="http://twitter.com/home?status=title=Metadata+g%3A+United+Kingdom+Butterfly+Monitoring+Scheme%3A+species+trends+2012%20-%20http%3A%2F%2Fdata-search.nerc.ac.uk%2Fsearch%2Ffull%2Fcatalogue%2Fceh.nerc.ac.uk__NERC_DMS_0.7__1368011698524.xml">Twitter</a>-->
+        <!--      </li>-->
+        <!--        </ul>-->
+        <div class="right"><a href="http://validator.w3.org/check?uri=referer"><img class="image_no_border" src="/images/valid-xhtml11.png" alt="Valid XHTML 1.1" height="31" width="88" /></a></div>
+        <!--<div id="copyright">NERC Discovery Service Search version 1.4 ©2015<br />-->
+        <!--  Developed by the <a href="http://www.geodata.soton.ac.uk/">GeoData Institute<img class="image_no_border" style="margin-left:2px;vertical-align:middle" src="/images/geodata-icon.png" width="16" height="16" title="GeoData Institute" alt="GeoData logo"/></a>   and<a href="http://www.bodc.ac.uk"> BODC</a>-->
+        <!--</div>-->
+        <div id="copyright">NERC Data Catalogue Service 1.4 &copy;2015<br />
+          A <a href="http://data-search.nerc.ac.uk/search/light"
+					tabindex="11" title="Go to the light search interface">light version</a> of
+					the portal is available for mobile and other limited
+					browsers.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

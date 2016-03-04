@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <DIF xmlns="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/ http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif_v9.8.4.xsd">
+          <Entry_ID>b98a57e3-638c-11e4-8886-00c0f03d5b7c</Entry_ID>
+          <Entry_Title>HLY-07-01 LDEO One Minute Averaged Data [Sambrotto/LDEO]</Entry_Title>
+
+
+          <Temporal_Coverage>
+            <Start_Date>2007-04-10</Start_Date>
+            <Stop_Date>2007-05-12</Stop_Date>
+          </Temporal_Coverage>
+
+          <Spatial_Coverage>
+            <Southernmost_Latitude>53</Southernmost_Latitude>
+            <Northernmost_Latitude>63</Northernmost_Latitude>
+            <Westernmost_Longitude>-180</Westernmost_Longitude>
+            <Easternmost_Longitude>-163</Easternmost_Longitude>
+          </Spatial_Coverage>
+
+          <Data_Center>
+            <Data_Center_Name>
+              <Short_Name>EOL</Short_Name>
+              <Long_Name>Earth Observing Laboratory</Long_Name>
+            </Data_Center_Name>
+            <Data_Center_URL>http://data.eol.ucar.edu/</Data_Center_URL>
+            <Personnel>
+              <Role>DATA CENTER CONTACT</Role>
+              <First_Name>EOL</First_Name>
+              <Last_Name>User Services</Last_Name>
+              <Contact_Address>
+                <Address>NCAR/EOL</Address>
+                <Address>P.O. Box 3000</Address>
+                <City>Boulder</City>
+                <Province_or_State>CO</Province_or_State>
+                <Postal_Code>80307</Postal_Code>
+                <Country>USA</Country>
+              </Contact_Address>
+            </Personnel>
+          </Data_Center>
+
+          <Summary>
+            <Abstract>&lt;p&gt;This dataset includes data from the underway instruments onboard the US Coast Guard Cutter Healy during the BEST 2007 cruise. The data are summarized into an averaged one minute data file by the LDEO technician. The file takes the average value centered around the minute (30 seconds on either side of the whole minute).&lt;/p&gt;</Abstract>
+          </Summary>
+
+          <Related_URL>
+            <URL_Content_Type>
+              <Type>GET DATA</Type>
+            </URL_Content_Type>
+            <URL>http://www.aoncadis.org/dataset/id/b98a57e3-638c-11e4-8886-00c0f03d5b7c.html</URL>
+            <Description>Data Center top-level access page for this resource</Description>
+          </Related_URL>
+
+          <Metadata_Name>ACADIS IDN DIF</Metadata_Name>
+          <Metadata_Version>9.8.4</Metadata_Version>
+          <Last_DIF_Revision_Date>2015-02-05</Last_DIF_Revision_Date>
+        </DIF>

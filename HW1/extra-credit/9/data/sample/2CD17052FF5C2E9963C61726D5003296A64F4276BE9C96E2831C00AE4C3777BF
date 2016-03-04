@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>About IOOS | SECOORA</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/secoora_favicon_0.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ctools/css/ctools.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/libraries/superfish/css/superfish.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/libraries/superfish/css/superfish-vertical.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/libraries/superfish/css/superfish-navbar.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/upload_element/upload_element.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views_slideshow/contrib/views_slideshow_singleframe/views_slideshow.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/zen/html-elements.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/zen/tabs.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/zen/messages.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/zen/block-editing.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/zen/wireframes.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/secoora/fluid-layout.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/secoora/secoora.css?x" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/secoora/colors/blue.css?x" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/zen/zen/print.css?x" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/secoora/ie.css?x" />
+<![endif]-->
+  <script type="text/javascript" src="/sites/all/modules/jquery_update/replace/jquery.min.js?x"></script>
+<script type="text/javascript" src="/misc/drupal.js?x"></script>
+<script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?x"></script>
+<script type="text/javascript" src="/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?x"></script>
+<script type="text/javascript" src="/sites/all/libraries/superfish/jquery.bgiframe.min.js?x"></script>
+<script type="text/javascript" src="/sites/all/libraries/superfish/superfish.js?x"></script>
+<script type="text/javascript" src="/sites/all/libraries/superfish/supersubs.js?x"></script>
+<script type="text/javascript" src="/sites/all/libraries/superfish/supposition.js?x"></script>
+<script type="text/javascript" src="/sites/all/libraries/superfish/sftouchscreen.js?x"></script>
+<script type="text/javascript" src="/sites/all/libraries/superfish/sfsmallscreen.js?x"></script>
+<script type="text/javascript" src="/sites/all/modules/superfish/superfish.js?x"></script>
+<script type="text/javascript" src="/sites/all/modules/views_slideshow/js/jquery.cycle.all.min.js?x"></script>
+<script type="text/javascript" src="/sites/all/modules/views_slideshow/contrib/views_slideshow_singleframe/views_slideshow.js?x"></script>
+<script type="text/javascript" src="/sites/all/modules/views/js/base.js?x"></script>
+<script type="text/javascript" src="/sites/all/modules/views/js/ajax_view.js?x"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "views": { "ajax_path": "/views/ajax", "ajaxViews": [ { "view_name": "rotor", "view_display_id": "block_1", "view_args": "", "view_path": "node/270", "view_base_path": null, "view_dom_id": 1, "pager_element": 0 } ] } });
+//--><!]]>
+</script>
+    
+  <!--[if lte IE 6]>
+  <script type="text/javascript" src="/sites/all/themes/secoora/js/suckerfish.js"></script>
+  <![endif]-->
+</head>
+
+<body class="not-front not-logged-in node-type-page one-sidebar sidebar-left page-about-ioos section-about">
+
+  <div id="page"><div id="page-inner">
+
+    <a name="top" id="navigation-top"></a>
+
+    <div id="header"><div id="header-inner" class="clear-block">
+    <div id="top_bar">
+    
+               <div id="header-top">
+        
+<div id="block-block-10" class="block block-block region-odd even region-count-1 count-2 block-1">
+ 
+<div class="block-inner">
+
+  
+  <div class="content">
+    <div>
+<!--[if IE 7]>
+<style type="text/css">
+#ioos_banner { 
+    position : absolute;
+    top : 12px;  
+        
+}
+</style>
+<![endif]--><!--[if IE 7]>
+<style type="text/css">
+#ioos_banner { 
+    position : absolute;
+    top : 12px;  
+        
+}
+</style>
+<![endif]--><p><a href="/about/ioos"><img alt="" id="ioos_banner" src="/sites/default/files/ioos_banner.jpg" /></a></p></div>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+        </div> <!-- /end #header-top -->
+        <div id="topbarleft">
+  		
+    
+                     <div id="site-slogan">Our eyes on the Southeast's ocean and coastal waters</div>
+           </div>
+ <div id="topbarright">
+   
+             <div id="secondary">
+          <ul class="links"><li class="menu-434 first"><a href="/login" title="
+">admin</a></li>
+<li class="menu-433 last"><a href="/sitemap" title="
+">site map</a></li>
+</ul>        </div> <!-- /#secondary -->
+            </div>
+        
+         
+      
+      </div> <!-- end #top_bar -->
+     
+
+              <div id="logo-title">
+        
+
+                      <div id="logo"><a href="/" title="Home" rel="home"><img src="/sites/default/files/secoora_logo.png" alt="Home" id="logo-image" /></a></div>
+          
+ 
+  
+              <div id="title-slogan">
+
+          
+        
+
+          </div> <!-- /#title-slogan -->
+        
+        </div> <!-- /#logo-title -->
+      
+
+
+
+            
+     
+
+    </div></div> <!-- /#header-inner, /#header -->
+
+    <div id="main"><div id="main-inner" class="clear-block with-navbar">
+
+      <div id="content"><div id="content-inner">
+
+      
+        
+                  <div id="content-header">
+            <div class="breadcrumb"><a href="/">Home</a> › <a href="/about" title="About SECOORA">About</a> › </div>                          <h1 class="title">About IOOS</h1>
+                                                          </div> <!-- /#content-header -->
+        
+		
+
+        <div id="content-area">
+          <div id="node-270" class="node node-type-page"><div class="node-inner">
+
+ 
+  
+  
+  
+  
+  <div class="content">
+    <h3><strong>About</strong><strong> Integrated Ocean Observing System (IOOS<sup>&reg;</sup>)</strong></h3>
+<p>The Integrated Ocean Observing System (IOOS&reg;) is a partnership among federal, regional, academic and private sector parties that works to provide new tools and forecasts to improve safety, enhance the economy, and protect our environment.<br />
+&nbsp;<br />
+IOOS supplies critical information about our Nation&rsquo;s oceans, coasts, and Great Lakes. Scientists working to understand climate change, governments adapting to changes in the Arctic, municipalities monitoring local water quality, and industries affected by coastal and marine spatial planning all have the same need: reliable, timely, and sustained access to data and information that inform decision making.</p>
+<p>Improving access to key marine data and information supports several purposes. IOOS data sustain national defense, marine commerce and navigation safety. Scientists use these data to issue weather, climate and marine forecasts. IOOS data are also used to make decisions for energy siting and production, economic development, and ecosystem-based resource management. Emergency managers and health officials need IOOS information to make decisions about public safety. Teachers and government officials rely on IOOS data for public outreach, training and education.&nbsp; &nbsp;</p>
+<p><img alt="" src="/sites/all/themes/secoora/images/multi_ioos.jpg" /></p>
+<p>For further details go to: <a href="http://ioos.noaa.gov" target="_blank" title="Integrated Ocean Observing System">http://ioos.noaa.gov</a></p>
+  </div>
+
+  <div class="node-links">
+      </div>
+
+  <div class="clear-block"></div>
+
+ 
+</div></div> <!-- /node-inner, /node -->
+        </div>
+        
+          
+
+        
+
+        
+      </div></div> <!-- /#content-inner, /#content -->
+
+              <div id="navbar"><div id="navbar-inner" class="clear-block region region-navbar">
+
+          <a name="navigation" id="navigation"></a>
+
+	                 <div id="suckerfishmenu">
+                <ul class="menu"><li class="leaf first"><a href="/" title="Home Page">Home</a></li>
+<li class="expanded active-trail"><a href="/about" title="About SECOORA">About</a><ul class="menu"><li class="expanded first"><a href="/about/inmystate" title="SECOORA In My State">SECOORA In My State</a><ul class="menu"><li class="leaf first"><a href="/about/inmystate/FL" title="Florida">Florida</a></li>
+<li class="leaf"><a href="/about/inmystate/GA" title="Georgia">Georgia</a></li>
+<li class="leaf"><a href="/about/inmystate/NC" title="North Carolina">North Carolina</a></li>
+<li class="leaf last"><a href="/about/inmystate/SC" title="South Carolina">South Carolina</a></li>
+</ul></li>
+<li class="expanded"><a href="/about/theme_areas" title="Theme Areas">Theme Areas</a><ul class="menu"><li class="leaf first"><a href="/about/theme_areas/climate_change" title="Climate Change">Climate Change</a></li>
+<li class="leaf"><a href="/about/theme_areas/coastal_hazards" title="Coastal Hazards">Coastal Hazards</a></li>
+<li class="leaf"><a href="/about/theme_areas/ecosystems" title="Ecosystems:   Water Quality &amp; Living Marine Resources">Ecosystems</a></li>
+<li class="leaf last"><a href="/about/theme_areas/marine_operations" title="Marine Operations">Marine Operations</a></li>
+</ul></li>
+<li class="leaf"><a href="/about/governance/join" title="Join SECOORA">Join SECOORA</a></li>
+<li class="leaf"><a href="/about/membership" title="Membership">Current Membership</a></li>
+<li class="leaf"><a href="/about/technologies" title="">Observing Technologies</a></li>
+<li class="leaf"><a href="http://inventory.secoora.org/" title="Asset Inventory Map">Asset Inventory Map</a></li>
+<li class="leaf"><a href="/about/contact_us" title="
+	Contact Us
+">Contact Us</a></li>
+<li class="leaf active-trail"><a href="/about/ioos" title="About IOOS" class="active">What is IOOS</a></li>
+<li class="leaf"><a href="/data/disclaimer" title="">Data Disclaimer</a></li>
+<li class="leaf last"><a href="/node/397" title="">Job/Contractor Opportunities</a></li>
+</ul></li>
+<li class="expanded"><a href="/news" title="Latest News">News</a><ul class="menu"><li class="leaf first"><a href="/news/archive">Monthly Archive</a></li>
+<li class="leaf"><a href="/Annual_Meeting_2015" title="2015 Annual Meeting">2015 Annual Meeting</a></li>
+<li class="leaf last"><a href="/IOOS_2015_FFO" title="SECOORA Solicitation for Letters of Intent for IOOS 2016 FFO">IOOS 2016 FFO</a></li>
+</ul></li>
+<li class="collapsed"><a href="/about/theme_areas/projects" title="SECOORA Projects">Projects</a></li>
+<li class="expanded"><a href="/data" title="
+	Data and Maps
+">Data &amp; Maps</a><ul class="menu"><li class="expanded first"><a href="http://secoora.org/maps" title="Interactive Map">Explore Real-Time Data</a><ul class="menu"><li class="leaf first"><a href="http://secoora.org/maps" title="Interactive Map for SECOORA region">Interactive Map</a></li>
+<li class="leaf"><a href="http://secoora.org/pages/queryStation.php?platform=ndbc.41004.met" title="Query and download for platforms">Platform Query</a></li>
+<li class="leaf"><a href="http://129.252.37.90/xenia/pages/queryCompare.php" title="Query compare and download observation data between multiple platforms">Platform Compare</a></li>
+<li class="leaf"><a href="http://secoora.org/pages/alertpage.php" title="Set up real time alerts ">Real-Time Alerts</a></li>
+<li class="expanded"><a href="/data/recent_observation_maps/HFRadar" title="HF Radar Surface Currents">HF Radar Surface Currents</a><ul class="menu"><li class="leaf first"><a href="/data/recent_observation_maps/HFRadar/NC_CODAR" title="NC CODAR Surface Currents">NC CODAR</a></li>
+<li class="leaf"><a href="/data/recent_observation_maps/HFRadar/SC_NC_WERA" title="South Carolina / North Carolina WERA Surface Currents">SC/NC WERA</a></li>
+<li class="leaf"><a href="/data/recent_observation_maps/HFRadar/SC_GA_WERA" title="South Carolina / Georgia WERA Surface Currents">SC/GA WERA</a></li>
+<li class="leaf"><a href="/data/recent_observation_maps/HFRadar/Miami_WERA" title="Miami WERA Surface Currents">Miami WERA</a></li>
+<li class="leaf last"><a href="/data/recent_observation_maps/HFRadar/West_Florida_Shelf_Currents" title="West Florida Shelf Surface Currents">West Florida Shelf</a></li>
+</ul></li>
+<li class="leaf last"><a href="/data/recent_observation_maps" title="platform status for insitu and hfradar platforms">Platform Status</a></li>
+</ul></li>
+<li class="expanded"><a href="/data" title="Applications">Applications</a><ul class="menu"><li class="leaf first"><a href="/data/applications" title="">Marine Weather Portal</a></li>
+<li class="leaf"><a href="/data/secooraclimatology" title="SECOORA Climatology">SECOORA Climatology</a></li>
+<li class="leaf"><a href="http://howsthebeach.org" title="Beach Water Quality Model">Beach Water Quality Model</a></li>
+<li class="leaf"><a href="http://ocean.floridamarine.org/biohab_gis/" title="Biological, habitat and physical data layers viewer throughout the SECOORA region
+">Biological Habitat/Physical Data GIS Viewer</a></li>
+<li class="leaf"><a href="/node/394" title="IOOS/SECOORA Biological Data Project">Biological Data/ERDDAP</a></li>
+<li class="leaf last"><a href="http://gsaaportal.org" title="Governors South Atlantic Alliance Portal">GSAA Portal</a></li>
+</ul></li>
+<li class="expanded"><a href="/data/data_feeds" title="Data Download">Data Download</a><ul class="menu"><li class="leaf first"><a href="/data/data_feeds" title="Data feeds for various observations">Data Feeds</a></li>
+<li class="leaf"><a href="/format_feed_support" title="Format and Feed Support">Format and Feed Support</a></li>
+<li class="leaf"><a href="http://129.252.139.124/thredds/catalog.html" title="The THREDDS (Thematic Realtime Environmental Distributed Data Services) project is developing middleware to bridge the gap between data providers and data users. The goal is to simplify the discovery and use of scientific data and to allow scientific publications and educational materials to reference scientific data.">THREDDS Server</a></li>
+<li class="leaf"><a href="http://129.252.139.124/ncWMS/godiva2.html" title="The ncWMS/Godiva viewer allows several query and visualization options on THREDDS/WMS enabled datasets">ncWMS/Godiva viewer</a></li>
+<li class="leaf last"><a href="http://code.google.com/p/xenia/wiki/XeniaHome" title="SECOORA DMAC Documentation">Technical Documentation</a></li>
+</ul></li>
+<li class="leaf last"><a href="/maps/datalinks" title="SECOORA Partner Data Websites">SECOORA Data Partners</a></li>
+</ul></li>
+<li class="expanded"><a href="/classroom" title="
+	Education
+">Classroom</a><ul class="menu"><li class="leaf first"><a href="/classroom/BOB_educational_water_quality" title="Educational Water Quality Monitoring">BOB: Educational Water Quality Monitoring</a></li>
+<li class="leaf"><a href="/classroom/technologies" title="Technologies">Observing Technologies</a></li>
+<li class="leaf"><a href="/classroom/oil_spill_education_materials" title="Oil Spill Education Materials">Oil Spill Education Materials</a></li>
+<li class="expanded"><a href="/classroom/flowing_ocean" title="Our Flowing Ocean">Our Flowing Ocean</a><ul class="menu"><li class="leaf first"><a href="/classroom/flowing_ocean/sab" title="The Gulf Stream and Surface Current Patterns of the South Atlantic Bight">South Atlantic Bight</a></li>
+<li class="leaf"><a href="/classroom/flowing_ocean/skidaway_river" title="Taking the Pulse of our Coastal Skidaway River">Skidaway River</a></li>
+<li class="leaf"><a href="/classroom/flowing_ocean/tracers" title="Lagrangian versus Eulerian Tracers">Tracers</a></li>
+<li class="leaf"><a href="/classroom/flowing_ocean/ocean_currents" title="Ocean Currents">Ocean Currents</a></li>
+<li class="leaf last"><a href="/classroom/flowing_ocean/currents_glossary" title="Currents Glossary">Currents Glossary</a></li>
+</ul></li>
+<li class="expanded"><a href="/classroom/virtual_wave" title="Catch the SECOORA Wave!">Virtual Wave Classroom</a><ul class="menu"><li class="leaf first"><a href="/classroom/virtual_wave/glossary" title="Waves Glossary">Glossary</a></li>
+<li class="leaf"><a href="/classroom/virtual_wave/home_on_the_beach" title="Home, Home on the Beach">Home, Home on the Beach</a></li>
+<li class="leaf"><a href="/classroom/virtual_wave/making_waves" title="Making Waves">Making Waves</a></li>
+<li class="leaf"><a href="/classroom/virtual_wave/tsunami_resource_links" title="Tsunami Resource Links">Tsunami Resource Links</a></li>
+<li class="leaf"><a href="/classroom/virtual_wave/wave_size_depth" title="Wave Size and Depth">Wave Size &amp; Depth</a></li>
+<li class="leaf"><a href="/classroom/virtual_wave/waves_fact_sheet" title="Waves Fact Sheet">Waves Fact Sheet</a></li>
+<li class="leaf"><a href="/classroom/virtual_wave/wind_waves" title="Wind Waves">Wind Waves</a></li>
+<li class="leaf"><a href="/classroom/virtual_wave/national_standards" title="National Science Education Standards">National Standards</a></li>
+<li class="leaf last"><a href="/classroom/virtual_wave/state_standards" title="State Science Education Standards">State Standards</a></li>
+</ul></li>
+<li class="expanded"><a href="/classroom/virtual_hurricane" title="Virtual Hurricane">Virtual Hurricane Classroom</a><ul class="menu"><li class="leaf first"><a href="/classroom/virtual_hurricane/hurricane_glossary" title="Hurricane Glossary">Hurricane Glossary</a></li>
+<li class="leaf"><a href="/virtual_hurricane/virtual_hurricane/hurricane_poster" title="Forming Hurricanes Poster">Forming Hurricanes Poster</a></li>
+<li class="leaf"><a href="/classroom/virtual_hurricane/exploring_lat_long" title="Exploring Latitude and Longitude">Exploring Latitude &amp; Longitude</a></li>
+<li class="leaf"><a href="/classroom/virtual_hurricane/hurricane_bingo" title="Hurricane Bingo">Hurricane Bingo</a></li>
+<li class="leaf"><a href="/classroom/virtual_hurricane/make_barometer" title="Making, Using, and Understanding a Barometer">Make Barometer</a></li>
+<li class="leaf last"><a href="/classroom/virtual_hurricane/surge_of_the_storm" title="The Surge of the Storm">Surge of the Storm</a></li>
+</ul></li>
+<li class="expanded"><a href="/classroom/observing_overview/boats_buoys_teachers" title="Boats, Buoys and Science Teachers">Boats, Buoys &amp; Science Teachers</a><ul class="menu"><li class="leaf first"><a href="/classroom/observing_overview/boats_buoys_teachers/cruise_videos" title="Buoy Maintenance: Research Cruise Videos">Buoy Maintenance Cruise Videos</a></li>
+<li class="leaf"><a href="/classroom/observing_overview/boats_buoys_teachers/manual_overview" title="Manual Overview">Manual Overview</a></li>
+<li class="leaf"><a href="/classroom/observing_overview/buoys_boats_teachers/oil_spill_cleanup" title="Oil Spill Cleanup Response">Oil Spill Cleanup Response</a></li>
+<li class="leaf"><a href="/classroom/observation_overview/boats_buoys_teachers/presentations" title="Presentations">Presentations</a></li>
+<li class="leaf last"><a href="/classroom/observing_overview/buoys_boats_teachers/microcosm" title="The Buoy Microcosm">The Buoy Microcosm</a></li>
+</ul></li>
+<li class="expanded last"><a href="/classroom/observing_overview/educators_interview_scientists" title="Educators Interview Marine Scientists">Marine Scientist Interviews</a><ul class="menu"><li class="leaf first"><a href="/classroom/observing_overview/educators_interview_scientists/mangrove_forest_decline" title="Mangrove Forest Decline and its Effect on Coral Reefs">Mangrove Forest Decline</a></li>
+<li class="leaf"><a href="/classroom/observing_overview/educators_interview_scientists/global_warming" title="Global Warming and its Affect on Ocean Stability">Global Warming</a></li>
+<li class="leaf"><a href="/classroom/observing_overview/teachers_interview_scientists/toxins_transfer" title="The Trophic Transfer of Toxins throughout the Food Web">Trophic Transfer of Toxins</a></li>
+<li class="leaf"><a href="/classroom/observing_overview/educators_interview_scientists/deep_reef" title="Deep Reef Discovery">Deep Reef Discovery</a></li>
+<li class="leaf"><a href="/classroom/observing_overview/educators_interview_scientists/economics" title="Economics and Marine Conservation">Economics and Marine Conservation</a></li>
+<li class="leaf"><a href="/classroom/observing_overview/educators_interview_scientists/marine_pollution" title="Marine Pollution">Marine Pollution</a></li>
+<li class="leaf"><a href="/classroom/observing_overview/educators_interview_scientists/interview_background" title="Interview Background">Interview Background</a></li>
+<li class="leaf last"><a href="/classroom/observing_overview/educators_interview_scientists/template" title="Case Study Template">Case Study Tempate</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded"><a href="/members" title="Members">For Members</a><ul class="menu"><li class="leaf first"><a href="/members/board" title="Board of Directors">Board of Directors</a></li>
+<li class="expanded"><a href="/members/governance" title="Governance">Governance</a><ul class="menu"><li class="leaf first last"><a href="/members/governance/by-laws" title="By Laws">By-Laws</a></li>
+</ul></li>
+<li class="expanded"><a href="/members/governance/committees" title="Committees">Committees</a><ul class="menu"><li class="collapsed first"><a href="/members/committees/executive_committee" title="Executive Committee">Executive Committee</a></li>
+<li class="leaf"><a href="/members/committees/board_development_committee" title="Board Development Committee">Board Development Committee</a></li>
+<li class="collapsed"><a href="/members/committees/dmac_committee" title="Data Management and Communications (DMAC) Committee">DMAC Committee</a></li>
+<li class="leaf"><a href="/members/committees/education_outreach" title="Education &amp; Outreach Committee">Education &amp; Outreach Committee</a></li>
+<li class="leaf"><a href="/members/committees/finance_committee" title="Finance and Audit Committee">Finance and Audit Committee</a></li>
+<li class="leaf"><a href="/members/committees/governance_committee" title="Governance Committee">Governance Committee</a></li>
+<li class="leaf"><a href="/members/committees/public_policy_committee" title="Public Policy Committee">Public Policy Committee</a></li>
+<li class="leaf"><a href="/members/committees/operations_maintenance" title="Operations and Maintenance Committee">Operations and Maintenance Committee</a></li>
+<li class="leaf"><a href="/members/committees/science_committee" title="Science Committee">Science Committee</a></li>
+<li class="leaf last"><a href="/members/committees/stakeholder_council" title="Stakeholder Advisory Council">Stakeholder Advisory Council</a></li>
+</ul></li>
+<li class="leaf last"><a href="/members/frequent_docs" title="Frequently Accessed Documents">Frequently Accessed Documents</a></li>
+</ul></li>
+<li class="expanded last"><a href="/communications%20" title="Hot Topics">Communications</a><ul class="menu"><li class="leaf first"><a href="/node/438" title="SECOORA 2013 Annual Report">2013 Annual Report</a></li>
+<li class="leaf last"><a href="/node/412" title="Hurricane Support Resources (Data and Products)">Hurricane Support Resources</a></li>
+</ul></li>
+</ul>              </div>
+          
+                       <div id="search-box">
+              <form action="/about/ioos"  accept-charset="UTF-8" method="post" id="search-theme-form">
+<div><div id="search" class="container-inline">
+  <div class="form-item" id="edit-search-theme-form-1-wrapper">
+ <label for="edit-search-theme-form-1">Search this site: </label>
+ <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-2-P_-bhps3O9bZuX_oLOuVUPjjd94-3BTEkD1Z33vcg" value="form-2-P_-bhps3O9bZuX_oLOuVUPjjd94-3BTEkD1Z33vcg"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+</div>
+
+</div></form>
+            </div> <!-- /#search-box -->
+          
+          
+        </div></div> <!-- /#navbar-inner, /#navbar -->
+      
+              <div id="sidebar-left"><div id="sidebar-left-inner" class="region region-left">
+          
+<div id="block-menu_block-1" class="block block-menu_block region-odd odd region-count-1 count-1 block-1">
+ 
+<div class="block-inner">
+
+      <h2 class="title"><a href="/about" title="About SECOORA" class="active-trail">About</a></h2>
+  
+  <div class="content">
+    <div class="menu-block-1 menu-name-primary-links parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="expanded first menu-mlid-1601"><a href="/about/inmystate" title="SECOORA In My State">SECOORA In My State</a><ul class="menu"><li class="leaf first menu-mlid-1605"><a href="/about/inmystate/FL" title="Florida">Florida</a></li>
+<li class="leaf menu-mlid-1604"><a href="/about/inmystate/GA" title="Georgia">Georgia</a></li>
+<li class="leaf menu-mlid-1602"><a href="/about/inmystate/NC" title="North Carolina">North Carolina</a></li>
+<li class="leaf last menu-mlid-1603"><a href="/about/inmystate/SC" title="South Carolina">South Carolina</a></li>
+</ul></li>
+<li class="expanded menu-mlid-592"><a href="/about/theme_areas" title="Theme Areas">Theme Areas</a><ul class="menu"><li class="leaf first menu-mlid-1622"><a href="/about/theme_areas/climate_change" title="Climate Change">Climate Change</a></li>
+<li class="leaf menu-mlid-1619"><a href="/about/theme_areas/coastal_hazards" title="Coastal Hazards">Coastal Hazards</a></li>
+<li class="leaf menu-mlid-1621"><a href="/about/theme_areas/ecosystems" title="Ecosystems:   Water Quality &amp; Living Marine Resources">Ecosystems</a></li>
+<li class="leaf last menu-mlid-1620"><a href="/about/theme_areas/marine_operations" title="Marine Operations">Marine Operations</a></li>
+</ul></li>
+<li class="leaf menu-mlid-352"><a href="/about/governance/join" title="Join SECOORA">Join SECOORA</a></li>
+<li class="leaf menu-mlid-489"><a href="/about/membership" title="Membership">Current Membership</a></li>
+<li class="leaf menu-mlid-785"><a href="/about/technologies" title="">Observing Technologies</a></li>
+<li class="leaf menu-mlid-520"><a href="http://inventory.secoora.org/" title="Asset Inventory Map">Asset Inventory Map</a></li>
+<li class="leaf menu-mlid-353"><a href="/about/contact_us" title="
+	Contact Us
+">Contact Us</a></li>
+<li class="leaf menu-mlid-1592 active active-trail"><a href="/about/ioos" title="About IOOS" class="active-trail active">What is IOOS</a></li>
+<li class="leaf menu-mlid-2046"><a href="/data/disclaimer" title="">Data Disclaimer</a></li>
+<li class="leaf last menu-mlid-2049"><a href="/node/397" title="">Job/Contractor Opportunities</a></li>
+</ul></div>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+        </div></div> <!-- /#sidebar-left-inner, /#sidebar-left -->
+      
+
+	      
+
+     
+
+		
+
+
+    </div></div> <!-- /#main-inner, /#main -->
+
+          <div id="footer"><div id="footer-inner" class="region region-footer">
+
+         <!-- removed block for footer message --> 
+		 
+
+        
+<div id="block-block-6" class="block block-block region-odd odd region-count-1 count-3 block-1">
+ 
+<div class="block-inner">
+
+  
+  <div class="content">
+    <div>&nbsp;</div>
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top-color: rgb(211, 211, 211); border-right-color: rgb(211, 211, 211); border-bottom-color: rgb(211, 211, 211); border-left-color: rgb(211, 211, 211); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: dotted; border-right-style: dotted; border-bottom-style: dotted; border-left-style: dotted; ">
+<tbody>
+<tr>
+<td style="border-top-color: rgb(211, 211, 211); border-right-color: rgb(211, 211, 211); border-bottom-color: rgb(211, 211, 211); border-left-color: rgb(211, 211, 211); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: dotted; border-right-style: dotted; border-bottom-style: dotted; border-left-style: dotted; ">
+<div><span style="color:#fff;"><strong>&nbsp; &nbsp; &nbsp; Who is SECOORA?</strong></span></div>
+<div style="margin-left: 40px; "><span style="color:#fff;">SECOORA is one of 11 Regional Associations established nationwide through the Integrated Ocean Observing System (IOOS&reg;). IOOS is a multi-agency, cooperative effort based on a continuously operating network of buoys, ships, satellites, underwater vehicles, and other platforms that routinely collect real-time data and manage historical information. These data are needed for rapid detection and timely prediction of changes in our nation&#39;s ocean and coastal waters.&nbsp;</span></div>
+<div style="margin-left: 40px; ">&nbsp;</div>
+</td>
+<td style="border-color: rgb(211, 211, 211); border-width: 0px; border-style: dotted; width: 200px; text-align: right;"><a href="http://visitor.r20.constantcontact.com/manage/optin/ea?v=001rlsB_VLrUOl30T_d8cI5xbuFqA0KXWYfpbDyeWe9ZDcYjaeGNfQEIeiT35EZY7d495DhYXzKF9x5qBkzQRFwyTA9IBXDE9w3PkwEwicU2fZ0qVY0iZ33Pce4KIbCR9FS3_ERsuZo9lEUTpKOJ0AYTgGiCl4Oy9p8"><img alt="" src="http://secoora.org/webfm_send/1252" style="cursor: default; width: 40px; height: 40px;" /></a><a href="https://twitter.com/secoora"><img alt="" src="http://secoora.org/webfm_send/1178" style="width: 40px; height: 40px;" /></a>&nbsp;<a href="https://www.facebook.com/secoora"><img alt="" src="http://secoora.org/webfm_send/1177" style="width: 40px; height: 40px; " />&nbsp;&nbsp; </a></td>
+</tr>
+<tr>
+<td style="border-top-color: rgb(211, 211, 211); border-right-color: rgb(211, 211, 211); border-bottom-color: rgb(211, 211, 211); border-left-color: rgb(211, 211, 211); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: dotted; border-right-style: dotted; border-bottom-style: dotted; border-left-style: dotted; ">
+<div><span style="color:#fff;"><strong>&nbsp; &nbsp; &nbsp; Regional Coastal Observing Systems:&nbsp;</strong></span></div>
+<div style="margin-left: 40px; "><a href="http://www.aoos.org/" style="color: rgb(49, 79, 158); text-decoration: none; " target="_blank" title="Alaska Ocean Observing System"><span style="color:#fff;">Alaska</span></a><span style="color:#fff;">&nbsp;&bull;  </span><a href="http://cara.uprm.edu/" style="color: rgb(49, 79, 158); text-decoration: none; " title="Caribbean Coastal Ocean Observing System"><span style="color:#fff;">Caribbean</span></a><span style="color:#fff;">&nbsp;&bull;  </span><a href="http://www.cencoos.org/" style="color: rgb(49, 79, 158); text-decoration: none; " target="_blank" title="Central and Northern California Ocean Observing"><span style="color:#fff;">Central and Northern California</span></a><span style="color:#fff;">&nbsp;&bull;  </span><a href="http://glos.us/" style="color: rgb(49, 79, 158); text-decoration: none; " title="Great Lakes Observing System"><span style="color:#fff;">Great Lakes</span></a><span style="color:#fff;">&nbsp;&bull;  </span><a href="http://gcoos.org/" style="color: rgb(49, 79, 158); text-decoration: none; " target="_blank" title="Gulf of Mexico Coastal Ocean Observing System"><span style="color:#fff;">Gulf of Mexico</span></a><span style="color:#fff;">&nbsp;&bull;  </span><a href="http://www.pacioos.org/" style="color: rgb(49, 79, 158); text-decoration: none; " target="_blank" title="Pacific Islands Ocean Observing System"><span style="color:#fff;">Pacific Islands</span></a><span style="color:#fff;">&nbsp;&bull;  </span><a href="http://maracoos.org/" style="color: rgb(49, 79, 158); text-decoration: none; " target="_blank" title="Mid-Atlantic Regional Association Coastal Ocean Observing System"><span style="color:#fff;">Mid-Atlantic</span></a><span style="color:#fff;">&nbsp;&bull;  </span><a href="http://www.neracoos.org/" style="color: rgb(49, 79, 158); text-decoration: none; " target="_blank" title="Northeastern Regional Association of Coastal Ocean Observing Systems"><span style="color:#fff;">Northeast-Atlantic</span></a><span style="color:#fff;">&nbsp;&bull;  </span><a href="http://www.nanoos.org/" style="color: rgb(49, 79, 158); text-decoration: none; " target="_blank" title="Pacific Northwest Regional Ocean Observing System"><span style="color:#fff;">Pacific Northwest</span></a><span style="color:#fff;">&nbsp;&bull;  </span><a href="http://www.sccoos.org/" style="color: rgb(49, 79, 158); text-decoration: none; " target="_blank" title="Southern California Coastal Ocean Observing System"><span style="color:#fff;">Southern California</span></a><span style="color:#fff;">&nbsp;&bull;  </span><span style="text-decoration: none"><a href="http://secoora.org" style="text-decoration: none"><span style="color:#fff;">Southeast Atlantic</span></a><span style="color:#fff;"> &bull;</span><a href="http://www.ioosassociation.org/" style="text-decoration: none"><span style="color:#fff;"> IOOS Association</span></a></span></div>
+<div style="margin-left: 40px; ">&nbsp;</div>
+</td>
+<td style="border-color: rgb(211, 211, 211); border-width: 0px; border-style: dotted; width: 200px; text-align: right;">&nbsp;&nbsp;<a href="http://www.ioos.noaa.gov/"><img alt="" src="http://secoora.org/webfm_send/1147" style="cursor: default; width: 126px; height: 49px; " /></a>&nbsp; &nbsp;</td>
+</tr>
+<tr>
+<td style="border-top-color: rgb(211, 211, 211); border-right-color: rgb(211, 211, 211); border-bottom-color: rgb(211, 211, 211); border-left-color: rgb(211, 211, 211); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: dotted; border-right-style: dotted; border-bottom-style: dotted; border-left-style: dotted; ">
+<div><span style="color:#fff;"><strong><span style="font-size: 12px;">&nbsp; &nbsp; &nbsp; National Observing System Partners:&nbsp;</span></strong></span></div>
+<div style="margin-left: 40px; "><a href="http://www.act-us.info/" style="text-decoration: none"><span style="color:#fff;">Alliance for Coastal Technologies (ACT) </span></a><span style="color:#fff;"><span style="font-size: 12px;">&bull;&nbsp;</span></span><span style="font-size: 12px; "><a href="http://www.sura.org/home/" style="color: rgb(49, 79, 158); text-decoration: none; " target="_blank" title="Southeastern Universities Research Association SURA"><span style="color:#fff;">Southeastern Universities Research Association (SURA) &bull;&nbsp;</span></a><a href="http://ioos.noaa.gov/" style="color: rgb(49, 79, 158); text-decoration: none; " target="_blank" title="Integrated Ocean Observing System IOOS"><span style="color:#fff;">Integrated Ocean Observing System IOOS</span></a></span></div>
+</td>
+<td style="border-color: rgb(211, 211, 211); border-width: 0px; border-style: dotted; width: 200px;">
+<div style="text-align: right; ">&nbsp;</div>
+<div style="text-align: right; ">&nbsp;</div>
+<div style="text-align: right; "><a href="http://secoora.org/about/contact_us" style="text-decoration: none"><span style="color:#fff;"><span style="font-size: 8px; "><font class="Apple-style-span">Contact </font><font class="Apple-style-span">SECOORA</font></span></span></a><span style="font-size: 8px; "><span style="color: rgb(255, 255, 255); ">&nbsp;|&nbsp;</span><span style="text-decoration: none; "><a href="http://secoora.org/sitemap" style="color: rgb(49, 79, 158); text-decoration: none; "><span style="color: rgb(255, 255, 255); ">Site Map</span></a></span></span><span style="color: rgb(255, 255, 255); "><span style="font-size: 8px; "><span style="text-decoration: none; ">&nbsp;</span></span></span></div>
+<div style="text-align: right; "><span style="color: rgb(255, 255, 255); "><span style="font-size: 8px; "><span style="text-decoration: none; ">&nbsp;&copy; 2011 SECOORA</span></span></span></div>
+</td>
+</tr>
+</tbody>
+</table>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+
+      </div></div> <!-- /#footer-inner, /#footer -->
+    
+  </div></div> <!-- /#page-inner, /#page -->
+
+  
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-3652063-2"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+
+</body>
+</html>

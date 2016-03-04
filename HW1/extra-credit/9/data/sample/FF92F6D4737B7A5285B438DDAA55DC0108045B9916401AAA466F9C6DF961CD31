@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <DIF xmlns="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/ http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif_v9.8.4.xsd">
+          <Entry_ID>8cc50d00-638d-11e4-8886-00c0f03d5b7c</Entry_ID>
+          <Entry_Title>HLY-02-01 Benthic Station Data (benthic faunal data and sediment tracers) (Excel) [Grebmeier, J. and L. Cooper]</Entry_Title>
+
+
+          <Temporal_Coverage>
+            <Start_Date>2002-05-10</Start_Date>
+            <Stop_Date>2002-06-06</Stop_Date>
+          </Temporal_Coverage>
+
+          <Spatial_Coverage>
+            <Southernmost_Latitude>60</Southernmost_Latitude>
+            <Northernmost_Latitude>80</Northernmost_Latitude>
+            <Westernmost_Longitude>-180</Westernmost_Longitude>
+            <Easternmost_Longitude>-130</Easternmost_Longitude>
+          </Spatial_Coverage>
+
+          <Data_Center>
+            <Data_Center_Name>
+              <Short_Name>EOL</Short_Name>
+              <Long_Name>Earth Observing Laboratory</Long_Name>
+            </Data_Center_Name>
+            <Data_Center_URL>http://data.eol.ucar.edu/</Data_Center_URL>
+            <Personnel>
+              <Role>DATA CENTER CONTACT</Role>
+              <First_Name>EOL</First_Name>
+              <Last_Name>User Services</Last_Name>
+              <Contact_Address>
+                <Address>NCAR/EOL</Address>
+                <Address>P.O. Box 3000</Address>
+                <City>Boulder</City>
+                <Province_or_State>CO</Province_or_State>
+                <Postal_Code>80307</Postal_Code>
+                <Country>USA</Country>
+              </Contact_Address>
+            </Personnel>
+          </Data_Center>
+
+          <Summary>
+            <Abstract>&lt;p&gt;This data set contains measurements at each station of benthic parameters, including bottom water parameters (temperature, salinity, and oxygen, delta 18O), benthic chlorophyll-a values (bottom water chlorophyll-a, integrated water column chlorophyll-a, sediment chlorophyll-a), benthic faunal parameters (abundance, biomass (g/m2), biomass (gC/m2), number of taxa), sediment grain size values, Total organic carbon (TOC), TON, C/N, and sediment oxygen uptake rates. Samples included in this data set were collected from May 11 - June 6, 2002, and July 19 - August 21, 2002 from the U.S. Coast Guard Cutter (USCGC) Healy (WAGB-20).&lt;/p&gt;</Abstract>
+          </Summary>
+
+          <Related_URL>
+            <URL_Content_Type>
+              <Type>GET DATA</Type>
+            </URL_Content_Type>
+            <URL>http://www.aoncadis.org/dataset/id/8cc50d00-638d-11e4-8886-00c0f03d5b7c.html</URL>
+            <Description>Data Center top-level access page for this resource</Description>
+          </Related_URL>
+
+          <Metadata_Name>ACADIS IDN DIF</Metadata_Name>
+          <Metadata_Version>9.8.4</Metadata_Version>
+          <Last_DIF_Revision_Date>2015-02-05</Last_DIF_Revision_Date>
+        </DIF>

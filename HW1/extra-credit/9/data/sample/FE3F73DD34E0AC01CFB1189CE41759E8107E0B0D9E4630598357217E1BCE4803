@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <DIF xmlns="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/ http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif_v9.8.4.xsd">
+          <Entry_ID>ac2e8029-638b-11e4-8886-00c0f03d5b7c</Entry_ID>
+          <Entry_Title>ArcticRIMS: NCEP Reanalysis ShortWaveDown Radiation</Entry_Title>
+
+
+          <Temporal_Coverage>
+            <Start_Date>1979-12-31</Start_Date>
+            <Stop_Date>2006-03-30</Stop_Date>
+          </Temporal_Coverage>
+
+          <Spatial_Coverage>
+            <Southernmost_Latitude>45</Southernmost_Latitude>
+            <Northernmost_Latitude>90</Northernmost_Latitude>
+            <Westernmost_Longitude>-180</Westernmost_Longitude>
+            <Easternmost_Longitude>180</Easternmost_Longitude>
+          </Spatial_Coverage>
+
+          <Data_Center>
+            <Data_Center_Name>
+              <Short_Name>EOL</Short_Name>
+              <Long_Name>Earth Observing Laboratory</Long_Name>
+            </Data_Center_Name>
+            <Data_Center_URL>http://data.eol.ucar.edu/</Data_Center_URL>
+            <Personnel>
+              <Role>DATA CENTER CONTACT</Role>
+              <First_Name>EOL</First_Name>
+              <Last_Name>User Services</Last_Name>
+              <Contact_Address>
+                <Address>NCAR/EOL</Address>
+                <Address>P.O. Box 3000</Address>
+                <City>Boulder</City>
+                <Province_or_State>CO</Province_or_State>
+                <Postal_Code>80307</Postal_Code>
+                <Country>USA</Country>
+              </Contact_Address>
+            </Personnel>
+          </Data_Center>
+
+          <Summary>
+            <Abstract>&lt;p&gt;This dataset contains NCEP Reanalysis ShortWaveDown Radiation data. Gridded daily time step data from Ohio State University based on National Centers for Environmental Prediction/National Center for Atmospheric Research (NCEP/NCAR) reanalysis data, interpolated from the NCEP/NCAR grids (~209km) to the 25km Northern Hemisphere Equal-Area Scalable Earth Grid (EASE-Grid) using a bi-lagrange interpolation formula. As part of the data processing of Arctic Rapid Integrated Monitoring System (ArcticRIMS) based at the Water Systems Analysis Group (WSAG), University of New Hampshire all data sets have been aggregated to multiple temporal and spatial resolutions.&lt;/p&gt; &lt;p&gt;The data is presented in 24 sub-datasets of different spatial and temporal aggregations.&lt;/p&gt;</Abstract>
+          </Summary>
+
+          <Related_URL>
+            <URL_Content_Type>
+              <Type>GET DATA</Type>
+            </URL_Content_Type>
+            <URL>http://www.aoncadis.org/dataset/id/ac2e8029-638b-11e4-8886-00c0f03d5b7c.html</URL>
+            <Description>Data Center top-level access page for this resource</Description>
+          </Related_URL>
+
+          <Metadata_Name>ACADIS IDN DIF</Metadata_Name>
+          <Metadata_Version>9.8.4</Metadata_Version>
+          <Last_DIF_Revision_Date>2015-02-05</Last_DIF_Revision_Date>
+        </DIF>
