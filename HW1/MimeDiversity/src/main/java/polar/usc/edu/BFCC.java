@@ -1,4 +1,4 @@
-package g12.BFC;
+package polar.usc.edu;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ public class BFCC {
 				
 				for(Mimetype mime : mimeCollection){
 					tempmatrix = correlation(tempsignature,mime.signature);
-					System.out.println(file.getAbsolutePath()+" "+mime.name);
+					//System.out.println(file.getAbsolutePath()+" "+mime.name);
 					writematrix(tempmatrix,dir,file,mime);
 				}				
 			}
@@ -39,7 +39,7 @@ public class BFCC {
 				 return;
 			 }
 			String name;
-			if (App.OS.contains("windows"))
+			if (Detect.OS.contains("windows"))
 			{
 				name = tdir.getAbsolutePath()+ "\\"+mime.name+"_"+file.getName()+".csv";
 			}
@@ -74,7 +74,12 @@ public class BFCC {
 			double[][] matrix = new double[256][256];
 			for(int i=0; i<256;i++){
 				for(int j=0;j<256;j++){
-					matrix[i][j] = Math.abs(arr1[i] - arr2[j]);
+					if(j<i){
+					matrix[i][j] = (arr1[i] - arr2[j]);
+					}
+					else if(j>i){
+						matrix[i][j] = 1 - Math.abs(arr1[i] - arr2[j]);
+					}
 				}
 			}
 			return matrix;

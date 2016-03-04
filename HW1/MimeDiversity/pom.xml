@@ -2,9 +2,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>g12</groupId>
-  <artifactId>BFC</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <groupId>polar.usc.edu</groupId>
+  <artifactId>contentDetector</artifactId>
+  <version>0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>BFC</name>
@@ -50,7 +50,7 @@
 					<!-- MainClass in mainfest make a executable jar -->
 					<archive>
 						<manifest>
-							<mainClass>g12.BFC.App</mainClass>
+							<mainClass>polar.usc.edu.Detect</mainClass>
 						</manifest>
 					</archive>
 

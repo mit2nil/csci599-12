@@ -1,39 +1,7 @@
-application/diff-xml
-application/octet-stream
-application/pdf
-application/xhtml+xml
-application/zip
-audio/mpeg
-audio/x-ms-wma
-audio/x-wav
-image/jpeg
-image/gif
-image/png
-message/rfc822
-text/x-matlab
-video/mp4
-video/quicktime
-
-Mime type division
-==================
- -- Manali (~ 10 GB) -- 
-application_xhtml+xml (9.5 GB)
-image_gif (451.2 MB)
-text_x-matlab (12.4 MB)
-application_diff+xml (8.8 MB)
-message_rfc822 (2.3 MB)
--------------------------------
- -- Kinara (~ 11 GB) -- 
-application_pdf (8.9 GB)
-image_png (1.8 GB)
-audio_mpeg (431.8 MB)
-audio_x-ms-wma (7.1 MB)
--------------------------------
- -- Nilay (~ 10 GB) -- 
-video_mp4 (4.2 GB)
-image_jpeg (4.0 GB) 
-video_quicktime (2.1 GB)
-application_zip (433.6 MB)
-audio_x-wav (3.7 MB)
--------------------------------
-application_octet-stream
+   <mime-type type="application/x-netcdf">
+      <glob pattern="*.nc"/>		      
+      <glob pattern="*.cdf"/>		      
+     <magic priority="50">
+       <match value="0x43444601" type="string" offset="0"/>
+     </magic>
+    </mime-type>		    

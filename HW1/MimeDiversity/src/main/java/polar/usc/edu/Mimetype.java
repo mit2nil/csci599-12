@@ -1,4 +1,4 @@
-package g12.BFC;
+package polar.usc.edu;
 
 public class Mimetype {
 	protected double[] signature;

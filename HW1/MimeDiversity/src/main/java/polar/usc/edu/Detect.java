@@ -1,19 +1,9 @@
-package g12.BFC;
-import g12.BFC.BFA;
-import g12.BFC.FHT;
+package polar.usc.edu;
+import polar.usc.edu.BFA;
+import polar.usc.edu.BFA100;
+import polar.usc.edu.FHT;
 
-/**
- * This project runs BFA, BFC, BFCC and FHT and generates all the necessary output files for D3 visualization. 
- * Structure of Main Folder : 
- * INPUT : All folders[named by MIME types and split test percent] - e.g. image_gif and image_gif_25.  
- * OUTPUT : 
- * 1) BFA : BFA_mimeType.json  
- * 2) BFC : BFA100_mimeType.json, (//one more file, will name later)
- * 3) BFCC : mimeType_Filename.csv 
- */
-import g12.BFC.BFA100;
-
-public class App 
+public class Detect 
 {
     protected static String OS = System.getProperty("os.name").toLowerCase();
 

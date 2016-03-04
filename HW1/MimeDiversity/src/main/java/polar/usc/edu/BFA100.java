@@ -1,5 +1,4 @@
-package g12.BFC;
-import g12.BFC.*;
+package polar.usc.edu;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.File;
@@ -8,6 +7,8 @@ import java.util.regex.Pattern;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import polar.usc.edu.*;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;
@@ -26,7 +27,7 @@ public class BFA100 {
 	
 	protected static double[] readJson(File bfaFingerprint)
     {
-		System.out.println("READING" + bfaFingerprint.getName());
+//		System.out.println("READING" + bfaFingerprint.getName());
 		double[] fingerprint = new double[256];
         try
         {
@@ -58,9 +59,9 @@ public class BFA100 {
                     //System.out.println("From "+line+" matched: "+line.substring(m.start(2), m.end(2) );
                 } 
             }
-            for(double val : fingerprint){
-            	System.out.print(val);
-            }
+//            for(double val : fingerprint){
+//            	System.out.print(val);
+//            }
             br.close();
         }
         catch (FileNotFoundException e)
@@ -90,9 +91,9 @@ public class BFA100 {
         	if(fname.equals("BFA_"+name+".json")){
         		String mimename = fname.substring(4,fname.length()-5);
         		temp = readJson(f);
-        		for(double val : temp){
-        			System.out.print(val);
-        		}
+//        		for(double val : temp){
+//        			System.out.print(val);
+//        		}
         		Mimetype mime = new Mimetype(mimename, temp);
         		mimeCollection.add(mime);        		
         	}
@@ -114,9 +115,9 @@ public class BFA100 {
         		signature = readJson(f);
         	}
         }  
-        for(double val : signature){
-        	System.out.print(val);
-        }
+//        for(double val : signature){
+//        	System.out.print(val);
+//        }
         return signature;
 	}
 		
@@ -167,7 +168,7 @@ public class BFA100 {
 			if(mimename.equals(mime.name)){
 				for(int i =0; i<256; i++){
 					matrix[count][i] = Math.abs(signature[i]-mime.signature[i]);
-					System.out.print(matrix[count][i]);
+//					System.out.print(matrix[count][i]);
 				}
 				count++;
 				System.out.println("");
@@ -179,7 +180,7 @@ public class BFA100 {
 		try {
 
 			String test;
-			if (App.OS.contains("windows"))
+			if (Detect.OS.contains("windows"))
 			{
 				test = dirPath + "\\BFC_" + mimename + ".json";
 			}
@@ -216,9 +217,9 @@ public class BFA100 {
             throw new IllegalArgumentException();
         }
 		String mimename = dir.getName();
-		System.out.println(mimename);
+//		System.out.println(mimename);
 		mimename = mimename.substring(0,mimename.length()-3); 
-		System.out.println(mimename);
+//		System.out.println(mimename);
 		return mimename;
 	}
 

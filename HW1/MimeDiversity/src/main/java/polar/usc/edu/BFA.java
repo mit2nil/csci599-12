@@ -1,4 +1,4 @@
-package g12.BFC;
+package polar.usc.edu;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -44,7 +44,7 @@ public class BFA
         // Repeat the process for every file in a directory
         for (File f: dir.listFiles())
         {
-            System.out.println("Processing file: "+f.getName());
+//            System.out.println("Processing file: "+f.getName());
             
             // Step-1
             status = computeByteFrequency(f);
@@ -168,13 +168,13 @@ public class BFA
     
     protected void printFqs()
     {
-        for (int i=0;i<256;i++)
-        {
-            
-             System.out.print(normalizedSignatures[i]+" ");
-             System.out.println("");
-                
-    }
+//        for (int i=0;i<256;i++)
+//        {
+//            
+//             System.out.print(normalizedSignatures[i]+" ");
+//             System.out.println("");
+//                
+//    }
     }
     
     protected void dumpJson()
@@ -185,7 +185,7 @@ public class BFA
         {
             String tempPath;
             String file;
-            if (App.OS.contains("windows"))
+            if (Detect.OS.contains("windows"))
             {
                 tempPath = dir.getAbsolutePath().substring(0,dir.getAbsolutePath().lastIndexOf("\\"));
                 file = tempPath.substring(0,tempPath.lastIndexOf("\\")) + "\\BFA_" +  dir.getName() + ".json";
@@ -275,7 +275,7 @@ public class BFA
         try 
         {
             String file;
-            if (App.OS.contains("windows"))
+            if (Detect.OS.contains("windows"))
             {
                 file = dir.getAbsolutePath() + "\\BFA100_" + mimename + ".json";
             }

@@ -1,4 +1,4 @@
-package g12.BFC;
+package polar.usc.edu;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -89,7 +89,7 @@ public class FHT {
 				if(f.getName().equals(".DS_Store")){
 					continue;
 				}
-	            System.out.println("Processing file: "+f.getName());
+//	            System.out.println("Processing file: "+f.getName());
 	            
 	            // Step-1
 	            status = computeFrequencyHeader(f,count);
@@ -135,7 +135,7 @@ public class FHT {
 		try {
 			int i;
 			String mimeType;
-			if (App.OS.contains("windows"))
+			if (Detect.OS.contains("windows"))
 			{
 				i  = path.getAbsolutePath().lastIndexOf("\\");
 				mimeType = path.getAbsolutePath().substring(path.getAbsolutePath().lastIndexOf("\\")+1);
@@ -271,19 +271,6 @@ public class FHT {
 		return status;
 	}
 	
-
-	public static void main(String m[]) throws IOException{
-		long st1 = System.currentTimeMillis();
-		
-		//Calculate frequency header for a particular mime type
-		String mainDirectory = "/Users/manali/599/ass1/polar-fulldump/demoFHT";
-		String mimeType = "image_gif";
-		FHT f = new FHT(mainDirectory + "/" + mimeType + "/" + mimeType, "DIRECTORY");
-		f.computeFHT();
-		f.detectFileScore(mainDirectory, mainDirectory + "/" + mimeType + "/" + mimeType + "_25", mimeType);
-		System.out.println("Generated FHT scores in: " + (System.currentTimeMillis()-st1));
-	}
-	
 	//input mainFolder: Path to the main folder that contains all fingerprints, 
 	//input path: path to the folder/files that need to be compared with existing fingerprint
 	//mimeType: if known compare to only that mime fingerprint else if unknown compare to all obtained from mainFolder
@@ -398,7 +385,7 @@ public class FHT {
 		
 		score=cg/g;
 		x += "\"4\":" + score + ",";
-		System.out.println("4ByteFHT Score: "+score);
+		//System.out.println("4ByteFHT Score: "+score);
 		
 		cg=0;
 		g=0;
@@ -415,7 +402,7 @@ public class FHT {
 		}
 		score=cg/g;
 		x += "\"8\":" + score + ",";
-		System.out.println("8ByteFHT Score: "+score);
+//		System.out.println("8ByteFHT Score: "+score);
 		
 		cg=0;
 		g=0;
@@ -432,7 +419,7 @@ public class FHT {
 		}
 		score=cg/g;
 		x += "\"16\":" + score;
-		System.out.println("16ByteFHT Score: "+score);
+//		System.out.println("16ByteFHT Score: "+score);
 		
 		return x;
 	}
